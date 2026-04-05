@@ -112,7 +112,6 @@ function createParticles() {
   var box = document.getElementById('particles');
   if (!box) return;
 
-  // Ghana palette + purple
   var colours = [
     'rgba(255,255,255,.65)',
     'rgba(252,209,22,.72)',
@@ -382,7 +381,6 @@ function initModalControls() {
   if (ov) ov.addEventListener('click', function (e) { if (e.target === ov) closeModal(); });
 }
 
-// Shake keyframe
 (function () {
   var s = document.createElement('style');
   s.textContent = '@keyframes shake{0%,100%{transform:translateX(0)}20%,60%{transform:translateX(-8px)}40%,80%{transform:translateX(8px)}}';
