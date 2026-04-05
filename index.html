@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Zazu — Ghana's #1 youth store. Premium tech & fashion delivered to all 16 regions. Pay with MoMo!" />
+    <meta name="theme-color" content="#1a0a2e" />
+    <title>Zazu ⚡ Ghana's Hottest Store 🇬🇭</title>
+
+    <!-- Google Fonts: Outfit (headings) + DM Sans (body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+
+    <!-- PAGE LOADER -->
+    <div class="page-loader" id="page-loader">
+      <div class="loader__inner">
+        <div class="loader__logo">
+          <span class="loader__bolt">⚡</span>
+          <span class="loader__word">Zazu</span>
+        </div>
+        <div class="loader__tagline">Ghana's Finest Store 🇬🇭</div>
+        <div class="loader__bar"><div class="loader__fill"></div></div>
+      </div>
+    </div>
+
+    <!-- ANNOUNCEMENT TICKER -->
+    <div class="announcement-bar">
+      <div class="announcement-bar__track">
+        <span>🔥 Free delivery on orders over GH₵500</span>
+        <span class="sep">·</span>
+        <span>📱 Pay with MoMo — Fast &amp; Secure</span>
+        <span class="sep">·</span>
+        <span>🇬🇭 Delivering to all 16 regions of Ghana</span>
+        <span class="sep">·</span>
+        <span>⚡ Same-day dispatch in Accra</span>
+        <span class="sep">·</span>
+        <span>💛 Yɛ da wo ase — Thank you for shopping!</span>
+        <span class="sep">·</span>
+        <span>🔥 Free delivery on orders over GH₵500</span>
+        <span class="sep">·</span>
+        <span>📱 Pay with MoMo — Fast &amp; Secure</span>
+        <span class="sep">·</span>
+        <span>🇬🇭 Delivering to all 16 regions of Ghana</span>
+        <span class="sep">·</span>
+        <span>⚡ Same-day dispatch in Accra</span>
+        <span class="sep">·</span>
+        <span>💛 Yɛ da wo ase — Thank you for shopping!</span>
+        <span class="sep">·</span>
+      </div>
+    </div>
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+      <div class="header__container">
+        <a href="#home" class="header__logo">
+          <span class="logo__bolt">⚡</span>
+          <span class="logo__name">Zazu</span>
+          <span class="logo__tag">GH</span>
+        </a>
+
+        <nav class="header__nav" id="nav-menu">
+          <ul class="nav__list">
+            <li><a href="#home"      class="nav__link active-link">Home</a></li>
+            <li><a href="#products"  class="nav__link">Shop</a></li>
+            <li><a href="#flashsale" class="nav__link nav__link--deals">🔥 Deals</a></li>
+            <li><a href="#delivery"  class="nav__link">Delivery</a></li>
+            <li><a href="#about"     class="nav__link">About</a></li>
+            <li><a href="#contact"   class="nav__link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header__actions">
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+            <i class="fa-solid fa-sun"  id="icon-sun"></i>
+            <i class="fa-solid fa-moon" id="icon-moon" style="display:none"></i>
+          </button>
+          <button class="icon-btn" id="search-btn" aria-label="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <button class="cart-btn" id="cart-btn" aria-label="View cart">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span class="cart-count" id="cart-count">0</span>
+          </button>
+          <button class="hamburger" id="hamburger-btn" aria-label="Menu" aria-expanded="false">
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+            <span class="hamburger__line"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Slide-down search bar -->
+      <div class="search-bar" id="search-bar">
+        <div class="search-bar__inner">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" id="search-input" placeholder="Search gadgets, fashion, sneakers..." aria-label="Search" />
+          <button id="search-close" aria-label="Close search"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+      </div>
+    </header>
+
+
+    <!-- =============================================
+         HERO SECTION
+    ============================================== -->
+    <section class="hero" id="home">
+      <!-- Layered background -->
+      <div class="hero__bg-layer hero__bg-layer--grid"></div>
+      <div class="hero__bg-layer hero__bg-layer--glow"></div>
+
+      <!-- Animated orbs -->
+      <div class="orb orb--purple"></div>
+      <div class="orb orb--gold"></div>
+      <div class="orb orb--green"></div>
+      <div class="orb orb--red"></div>
+
+      <!-- Ghana flag strip -->
+      <div class="hero__flag">
+        <div class="flag--red"></div>
+        <div class="flag--gold"></div>
+        <div class="flag--green"></div>
+      </div>
+
+      <div class="particles" id="particles"></div>
+
+      <div class="hero__container">
+        <!-- LEFT: Content -->
+        <div class="hero__content">
+          <div class="hero__live-pill">
+            <span class="live-dot"></span>
+            <span>Live Now — New Drops Available</span>
+          </div>
+
+          <h1 class="hero__headline">
+            <span class="hero__line hero__line--1">Style.</span>
+            <span class="hero__line hero__line--2">Tech.</span>
+            <span class="hero__line hero__line--3">Ghana. 🇬🇭</span>
+          </h1>
+
+          <p class="hero__desc">
+            The freshest tech gadgets and fashion — delivered to
+            <strong>every corner of Ghana</strong>.
+            Accra to Tamale, Kumasi to Cape Coast.
+            Pay fast with <strong>MoMo</strong>. No wahala.
+          </p>
+
+          <!-- Countdown inside hero -->
+          <div class="hero__deal-strip">
+            <span class="deal-strip__label">⚡ Flash Sale ends in</span>
+            <div class="deal-strip__timer">
+              <div class="deal-block"><span id="h-hours">00</span><small>HRS</small></div>
+              <span class="deal-sep">:</span>
+              <div class="deal-block"><span id="h-mins">00</span><small>MIN</small></div>
+              <span class="deal-sep">:</span>
+              <div class="deal-block"><span id="h-secs">00</span><small>SEC</small></div>
+            </div>
+          </div>
+
+          <div class="hero__buttons">
+            <a href="#products" class="btn btn--gold">
+              <i class="fa-solid fa-bolt"></i> Shop Now
+            </a>
+            <a href="https://wa.me/233247221043?text=Hi%20Zazu!%20I%20want%20to%20order." target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp-hero">
+              <i class="fa-brands fa-whatsapp"></i> Order on WhatsApp
+            </a>
+          </div>
+
+          <div class="hero__pills">
+            <span class="hero__pill"><i class="fa-solid fa-shield-halved"></i> Secure Pay</span>
+            <span class="hero__pill"><i class="fa-solid fa-truck-fast"></i> Fast Delivery</span>
+            <span class="hero__pill"><i class="fa-solid fa-rotate-left"></i> Easy Returns</span>
+          </div>
+        </div>
+
+        <!-- RIGHT: Stacked product cards -->
+        <div class="hero__visual">
+          <div class="pcard pcard--back">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=85&auto=format&fit=crop" alt="Sneakers" />
+            <p>GH₵ 390</p>
+          </div>
+          <div class="pcard pcard--mid">
+            <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=400&q=85&auto=format&fit=crop" alt="Phone" />
+            <p>GH₵ 1,850</p>
+          </div>
+          <div class="pcard pcard--front">
+            <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&q=85&auto=format&fit=crop" alt="Smartwatch" />
+            <div class="pcard__bottom">
+              <span class="pcard__price">GH₵ 780</span>
+              <span class="pcard__momo"><i class="fa-solid fa-mobile-screen-button"></i> MoMo</span>
+            </div>
+          </div>
+
+          <!-- Floating info badges -->
+          <div class="hero-float hero-float--rating">
+            <i class="fa-solid fa-star"></i>
+            <div><strong>4.9 / 5</strong><span>Rating</span></div>
+          </div>
+          <div class="hero-float hero-float--delivery">
+            <i class="fa-solid fa-truck-fast"></i>
+            <div><strong>All 16 Regions</strong><span>Nationwide 🇬🇭</span></div>
+          </div>
+          <div class="hero-float hero-float--customers">
+            <i class="fa-solid fa-users"></i>
+            <div><strong>2,400+</strong><span>Customers</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__scroll">
+        <span>Scroll to explore</span>
+        <div class="scroll-ring"><i class="fa-solid fa-chevron-down"></i></div>
+      </div>
+    </section>
+
+
+    <!-- FEATURES STRIP -->
+    <div class="features-strip">
+      <div class="features-strip__track">
+        <span class="feat"><i class="fa-solid fa-shield-halved"></i> 100% Authentic Products</span>
+        <span class="feat"><i class="fa-solid fa-truck-fast"></i> Nationwide Ghana Delivery</span>
+        <span class="feat"><i class="fa-solid fa-mobile-screen-button"></i> Pay with MoMo</span>
+        <span class="feat"><i class="fa-brands fa-whatsapp"></i> 24/7 WhatsApp Support</span>
+        <span class="feat"><i class="fa-solid fa-rotate-left"></i> Easy 7-Day Returns</span>
+        <span class="feat"><i class="fa-solid fa-star"></i> 4.9★ Rated Store</span>
+        <span class="feat"><i class="fa-solid fa-shield-halved"></i> 100% Authentic Products</span>
+        <span class="feat"><i class="fa-solid fa-truck-fast"></i> Nationwide Ghana Delivery</span>
+        <span class="feat"><i class="fa-solid fa-mobile-screen-button"></i> Pay with MoMo</span>
+        <span class="feat"><i class="fa-brands fa-whatsapp"></i> 24/7 WhatsApp Support</span>
+        <span class="feat"><i class="fa-solid fa-rotate-left"></i> Easy 7-Day Returns</span>
+        <span class="feat"><i class="fa-solid fa-star"></i> 4.9★ Rated Store</span>
+      </div>
+    </div>
+
+
+    <!-- FLASH SALE SECTION -->
+    <section class="flashsale" id="flashsale">
+      <div class="container">
+        <div class="flashsale__head">
+          <div>
+            <h2 class="flashsale__title">⚡ Flash Sale</h2>
+            <p class="flashsale__sub">Grab it before it's gone — limited stock!</p>
+          </div>
+          <div class="fs-timer">
+            <span class="fs-timer__label">Ends in:</span>
+            <div class="fs-timer__blocks">
+              <div class="fs-block"><span id="fs-hours">00</span><small>HRS</small></div>
+              <span class="fs-sep">:</span>
+              <div class="fs-block"><span id="fs-mins">00</span><small>MIN</small></div>
+              <span class="fs-sep">:</span>
+              <div class="fs-block"><span id="fs-secs">00</span><small>SEC</small></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flashsale__grid">
+
+          <article class="flash-card" data-id="201">
+            <div class="flash-card__img">
+              <span class="flash-off">-40%</span>
+              <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&q=85&auto=format&fit=crop" alt="Smartwatch" onerror="this.src='https://placehold.co/400x400/6d28d9/fff?text=Smartwatch'" />
+            </div>
+            <div class="flash-card__body">
+              <p class="flash-card__name">ZazuTech Smartwatch</p>
+              <div class="flash-card__prices">
+                <span class="flash-new">GH₵ 468</span>
+                <span class="flash-old">GH₵ 780</span>
+              </div>
+              <div class="flash-progress-wrap"><div class="flash-progress" style="width:72%"></div></div>
+              <p class="flash-sold">🔥 72% sold</p>
+              <button class="btn btn--momo-sm" onclick="addToCart(201,'ZazuTech Smartwatch — Flash Deal',468)">
+                <i class="fa-solid fa-bolt"></i> Buy Now
+              </button>
+            </div>
+          </article>
+
+          <article class="flash-card" data-id="202">
+            <div class="flash-card__img">
+              <span class="flash-off">-35%</span>
+              <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=85&auto=format&fit=crop" alt="Sneakers" onerror="this.src='https://placehold.co/400x400/dc2626/fff?text=Sneakers'" />
+            </div>
+            <div class="flash-card__body">
+              <p class="flash-card__name">Kente Print Sneakers</p>
+              <div class="flash-card__prices">
+                <span class="flash-new">GH₵ 254</span>
+                <span class="flash-old">GH₵ 390</span>
+              </div>
+              <div class="flash-progress-wrap"><div class="flash-progress" style="width:85%"></div></div>
+              <p class="flash-sold">🔥 85% sold</p>
+              <button class="btn btn--momo-sm" onclick="addToCart(202,'Kente Sneakers — Flash Deal',254)">
+                <i class="fa-solid fa-bolt"></i> Buy Now
+              </button>
+            </div>
+          </article>
+
+          <article class="flash-card" data-id="203">
+            <div class="flash-card__img">
+              <span class="flash-off">-45%</span>
+              <img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400&q=85&auto=format&fit=crop" alt="Speaker" onerror="this.src='https://placehold.co/400x400/0ea5e9/fff?text=Speaker'" />
+            </div>
+            <div class="flash-card__body">
+              <p class="flash-card__name">BoomBox Speaker</p>
+              <div class="flash-card__prices">
+                <span class="flash-new">GH₵ 231</span>
+                <span class="flash-old">GH₵ 420</span>
+              </div>
+              <div class="flash-progress-wrap"><div class="flash-progress" style="width:91%"></div></div>
+              <p class="flash-sold">🔥 91% sold</p>
+              <button class="btn btn--momo-sm" onclick="addToCart(203,'BoomBox Speaker — Flash Deal',231)">
+                <i class="fa-solid fa-bolt"></i> Buy Now
+              </button>
+            </div>
+          </article>
+
+          <article class="flash-card" data-id="204">
+            <div class="flash-card__img">
+              <span class="flash-off">-30%</span>
+              <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400&q=85&auto=format&fit=crop" alt="Sunglasses" onerror="this.src='https://placehold.co/400x400/f59e0b/000?text=Shades'" />
+            </div>
+            <div class="flash-card__body">
+              <p class="flash-card__name">Chrome Wave Shades</p>
+              <div class="flash-card__prices">
+                <span class="flash-new">GH₵ 109</span>
+                <span class="flash-old">GH₵ 155</span>
+              </div>
+              <div class="flash-progress-wrap"><div class="flash-progress" style="width:63%"></div></div>
+              <p class="flash-sold">🔥 63% sold</p>
+              <button class="btn btn--momo-sm" onclick="addToCart(204,'Chrome Wave Shades — Flash Deal',109)">
+                <i class="fa-solid fa-bolt"></i> Buy Now
+              </button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CATEGORY FILTER -->
+    <section class="categories" id="categories">
+      <div class="container">
+        <div class="categories__row">
+          <button class="cat-pill active" data-filter="all"><i class="fa-solid fa-th-large"></i> All</button>
+          <button class="cat-pill" data-filter="tech"><i class="fa-solid fa-microchip"></i> Tech</button>
+          <button class="cat-pill" data-filter="fashion"><i class="fa-solid fa-shirt"></i> Fashion</button>
+          <button class="cat-pill" data-filter="audio"><i class="fa-solid fa-headphones"></i> Audio</button>
+          <button class="cat-pill" data-filter="accessories"><i class="fa-solid fa-glasses"></i> Accessories</button>
+          <button class="cat-pill" data-filter="phones"><i class="fa-solid fa-mobile-screen"></i> Phones</button>
+          <button class="cat-pill" data-filter="beauty"><i class="fa-solid fa-spa"></i> Beauty</button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- PRODUCTS SECTION — 11 products (ProSound removed) -->
+    <section class="products" id="products">
+      <div class="container">
+        <div class="section__header">
+          <div class="section__badge">🛒 Fresh Drops</div>
+          <h2 class="section__title">Trending Right Now</h2>
+          <p class="section__sub">The freshest picks — delivered anywhere in Ghana 🇬🇭</p>
+        </div>
+
+        <div class="products__grid" id="products-grid">
+
+          <!-- 1. SMARTWATCH -->
+          <article class="product-card" data-category="tech" data-id="1">
+            <div class="product-card__img-wrap">
+              <span class="p-badge p-badge--hot">🔥 Hot</span>
+              <button class="wishlist-btn" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&q=85&auto=format&fit=crop" alt="ZazuTech Pro Smartwatch" class="product-card__img" loading="lazy" onerror="this.src='https://placehold.co/500x500/6d28d9/fff?text=Smartwatch'" />
+              <div class="product-card__hover">
+                <button class="quick-add-btn" onclick="addToCart(1,'ZazuTech Pro Smartwatch',780)"><i class="fa-solid fa-bag-shopping"></i> Quick Add</button>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <span class="p-category">Tech</span>
+              <h3 class="p-title">ZazuTech Pro Smartwatch</h3>
+              <div class="p-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><span>(204)</span></div>
+              <div class="p-pricing"><span class="p-price">GH₵ 780</span><span class="p-old">GH₵ 1,200</span><span class="p-off">-35%</span></div>
+              <p class="p-delivery"><i class="fa-solid fa-truck-fast"></i> Nationwide delivery</p>
+              <button class="btn btn--momo" onclick="handleMoMoPayment('ZazuTech Pro Smartwatch',780)"><i class="fa-solid fa-mobile-screen-button"></i> Pay with MoMo</button>
+            </div>
+          </article>
+
+          <!-- 2. HOODIE -->
+          <article class="product-card" data-category="fashion" data-id="2">
+            <div class="product-card__img-wrap">
+              <span class="p-badge p-badge--new">✨ New</span>
+              <button class="wishlist-btn" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=500&q=85&auto=format&fit=crop" alt="Accra Vibes Hoodie" class="product-card__img" loading="lazy" onerror="this.src='https://placehold.co/500x500/f59e0b/000?text=Accra+Hoodie'" />
+              <div class="product-card__hover">
+                <button class="quick-add-btn" onclick="addToCart(2,'Accra Vibes Streetwear Hoodie',280)"><i class="fa-solid fa-bag-shopping"></i> Quick Add</button>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <span class="p-category">Fashion</span>
+              <h3 class="p-title">Accra Vibes Streetwear Hoodie</h3>
+              <div class="p-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><span>(87)</span></div>
+              <div class="p-pricing"><span class="p-price">GH₵ 280</span><span class="p-old">GH₵ 380</span><span class="p-off">-26%</span></div>
+              <p class="p-delivery"><i class="fa-solid fa-truck-fast"></i> Nationwide delivery</p>
+              <button class="btn btn--momo" onclick="handleMoMoPayment('Accra Vibes Streetwear Hoodie',280)"><i class="fa-solid fa-mobile-screen-button"></i> Pay with MoMo</button>
+            </div>
+          </article>
+
+          <!-- 3. SUNGLASSES -->
+          <article class="product-card" data-category="accessories" data-id="3">
+            <div class="product-card__img-wrap">
+              <span class="p-badge p-badge--new">✨ New</span>
+              <button class="wishlist-btn" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img src="https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=500&q=85&auto=format&fit=crop" alt="Chrome Wave Sunglasses" class="product-card__img" loading="lazy" onerror="this.src='https://placehold.co/500x500/f59e0b/000?text=Sunglasses'" />
+              <div class="product-card__hover">
+                <button class="quick-add-btn" onclick="addToCart(3,'Chrome Wave Sunglasses',155)"><i class="fa-solid fa-bag-shopping"></i> Quick Add</button>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <span class="p-category">Accessories</span>
+              <h3 class="p-title">Chrome Wave Sunglasses</h3>
+              <div class="p-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i><span>(63)</span></div>
+              <div class="p-pricing"><span class="p-price">GH₵ 155</span><span class="p-old">GH₵ 220</span><span class="p-off">-30%</span></div>
+              <p class="p-delivery"><i class="fa-solid fa-truck-fast"></i> Nationwide delivery</p>
+              <button class="btn btn--momo" onclick="handleMoMoPayment('Chrome Wave Sunglasses',155)"><i class="fa-solid fa-mobile-screen-button"></i> Pay with MoMo</button>
+            </div>
+          </article>
+
+          <!-- 4. BLUETOOTH SPEAKER -->
+          <article class="product-card" data-category="tech" data-id="4">
+            <div class="product-card__img-wrap">
+              <span class="p-badge p-badge--sale">💥 Sale</span>
+              <button class="wishlist-btn" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img src="https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=500&q=85&auto=format&fit=crop" alt="BoomBox Mini Bluetooth Speaker" class="product-card__img" loading="lazy" onerror="this.src='https://placehold.co/500x500/0ea5e9/fff?text=Speaker'" />
+              <div class="product-card__hover">
+                <button class="quick-add-btn" onclick="addToCart(4,'BoomBox Mini Speaker',420)"><i class="fa-solid fa-bag-shopping"></i> Quick Add</button>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <span class="p-category">Tech</span>
+              <h3 class="p-title">BoomBox Mini Bluetooth Speaker</h3>
+              <div class="p-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><span>(311)</span></div>
+              <div class="p-pricing"><span class="p-price">GH₵ 420</span><span class="p-old">GH₵ 650</span><span class="p-off">-35%</span></div>
+              <p class="p-delivery"><i class="fa-solid fa-truck-fast"></i> Nationwide delivery</p>
+              <button class="btn btn--momo" onclick="handleMoMoPayment('BoomBox Mini Bluetooth Speaker',420)"><i class="fa-solid fa-mobile-screen-button"></i> Pay with MoMo</button>
+            </div>
+          </article>
+
+          <!-- 5. KENTE SNEAKERS -->
+          <article class="product-card" data-category="fashion" data-id="5">
+            <div class="product-card__img-wrap">
+              <span class="p-badge p-badge--hot">🔥 Hot</span>
+              <button class="wishlist-btn" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&q=85&auto=format&fit=crop" alt="Kente Print Sneakers" class="product-card__img" loading="lazy" onerror="this.src='https://placehold.co/500x500/dc2626/fff?text=Kente+Sneakers'" />
+              <div class="product-card__hover">
+                <button class="quick-add-btn" onclick="addToCart(5,'Kente Print Sneakers',390)"><i class="fa-solid fa-bag-shopping"></i> Quick Add</button>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <span class="p-category">Fashion</span>
+              <h3 class="p-title">Kente Print Sneakers</h3>
+              <div class="p-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><span>(176)</span></div>
+              <div class="p-pricing"><span class="p-price">GH₵ 390</span><span class="p-old">GH₵ 560</span><span class="p-off">-30%</span></div>
+              <p class="p-delivery"><i class="fa-solid fa-truck-fast"></i> Nationwide delivery</p>
+              <button class="btn btn--momo" onclick="handleMoMoPayment('Kente Print Sneakers',390)"><i class="fa-solid fa-mobile-screen-button"></i> Pay with MoMo</button>
+            </div>
+          </article>
+
+          <!-- 6. SMARTPHONE -->
+          <article class="product-card" data-category="phones" data-id="6">
+            <div class="product-card__img-wrap">
+              <span class="p-badge p-badge--new">✨ New</span>
+              <button class="wishlist-btn" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500&q=85&auto=format&fit=crop" alt="ZazuPhone X Pro" class="product-card__img" loading="lazy" onerror="this.src='https://placehold.co/500x500/1e293b/fff?text=ZazuPhone+X'" />
+              <div class="product-card__hover">
+                <button class="quick-add-btn" onclick="addToCart(6,'ZazuPhone X Pro',1850)"><i class="fa-solid fa-bag-shopping"></i> Quick Add</button>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <span class="p-category">Phones</span>
+              <h3 class="p-title">ZazuPhone X Pro Smartphone</h3>
+              <div class="p-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><span>(89)</span></div>
+              <div class="p-pricing"><span class="p-price">GH₵ 1,850</span><span class="p-old">GH₵ 2,400</span><span class="p-off">-23%</span></div>
+              <p class="p-delivery"><i class="fa-solid fa-truck-fast"></i> Nationwide delivery</p>
+              <button class="btn btn--momo" onclick="handleMoMoPayment('ZazuPhone X Pro Smartphone',1850)"><i class="fa-solid fa-mobile-screen-button"></i> Pay with MoMo</button>
+            </div>
+          </article>
+
+          <!-- 7. GAMING HEADSET -->
+          <article class="product-card" data-category="audio" data-id="7">
+            <div class="product-card__img-wrap">
+              <span class="p-badge p-badge--hot">🔥 Hot</span>
+              <button class="wishlist-btn" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=85&auto=format&fit=crop" alt="ProGamer RGB Headset" class="product-card__img" loading="lazy" onerror="this.src='https://placehold.co/500x500/7c3aed/fff?text=Headset'" />
+              <div class="product-card__hover">
+                <button class="quick-add-btn" onclick="addToCart(7,'ProGamer RGB Headset',560)"><i class="fa-solid fa-bag-shopping"></i> Quick Add</button>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <span class="p-category">Audio</span>
+              <h3 class="p-title">ProGamer RGB Headset</h3>
+              <div class="p-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><span>(143)</span></div>
+              <div class="p-pricing"><span class="p-price">GH₵ 560</span><span class="p-old">GH₵ 800</span><span class="p-off">-30%</span></div>
+              <p class="p-delivery"><i class="fa-solid fa-truck-fast"></i> Nationwide delivery</p>
+              <button class="btn btn--momo" onclick="handleMoMoPayment('ProGamer RGB Headset',560)"><i class="fa-solid fa-mobile-screen-button"></i> Pay with MoMo</button>
+            </div>
+          </article>
+
+          <!-- 8. KENTE DRESS -->
+          <article class="product-card" data-category="fashion" data-id="8">
+            <div class="product-card__img-wrap">
+              <span class="p-badge p-badge--new">✨ New</span>
+              <button class="wishlist-btn" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img src="https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=500&q=85&auto=format&fit=crop" alt="Kente Pattern Dress" class="product-card__img" loading="lazy" onerror="this.src='https://placehold.co/500x500/dc2626/fff?text=Kente+Dress'" />
+              <div class="product-card__hover">
+                <button class="quick-add-btn" onclick="addToCart(8,'Kente Pattern Summer Dress',320)"><i class="fa-solid fa-bag-shopping"></i> Quick Add</button>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <span class="p-category">Fashion</span>
+              <h3 class="p-title">Kente Pattern Summer Dress</h3>
+              <div class="p-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><span>(92)</span></div>
+              <div class="p-pricing"><span class="p-price">GH₵ 320</span><span class="p-old">GH₵ 450</span><span class="p-off">-29%</span></div>
+              <p class="p-delivery"><i class="fa-solid fa-truck-fast"></i> Nationwide delivery</p>
+              <button class="btn btn--momo" onclick="handleMoMoPayment('Kente Pattern Summer Dress',320)"><i class="fa-solid fa-mobile-screen-button"></i> Pay with MoMo</button>
+            </div>
+          </article>
+
+          <!-- 9. LAPTOP -->
+          <article class="product-card" data-category="tech" data-id="9">
+            <div class="product-card__img-wrap">
+              <span class="p-badge p-badge--sale">💥 Deal</span>
+              <button class="wishlist-btn" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=500&q=85&auto=format&fit=crop" alt="ZazuBook Pro Laptop" class="product-card__img" loading="lazy" onerror="this.src='https://placehold.co/500x500/1e293b/fff?text=ZazuBook+Pro'" />
+              <div class="product-card__hover">
+                <button class="quick-add-btn" onclick="addToCart(9,'ZazuBook Pro Laptop',3200)"><i class="fa-solid fa-bag-shopping"></i> Quick Add</button>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <span class="p-category">Tech</span>
+              <h3 class="p-title">ZazuBook Pro Laptop</h3>
+              <div class="p-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><span>(57)</span></div>
+              <div class="p-pricing"><span class="p-price">GH₵ 3,200</span><span class="p-old">GH₵ 4,500</span><span class="p-off">-29%</span></div>
+              <p class="p-delivery"><i class="fa-solid fa-truck-fast"></i> Nationwide delivery</p>
+              <button class="btn btn--momo" onclick="handleMoMoPayment('ZazuBook Pro Laptop',3200)"><i class="fa-solid fa-mobile-screen-button"></i> Pay with MoMo</button>
+            </div>
+          </article>
+
+          <!-- 10. PERFUME -->
+          <article class="product-card" data-category="beauty" data-id="10">
+            <div class="product-card__img-wrap">
+              <span class="p-badge p-badge--new">✨ New</span>
+              <button class="wishlist-btn" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img src="https://images.unsplash.com/photo-1541643600914-78b084683702?w=500&q=85&auto=format&fit=crop" alt="Accra Nights Perfume" class="product-card__img" loading="lazy" onerror="this.src='https://placehold.co/500x500/be185d/fff?text=Accra+Nights'" />
+              <div class="product-card__hover">
+                <button class="quick-add-btn" onclick="addToCart(10,'Accra Nights Perfume 100ml',210)"><i class="fa-solid fa-bag-shopping"></i> Quick Add</button>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <span class="p-category">Beauty</span>
+              <h3 class="p-title">Accra Nights Perfume 100ml</h3>
+              <div class="p-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><span>(198)</span></div>
+              <div class="p-pricing"><span class="p-price">GH₵ 210</span><span class="p-old">GH₵ 320</span><span class="p-off">-34%</span></div>
+              <p class="p-delivery"><i class="fa-solid fa-truck-fast"></i> Nationwide delivery</p>
+              <button class="btn btn--momo" onclick="handleMoMoPayment('Accra Nights Perfume 100ml',210)"><i class="fa-solid fa-mobile-screen-button"></i> Pay with MoMo</button>
+            </div>
+          </article>
+
+          <!-- 11. POWER BANK -->
+          <article class="product-card" data-category="tech" data-id="11">
+            <div class="product-card__img-wrap">
+              <span class="p-badge p-badge--hot">🔥 Must Have</span>
+              <button class="wishlist-btn" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></button>
+              <img src="https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=500&q=85&auto=format&fit=crop" alt="ZazuCharge Power Bank" class="product-card__img" loading="lazy" onerror="this.src='https://placehold.co/500x500/0f172a/fff?text=Power+Bank'" />
+              <div class="product-card__hover">
+                <button class="quick-add-btn" onclick="addToCart(11,'ZazuCharge 20000mAh Power Bank',185)"><i class="fa-solid fa-bag-shopping"></i> Quick Add</button>
+              </div>
+            </div>
+            <div class="product-card__body">
+              <span class="p-category">Tech</span>
+              <h3 class="p-title">ZazuCharge 20,000mAh Power Bank</h3>
+              <div class="p-stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i><span>(267)</span></div>
+              <div class="p-pricing"><span class="p-price">GH₵ 185</span><span class="p-old">GH₵ 280</span><span class="p-off">-34%</span></div>
+              <p class="p-delivery"><i class="fa-solid fa-truck-fast"></i> Nationwide delivery</p>
+              <button class="btn btn--momo" onclick="handleMoMoPayment('ZazuCharge 20000mAh Power Bank',185)"><i class="fa-solid fa-mobile-screen-button"></i> Pay with MoMo</button>
+            </div>
+          </article>
+
+<!-- 12. ACER LED EARBUDS — Your Product -->
+<article class="product-card" data-category="audio" data-id="12">
+  <div class="product-card__img-wrap">
+    <span class="p-badge p-badge--new">✨ New</span>
+    <button class="wishlist-btn" aria-label="Wishlist">
+      <i class="fa-regular fa-heart"></i>
+    </button>
+    <img
+      src="https://i.ibb.co/gbp7mfmw/acer-earbuds.jpg"
+      alt="Acer LED Earbuds"
+      class="product-card__img"
+      loading="lazy"
+      onerror="this.src='https://placehold.co/500x500/1a1a2e/fbbf24?text=Acer+LED+Earbuds'"
+    />
+    <div class="product-card__hover">
+      <button
+        class="quick-add-btn"
+        onclick="addToCart(12,'Acer LED Earbuds',350)"
+      >
+        <i class="fa-solid fa-bag-shopping"></i> Quick Add
+      </button>
+    </div>
+  </div>
+
+  <div class="product-card__body">
+    <span class="p-category">Audio</span>
+    <h3 class="p-title">Acer LED Earbuds</h3>
+    <div class="p-stars">
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half-stroke"></i>
+      <span>(47)</span>
+    </div>
+    <div class="p-pricing">
+      <span class="p-price">GH₵ 350</span>
+      <span class="p-old">GH₵ 480</span>
+      <span class="p-off">-27%</span>
+    </div>
+    <p class="p-delivery">
+      <i class="fa-solid fa-truck-fast"></i> Nationwide delivery
+    </p>
+    <button
+      class="btn btn--momo"
+      onclick="handleMoMoPayment('Acer LED Earbuds',350)"
+    >
+      <i class="fa-solid fa-mobile-screen-button"></i> Pay with MoMo
+    </button>
+  </div>
+</article>
+        </div>
+
+        <div class="load-more-wrap">
+          <button class="btn btn--outline btn--load-more" id="load-more-btn">
+            <i class="fa-solid fa-arrow-rotate-right"></i> Load More Products
+          </button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- DELIVERY SECTION -->
+    <section class="delivery" id="delivery">
+      <div class="container">
+        <div class="section__header">
+          <div class="section__badge">🚚 Delivery</div>
+          <h2 class="section__title">We Deliver Across All of Ghana 🇬🇭</h2>
+          <p class="section__sub">From Accra to Tamale, Kumasi to Cape Coast — Zazu brings it to your door.</p>
+        </div>
+        <div class="delivery__layout">
+          <div class="delivery__cards">
+            <div class="delivery-card" style="--dc-color:#6d28d9">
+              <div class="delivery-card__icon"><i class="fa-solid fa-bolt"></i></div>
+              <h4>Same-Day Dispatch</h4>
+              <p>Order before 12pm in Accra — dispatched same day</p>
+            </div>
+            <div class="delivery-card" style="--dc-color:#f59e0b">
+              <div class="delivery-card__icon"><i class="fa-solid fa-truck-fast"></i></div>
+              <h4>Nationwide Delivery</h4>
+              <p>1–3 days to all major cities across Ghana</p>
+            </div>
+            <div class="delivery-card" style="--dc-color:#10b981">
+              <div class="delivery-card__icon"><i class="fa-solid fa-location-dot"></i></div>
+              <h4>Doorstep Delivery</h4>
+              <p>We bring it straight to your door — no stress</p>
+            </div>
+            <div class="delivery-card" style="--dc-color:#ef4444">
+              <div class="delivery-card__icon"><i class="fa-solid fa-headset"></i></div>
+              <h4>Track Your Order</h4>
+              <p>WhatsApp us anytime for live order updates</p>
+            </div>
+          </div>
+          <div class="delivery__regions-panel">
+            <h3 class="regions-panel__title"><i class="fa-solid fa-map-location-dot"></i> All 16 Regions Covered</h3>
+            <div class="regions-grid">
+              <div class="region-chip"><i class="fa-solid fa-check"></i> Greater Accra</div>
+              <div class="region-chip"><i class="fa-solid fa-check"></i> Ashanti</div>
+              <div class="region-chip"><i class="fa-solid fa-check"></i> Northern</div>
+              <div class="region-chip"><i class="fa-solid fa-check"></i> Western</div>
+              <div class="region-chip"><i class="fa-solid fa-check"></i> Eastern</div>
+              <div class="region-chip"><i class="fa-solid fa-check"></i> Central</div>
+              <div class="region-chip"><i class="fa-solid fa-check"></i> Volta</div>
+              <div class="region-chip"><i class="fa-solid fa-check"></i> Upper East</div>
+              <div class="region-chip"><i class="fa-solid fa-check"></i> Upper West</div>
+              <div class="region-chip"><i class="fa-solid fa-check"></i> Brong-Ahafo</div>
+              <div class="region-chip"><i class="fa-solid fa-check"></i> Bono East</div>
+              <div class="region-chip"><i class="fa-solid fa-check"></i> Ahafo</div>
+              <div class="region-chip"><i class="fa-solid fa-check"></i> Savannah</div>
+              <div class="region-chip"><i class="fa-solid fa-check"></i> North East</div>
+              <div class="region-chip"><i class="fa-solid fa-check"></i> Oti</div>
+              <div class="region-chip"><i class="fa-solid fa-check"></i> Western North</div>
+            </div>
+            <a href="https://wa.me/233247221043?text=Hi%20Zazu!%20What%20is%20the%20delivery%20cost%20to%20my%20area?" target="_blank" rel="noopener noreferrer" class="btn btn--whatsapp-delivery">
+              <i class="fa-brands fa-whatsapp"></i> Ask About Delivery to My Area
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- MOMO BANNER -->
+    <section class="momo-banner">
+      <div class="momo-banner__shapes">
+        <div class="ms ms--1"></div>
+        <div class="ms ms--2"></div>
+        <div class="ms ms--3"></div>
+      </div>
+      <div class="container">
+        <div class="momo-banner__inner">
+          <div class="momo-banner__left">
+            <span class="momo-banner__emoji">📱</span>
+            <div>
+              <h3>Pay Instantly with Mobile Money</h3>
+              <p>MTN MoMo · Vodafone Cash · AirtelTigo Money</p>
+            </div>
+          </div>
+          <a href="#products" class="btn btn--momo-banner">
+            <i class="fa-solid fa-bolt"></i> Shop &amp; Pay Now
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about__layout">
+          <div class="about__text-side">
+            <div class="section__badge">🇬🇭 Our Story</div>
+            <h2 class="section__title">Born in Accra.<br />Built for All of Ghana.</h2>
+            <p class="about__para">Zazu started with one mission — give every young Ghanaian access to premium, trendy products without the premium price tag. Style and tech should be for everyone.</p>
+            <p class="about__para">Ebe y3 fie! From Osu to Obuasi, Takoradi to Tamale — we deliver across all 16 regions. Pay with MoMo, get it at your door. Simple.</p>
+            <div class="about__stats-row">
+              <div class="about-stat">
+                <span class="about-stat__num" data-target="2400">0</span><span class="about-stat__plus">+</span>
+                <span class="about-stat__label">Happy Customers</span>
+              </div>
+              <div class="about-stat">
+                <span class="about-stat__num" data-target="150">0</span><span class="about-stat__plus">+</span>
+                <span class="about-stat__label">Products</span>
+              </div>
+              <div class="about-stat">
+                <span class="about-stat__num" data-target="16">0</span>
+                <span class="about-stat__label">Regions Served</span>
+              </div>
+            </div>
+          </div>
+          <div class="about__img-side">
+            <img src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=600&q=85&auto=format&fit=crop" alt="Zazu store" class="about__img" loading="lazy" onerror="this.src='https://placehold.co/600x450/6d28d9/fff?text=Zazu+Store'" />
+            <div class="about__img-badge"><i class="fa-solid fa-trophy"></i> Ghana's #1 Youth Store</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section__header">
+          <div class="section__badge">💬 Real Reviews</div>
+          <h2 class="section__title">What Ghanaians Are Saying</h2>
+        </div>
+        <div class="testimonials__grid">
+          <div class="tcard">
+            <div class="tcard__stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p class="tcard__text">"I ordered from Kumasi and it arrived in 2 days! Paid with MoMo — so easy. Zazu is the real deal. Eye asem! 🙌"</p>
+            <div class="tcard__author">
+              <div class="tcard__avatar" style="background:linear-gradient(135deg,#6d28d9,#8b5cf6)">K</div>
+              <div><strong>Kofi Mensah</strong><span>Kumasi, Ashanti Region</span></div>
+            </div>
+          </div>
+          <div class="tcard">
+            <div class="tcard__stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i></div>
+            <p class="tcard__text">"The Kente sneakers are absolutely fire 🔥. Everyone on the street was asking where I got them. Zazu dey deliver!"</p>
+            <div class="tcard__author">
+              <div class="tcard__avatar" style="background:linear-gradient(135deg,#f59e0b,#fbbf24)">A</div>
+              <div><strong>Akosua Boateng</strong><span>East Legon, Accra</span></div>
+            </div>
+          </div>
+          <div class="tcard">
+            <div class="tcard__stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star-half-stroke"></i></div>
+            <p class="tcard__text">"I'm in Tamale and was worried about delivery. Got my smartwatch in 3 days! MoMo payment was seamless. Very legit! 💯"</p>
+            <div class="tcard__author">
+              <div class="tcard__avatar" style="background:linear-gradient(135deg,#10b981,#34d399)">Y</div>
+              <div><strong>Yakubu Ibrahim</strong><span>Tamale, Northern Region</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer" id="contact">
+      <div class="footer__wave">
+        <svg viewBox="0 0 1200 80" preserveAspectRatio="none"><path d="M0,40 C300,80 900,0 1200,40 L1200,80 L0,80 Z" fill="#0c0618"/></svg>
+      </div>
+      <div class="footer__body">
+        <div class="container">
+          <div class="footer__grid">
+            <div class="footer__col footer__col--brand">
+              <div class="footer__logo">
+                <span class="logo__bolt">⚡</span>
+                <span class="footer__logo-name">Zazu</span>
+                <span class="footer__logo-gh">GH</span>
+              </div>
+              <p class="footer__desc">Ghana's finest destination for tech &amp; fashion. Delivering to all 16 regions. Proudly Ghanaian. 🇬🇭</p>
+              <div class="footer__socials">
+                <a href="#" class="soc-link" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="soc-link" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#" class="soc-link" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#" class="soc-link" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+              </div>
+            </div>
+            <div class="footer__col">
+              <h4 class="footer__col-title">Quick Links</h4>
+              <ul class="footer__col-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Shop</a></li>
+                <li><a href="#flashsale">Flash Deals</a></li>
+                <li><a href="#delivery">Delivery Info</a></li>
+                <li><a href="#about">About Us</a></li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <h4 class="footer__col-title">Support</h4>
+              <ul class="footer__col-links">
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Track My Order</a></li>
+                <li><a href="#">Return Policy</a></li>
+                <li><a href="#">Size Guide</a></li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <h4 class="footer__col-title">Contact Us</h4>
+              <ul class="footer__contact">
+                <li><i class="fa-solid fa-location-dot"></i><span>Osu, Accra, Ghana</span></li>
+                <li><i class="fa-brands fa-whatsapp"></i><a href="https://wa.me/233247221043" target="_blank" rel="noopener noreferrer">+233 24 722 1043</a></li>
+                <li><i class="fa-solid fa-envelope"></i><span>hello@zazugh.com</span></li>
+                <li><i class="fa-solid fa-clock"></i><span>Mon–Sat, 8am–8pm</span></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer__bottom">
+            <p>&copy; 2025 Zazu. All rights reserved. Made with ❤️ in Ghana 🇬🇭</p>
+            <div class="footer__pay-tags">
+              <span class="pay-tag">MTN MoMo</span>
+              <span class="pay-tag">Vodafone Cash</span>
+              <span class="pay-tag">AirtelTigo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    <!-- FLOATING CHAT -->
+    <div class="floating-chat" id="floating-chat">
+      <div class="chat-tooltip" id="chat-tooltip">Akwaaba! Chat with us 👋</div>
+      <a href="https://wa.me/233247221043?text=Hi%20Zazu!%20I%20need%20help." target="_blank" rel="noopener noreferrer" class="fchat-btn fchat-btn--wa" aria-label="WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+        <span class="fchat-label">WhatsApp</span>
+      </a>
+      <a href="https://t.me/zazugh" target="_blank" rel="noopener noreferrer" class="fchat-btn fchat-btn--tg" aria-label="Telegram">
+        <i class="fa-brands fa-telegram"></i>
+        <span class="fchat-label">Telegram</span>
+      </a>
+    </div>
+
+
+    <!-- CART SIDEBAR -->
+    <div class="cart-overlay" id="cart-overlay"></div>
+    <aside class="cart-sidebar" id="cart-sidebar">
+      <div class="cart-sidebar__head">
+        <div class="cart-head-left">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <h3>Your Cart</h3>
+          <span class="cart-head-count" id="cart-header-count">0 items</span>
+        </div>
+        <button class="cart-close" id="cart-close-btn" aria-label="Close cart"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+
+      <div class="cart-delivery-progress" id="cart-delivery-bar">
+        <p class="cdp__text" id="cart-delivery-text">Add GH₵500 more for free delivery! 🚚</p>
+        <div class="cdp__track"><div class="cdp__fill" id="cart-delivery-fill" style="width:0%"></div></div>
+      </div>
+
+      <div class="cart-items" id="cart-items">
+        <div class="cart-empty" id="cart-empty">
+          <div class="cart-empty__emoji">🛒</div>
+          <p class="cart-empty__title">Your cart is empty!</p>
+          <p class="cart-empty__note">Eno ho nipa, add something! 😄</p>
+          <a href="#products" class="btn btn--purple btn--sm" id="cart-shop-link">Start Shopping</a>
+        </div>
+      </div>
+
+      <div class="cart-footer" id="cart-footer" style="display:none">
+        <div class="cart-row cart-row--sub"><span>Subtotal</span><span id="cart-subtotal">GH₵ 0</span></div>
+        <div class="cart-row cart-row--total"><span>Total</span><span id="cart-total">GH₵ 0</span></div>
+        <button class="btn btn--momo btn--full" onclick="handleMoMoCheckout()">
+          <i class="fa-solid fa-mobile-screen-button"></i> Pay with MoMo
+        </button>
+        <button class="btn btn--whatsapp-cart btn--full" onclick="orderViaWhatsApp()">
+          <i class="fa-brands fa-whatsapp"></i> Order via WhatsApp
+        </button>
+        <p class="cart-secure"><i class="fa-solid fa-lock"></i> Secure &amp; encrypted checkout</p>
+      </div>
+    </aside>
+
+
+    <!-- MOMO PAYMENT MODAL -->
+    <div class="modal-overlay" id="modal-overlay">
+      <div class="modal" id="momo-modal">
+        <button class="modal-close" id="modal-close" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+        <div class="modal-emoji">📱</div>
+        <h3 class="modal-title">MoMo Payment</h3>
+        <p class="modal-product" id="modal-product-name">Product</p>
+        <p class="modal-price" id="modal-price">GH₵ 0</p>
+        <div class="modal-steps">
+          <div class="modal-step"><span class="step-dot">1</span><span>Pick Network</span></div>
+          <div class="modal-step"><span class="step-dot">2</span><span>Enter Number</span></div>
+          <div class="modal-step"><span class="step-dot">3</span><span>Approve on Phone</span></div>
+        </div>
+        <div class="modal-networks">
+          <button class="net-btn net-btn--mtn active" onclick="selectNetwork('MTN MoMo',this)"><span>📶</span>MTN MoMo</button>
+          <button class="net-btn net-btn--voda" onclick="selectNetwork('Vodafone Cash',this)"><span>📡</span>Vodafone Cash</button>
+          <button class="net-btn net-btn--airtel" onclick="selectNetwork('AirtelTigo',this)"><span>📲</span>AirtelTigo</button>
+        </div>
+        <div class="modal-input-group">
+          <label for="momo-number">Enter MoMo Number</label>
+          <input type="tel" id="momo-number" placeholder="e.g. 0241234567" maxlength="10" class="modal-input" />
+        </div>
+        <button class="btn btn--momo btn--full" onclick="confirmMoMoPayment()">
+          <i class="fa-solid fa-lock"></i> Confirm &amp; Pay Now
+        </button>
+        <p class="modal-secure"><i class="fa-solid fa-shield-halved"></i> 256-bit SSL Secured</p>
+      </div>
+    </div>
+
+
+    <!-- TOAST -->
+    <div class="toast" id="toast">
+      <span class="toast-icon" id="toast-icon">✅</span>
+      <span class="toast-msg" id="toast-message">Done!</span>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
