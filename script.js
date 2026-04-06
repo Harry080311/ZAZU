@@ -908,7 +908,6 @@ function addToCart(id, name, price) {
   persistCart();
   updateCartUI();
   bounceCartBtn();
-  setTimeout(openCart, 420);
 }
 
 function changeQty(id, delta) {
