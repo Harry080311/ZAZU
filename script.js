@@ -88,7 +88,7 @@ const PRODUCTS = [
   },
   {
     id: 5,
-    name: 'Kente Print Sneakers',
+    name: 'Air Force Sneaker',
     category: 'fashion',
     price: 390,
     oldPrice: 560,
@@ -97,9 +97,9 @@ const PRODUCTS = [
     badgeText: '🔥 Hot',
     rating: 4.5,
     reviews: 176,
-    image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=500&q=85&auto=format&fit=crop',
-    alt: 'Kente Print Sneakers',
-    fallback: 'https://placehold.co/500x500/006B3F/fff?text=Sneakers',
+    image: 'https://i.ibb.co/ZRzwS8Fp/Air-force-1-sneaker.webp',
+    alt: 'Air Force Sneaker — classic style and ultimate comfort',
+    fallback: 'https://placehold.co/500x500/006B3F/fff?text=Air+Force+Sneaker',
   },
   {
     id: 6,
@@ -208,18 +208,18 @@ const PRODUCTS = [
   },
   {
     id: 13,
-    name: 'Accra Street Jacket',
-    category: 'fashion',
+    name: 'Electric Mist Diffuser',
+    category: 'home',
     price: 450,
     oldPrice: 620,
     discount: 27,
-    badge: 'hot',
-    badgeText: '🔥 Hot',
+    badge: 'new',
+    badgeText: '✨ New',
     rating: 5,
     reviews: 134,
-    image: 'https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=500&q=85&auto=format&fit=crop',
-    alt: 'Accra Street Jacket',
-    fallback: 'https://placehold.co/500x500/006B3F/fff?text=Jacket',
+    image: 'https://i.ibb.co/WNmR8TJB/Electric-air-refreshner.avif',
+    alt: 'Electric Mist Diffuser — fill your home with beautiful fragrance',
+    fallback: 'https://placehold.co/500x500/006B3F/fff?text=Electric+Mist+Diffuser',
   },
   {
     id: 14,
@@ -232,7 +232,7 @@ const PRODUCTS = [
     badgeText: '✨ New',
     rating: 4.5,
     reviews: 78,
-    image: 'https://i.ibb.co/0k05Lq8/Mens-Hollow-out-Slides.avif',
+    image: 'https://i.ibb.co/TMM5CsJW/Crocs-for-men.avif',
     alt: 'Hollow Out Slides — stylish and comfortable footwear',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Hollow+Out+Slides',
   },
@@ -268,18 +268,18 @@ const PRODUCTS = [
   },
   {
     id: 17,
-    name: 'Tecno Spark 20 Pro',
-    category: 'phones',
+    name: 'Hair Clipper',
+    category: 'beauty',
     price: 1200,
     oldPrice: 1600,
     discount: 25,
-    badge: 'sale',
-    badgeText: '💥 Deal',
+    badge: 'hot',
+    badgeText: '🔥 Hot',
     rating: 4.5,
     reviews: 203,
-    image: 'https://images.unsplash.com/photo-1580910051074-3eb694886505?w=500&q=85&auto=format&fit=crop',
-    alt: 'Tecno Spark 20 Pro smartphone',
-    fallback: 'https://placehold.co/500x500/006B3F/fff?text=Tecno+Spark',
+    image: 'https://i.ibb.co/RTv80H10/hair-clipper.avif',
+    alt: 'Hair Clipper — professional grade clipper for a clean cut',
+    fallback: 'https://placehold.co/500x500/006B3F/fff?text=Hair+Clipper',
   },
   {
     id: 18,
@@ -313,23 +313,23 @@ const PRODUCTS = [
   },
   {
     id: 20,
-    name: '4G WiFi Router Portable',
+    name: 'Tripod Ring Light',
     category: 'tech',
     price: 380,
     oldPrice: 520,
     discount: 27,
-    badge: 'sale',
-    badgeText: '💥 Sale',
+    badge: 'new',
+    badgeText: '✨ New',
     rating: 4.5,
     reviews: 88,
-    image: 'https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=500&q=85&auto=format&fit=crop',
-    alt: '4G WiFi Router Portable',
-    fallback: 'https://placehold.co/500x500/006B3F/fff?text=WiFi+Router',
+    image: 'https://i.ibb.co/FLbtf1K7/Tripod-ring-light.avif',
+    alt: 'Tripod Ring Light — perfect for content creators and selfies',
+    fallback: 'https://placehold.co/500x500/006B3F/fff?text=Tripod+Ring+Light',
   },
   {
     id: 21,
-    name: 'Afro Hair Growth Oil',
-    category: 'beauty',
+    name: 'Denim Shorts For Men',
+    category: 'fashion',
     price: 120,
     oldPrice: 180,
     discount: 33,
@@ -337,13 +337,13 @@ const PRODUCTS = [
     badgeText: '✨ New',
     rating: 5,
     reviews: 287,
-    image: 'https://images.unsplash.com/photo-1522338242992-e1a54906a8da?w=500&q=85&auto=format&fit=crop',
-    alt: 'Afro Hair Growth Oil',
-    fallback: 'https://placehold.co/500x500/006B3F/fff?text=Hair+Oil',
+    image: 'https://i.ibb.co/GftwFndW/Denim-shorts.avif',
+    alt: 'Denim Shorts For Men — stylish and comfortable everyday wear',
+    fallback: 'https://placehold.co/500x500/006B3F/fff?text=Denim+Shorts',
   },
   {
     id: 22,
-    name: 'SoundWave Pro Headphones',
+    name: 'JBL Pro Sound Box',
     category: 'audio',
     price: 680,
     oldPrice: 950,
@@ -352,9 +352,9 @@ const PRODUCTS = [
     badgeText: '🔥 Hot',
     rating: 4.5,
     reviews: 167,
-    image: 'https://images.unsplash.com/photo-1484704849700-f032a568e944?w=500&q=85&auto=format&fit=crop',
-    alt: 'SoundWave Pro Headphones',
-    fallback: 'https://placehold.co/500x500/006B3F/fff?text=Headphones',
+    image: 'https://i.ibb.co/vvrCcwYf/Jbl-pro.avif',
+    alt: 'JBL Pro Sound Box — powerful bass and crystal clear sound',
+    fallback: 'https://placehold.co/500x500/006B3F/fff?text=JBL+Pro+Sound+Box',
   },
   {
     id: 23,
@@ -367,29 +367,29 @@ const PRODUCTS = [
     badgeText: '✨ New',
     rating: 5,
     reviews: 445,
-    image: 'https://i.ibb.co/4DjvZtZ/Mini-fan.avif',
+    image: 'https://i.ibb.co/Jjk06pWW/Rechargeable-fan.avif',
     alt: 'USB Rechargeable Portable Mini Fan — perfect for Ghana heat!',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Mini+Fan',
   },
   {
     id: 24,
-    name: 'Classic Gold Wristwatch',
-    category: 'accessories',
-    price: 290,
-    oldPrice: 420,
-    discount: 31,
+    name: 'Mens Graphic T-Shirt',
+    category: 'fashion',
+    price: 95,
+    oldPrice: 140,
+    discount: 32,
     badge: 'hot',
     badgeText: '🔥 Hot',
     rating: 4.5,
     reviews: 119,
-    image: 'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=500&q=85&auto=format&fit=crop',
-    alt: 'Classic Gold Wristwatch',
-    fallback: 'https://placehold.co/500x500/006B3F/fff?text=Wristwatch',
+    image: 'https://i.ibb.co/VYPC0Fnb/Mens-Graphic-T-shirt.avif',
+    alt: 'Mens Graphic T-Shirt — stylish and comfortable everyday wear',
+    fallback: 'https://placehold.co/500x500/006B3F/fff?text=Mens+Graphic+Tshirt',
   },
   {
     id: 25,
-    name: 'Ghana Flag Phone Case',
-    category: 'phones',
+    name: 'Plaid Short Sleeve',
+    category: 'fashion',
     price: 45,
     oldPrice: 70,
     discount: 36,
@@ -397,9 +397,9 @@ const PRODUCTS = [
     badgeText: '✨ New',
     rating: 5,
     reviews: 532,
-    image: 'https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=500&q=85&auto=format&fit=crop',
-    alt: 'Ghana Flag Phone Case',
-    fallback: 'https://placehold.co/500x500/006B3F/fff?text=Phone+Case',
+    image: 'https://i.ibb.co/nq8rVC90/Plaid-short-sleeve.avif',
+    alt: 'Plaid Short Sleeve — stylish and comfortable everyday wear',
+    fallback: 'https://placehold.co/500x500/006B3F/fff?text=Plaid+Short+Sleeve',
   },
   {
     id: 26,
@@ -418,8 +418,8 @@ const PRODUCTS = [
   },
   {
     id: 27,
-    name: 'Zazu Signature Cap',
-    category: 'fashion',
+    name: 'Stainless Steel Vacuum Flask',
+    category: 'home',
     price: 75,
     oldPrice: 110,
     discount: 32,
@@ -427,9 +427,9 @@ const PRODUCTS = [
     badgeText: '✨ New',
     rating: 5,
     reviews: 189,
-    image: 'https://images.unsplash.com/photo-1608231387042-66d1773070a5?w=500&q=85&auto=format&fit=crop',
-    alt: 'Zazu Signature Cap',
-    fallback: 'https://placehold.co/500x500/006B3F/fff?text=Zazu+Cap',
+    image: 'https://i.ibb.co/kstyBWJN/Stainless-steel-vacuum-flask.avif',
+    alt: 'Stainless Steel Vacuum Flask — keeps drinks hot or cold for hours',
+    fallback: 'https://placehold.co/500x500/006B3F/fff?text=Vacuum+Flask',
   },
   {
     id: 28,
@@ -442,8 +442,8 @@ const PRODUCTS = [
     badgeText: '🔥 Hot',
     rating: 4.5,
     reviews: 98,
-    image: 'https://images.unsplash.com/photo-1593640408182-31c70c8268f5?w=500&q=85&auto=format&fit=crop',
-    alt: 'Mini Action Camera 4K',
+    image: 'https://i.ibb.co/Lh1dtqqr/Mini-Action-Camera-4-K.avif',
+    alt: 'Mini Action Camera 4K — capture every adventure in stunning detail',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Action+Camera',
   },
   {
@@ -463,8 +463,8 @@ const PRODUCTS = [
   },
   {
     id: 30,
-    name: 'Kente Beaded Bracelet Set',
-    category: 'accessories',
+    name: 'Mens Elastic Boxer',
+    category: 'fashion',
     price: 65,
     oldPrice: 95,
     discount: 32,
@@ -472,9 +472,9 @@ const PRODUCTS = [
     badgeText: '✨ New',
     rating: 5,
     reviews: 284,
-    image: 'https://images.unsplash.com/photo-1585386959984-a4155224a1ad?w=500&q=85&auto=format&fit=crop',
-    alt: 'Kente Beaded Bracelet Set',
-    fallback: 'https://placehold.co/500x500/006B3F/fff?text=Bracelet+Set',
+    image: 'https://i.ibb.co/8gZyw9B1/Mens-Elastic-Boxer.jpg',
+    alt: 'Mens Elastic Boxer — comfortable and stylish everyday wear',
+    fallback: 'https://placehold.co/500x500/006B3F/fff?text=Mens+Boxer',
   },
 ];
 
@@ -493,14 +493,14 @@ const FLASH_PRODUCTS = [
   },
   {
     id: 202,
-    name: 'Kente Print Sneakers',
+    name: 'Air Force Sneaker',
     price: 254,
     oldPrice: 390,
     discount: 35,
     soldPercent: 85,
-    image: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=85&auto=format&fit=crop',
-    alt: 'Kente Print Sneakers',
-    fallback: 'https://placehold.co/400x400/CE1126/fff?text=Sneakers',
+    image: 'https://i.ibb.co/ZRzwS8Fp/Air-force-1-sneaker.webp',
+    alt: 'Air Force Sneaker',
+    fallback: 'https://placehold.co/400x400/CE1126/fff?text=Sneaker',
   },
   {
     id: 203,
@@ -627,7 +627,6 @@ document.addEventListener('DOMContentLoaded', () => {
 function loadPersistedState() {
   const savedCart = storage.get(CONFIG.storageKeys.cart);
   if (Array.isArray(savedCart)) state.cart = savedCart;
-
   const savedWishlist = storage.get(CONFIG.storageKeys.wishlist);
   if (Array.isArray(savedWishlist)) state.wishlist = new Set(savedWishlist);
 }
@@ -641,7 +640,7 @@ function persistWishlist() {
 }
 
 /* =====================================================
-   9. SCROLL LOCK — better mobile body scroll lock
+   9. SCROLL LOCK
    ===================================================== */
 function lockScroll() {
   const scrollY = window.scrollY;
@@ -683,7 +682,6 @@ function renderStars(rating) {
 function renderFlashSale() {
   const grid = $('flashsale-grid');
   if (!grid) return;
-
   grid.innerHTML = FLASH_PRODUCTS.map((p) => `
     <article class="flash-card reveal" data-id="${p.id}">
       <div class="flash-card__img">
@@ -772,7 +770,6 @@ function renderProducts(filter = 'all', searchQuery = '') {
     const badgeClass =
       p.badge === 'hot' ? 'p-badge--hot' :
       p.badge === 'new' ? 'p-badge--new' : 'p-badge--sale';
-
     return `
       <article
         class="product-card reveal"
@@ -851,10 +848,8 @@ function renderProducts(filter = 'all', searchQuery = '') {
 document.addEventListener('click', (e) => {
   const target = e.target.closest('[data-action]');
   if (!target) return;
-
   const action = target.dataset.action;
   const { id, name, price } = target.dataset;
-
   switch (action) {
     case 'add-to-cart':
       addToCart(Number(id), name, Number(price));
@@ -888,7 +883,6 @@ document.addEventListener('click', (e) => {
    ===================================================== */
 function addToCart(id, name, price) {
   const existing = state.cart.find((x) => x.id === id);
-
   if (existing) {
     existing.quantity += 1;
     showToast(`🛒 ${name} — qty updated!`, '🛒');
@@ -904,7 +898,6 @@ function addToCart(id, name, price) {
     });
     showToast(`✅ ${name} added to cart!`, '✅');
   }
-
   persistCart();
   updateCartUI();
   bounceCartBtn();
@@ -950,7 +943,6 @@ function updateCartCount() {
   const countEl = $('cart-count');
   const headerCount = $('cart-header-count');
   const cartBtn = $('cart-btn');
-
   if (countEl) {
     countEl.textContent = total;
     countEl.classList.toggle('visible', total > 0);
@@ -971,29 +963,22 @@ function renderCartItems() {
   const footer = $('cart-footer');
   const empty = $('cart-empty');
   if (!wrap) return;
-
   $$('.cart-item', wrap).forEach((el) => el.remove());
-
   if (state.cart.length === 0) {
     if (empty) empty.style.display = 'flex';
     if (footer) footer.style.display = 'none';
     return;
   }
-
   if (empty) empty.style.display = 'none';
   if (footer) footer.style.display = 'flex';
-
   const subtotal = state.cart.reduce(
     (s, x) => s + x.price * x.quantity, 0
   );
-
   const subtotalEl = $('cart-subtotal');
   const totalEl = $('cart-total');
   if (subtotalEl) subtotalEl.textContent = `GH₵ ${subtotal.toLocaleString()}`;
   if (totalEl) totalEl.textContent = `GH₵ ${subtotal.toLocaleString()}`;
-
   const fragment = document.createDocumentFragment();
-
   state.cart.forEach((item) => {
     const el = document.createElement('div');
     el.classList.add('cart-item');
@@ -1042,7 +1027,6 @@ function renderCartItems() {
     `;
     fragment.appendChild(el);
   });
-
   wrap.insertBefore(fragment, empty);
 }
 
@@ -1056,10 +1040,8 @@ function updateDeliveryBar() {
   const fill = $('cart-delivery-fill');
   const txt = $('cart-delivery-text');
   const bar = $('delivery-progress-bar');
-
   if (fill) fill.style.width = `${pct}%`;
   if (bar) bar.setAttribute('aria-valuenow', Math.round(pct));
-
   if (txt) {
     if (subtotal >= CONFIG.freeDeliveryThreshold) {
       txt.textContent = '🎉 FREE delivery unlocked! Yɛ da wo ase!';
@@ -1082,12 +1064,10 @@ function initCartSidebar() {
   const shopLink = $('cart-shop-link');
   const momoBtn = $('momo-checkout-btn');
   const waBtn = $('whatsapp-order-btn');
-
   if (cartBtn) cartBtn.addEventListener('click', openCart);
   if (closeBtn) closeBtn.addEventListener('click', closeCart);
   if (overlay) overlay.addEventListener('click', closeCart);
   if (shopLink) shopLink.addEventListener('click', closeCart);
-
   if (momoBtn) {
     momoBtn.addEventListener('click', () => {
       const subtotal = state.cart.reduce(
@@ -1106,9 +1086,7 @@ function initCartSidebar() {
       );
     });
   }
-
   if (waBtn) waBtn.addEventListener('click', orderViaWhatsApp);
-
   document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
       if (state.isModalOpen) closeModal();
@@ -1175,7 +1153,6 @@ function orderViaWhatsApp() {
     `${lines.join('\n')}\n\n` +
     `Total: GH₵ ${total.toLocaleString()}\n\n` +
     `Please confirm. Medaase! 🙏`;
-
   window.open(
     `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(msg)}`,
     '_blank',
@@ -1189,11 +1166,9 @@ function orderViaWhatsApp() {
 function openMomoModal(name, price, isCheckout = false) {
   state.currentModalProduct = { name, price };
   state.isCheckout = isCheckout;
-
   const productEl = $('modal-product-name');
   const priceEl = $('modal-price');
   const input = $('momo-number');
-
   if (productEl) productEl.textContent = name;
   if (priceEl) priceEl.textContent = `GH₵ ${price.toLocaleString()}`;
   if (input) {
@@ -1201,12 +1176,10 @@ function openMomoModal(name, price, isCheckout = false) {
     input.classList.remove('error');
     input.style.borderColor = '';
   }
-
   $$('.net-btn').forEach((b) => b.classList.remove('active'));
   const mtnBtn = $q('.net-btn--mtn');
   if (mtnBtn) mtnBtn.classList.add('active');
   state.selectedNetwork = 'MTN MoMo';
-
   const overlay = $('modal-overlay');
   if (overlay) {
     overlay.classList.add('visible');
@@ -1238,9 +1211,7 @@ function selectNetwork(networkName, btn) {
 function confirmMoMoPayment() {
   const input = $('momo-number');
   if (!input) return;
-
   const val = input.value.trim();
-
   if (!/^\d{10}$/.test(val)) {
     input.classList.add('error');
     input.classList.remove('shake');
@@ -1251,15 +1222,12 @@ function confirmMoMoPayment() {
     input.focus();
     return;
   }
-
   input.classList.remove('error');
-
   const btn = $('confirm-pay-btn');
   if (!btn) return;
   const origHTML = btn.innerHTML;
   btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin" aria-hidden="true"></i> Processing...';
   btn.disabled = true;
-
   setTimeout(() => {
     closeModal();
     btn.innerHTML = origHTML;
@@ -1277,7 +1245,6 @@ function initModalControls() {
   const closeBtn = $('modal-close');
   const overlay = $('modal-overlay');
   const confirmBtn = $('confirm-pay-btn');
-
   if (closeBtn) closeBtn.addEventListener('click', closeModal);
   if (overlay) {
     overlay.addEventListener('click', (e) => {
@@ -1327,14 +1294,12 @@ function initSearch() {
   const inp = $('search-input');
   const closeBtn = $('search-close');
   if (!btn || !bar || !inp) return;
-
   btn.addEventListener('click', () => {
     const isOpen = bar.classList.toggle('open');
     bar.setAttribute('aria-hidden', String(!isOpen));
     btn.setAttribute('aria-expanded', String(isOpen));
     if (isOpen) setTimeout(() => inp.focus(), 200);
   });
-
   closeBtn?.addEventListener('click', () => {
     bar.classList.remove('open');
     bar.setAttribute('aria-hidden', 'true');
@@ -1343,14 +1308,11 @@ function initSearch() {
     state.visibleProducts = CONFIG.productsPerPage;
     renderProducts(state.currentFilter);
   });
-
   const handleSearch = debounce((query) => {
     state.visibleProducts = CONFIG.productsPerPage;
     renderProducts(state.currentFilter, query);
   }, 300);
-
   inp.addEventListener('input', () => handleSearch(inp.value));
-
   inp.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
       bar.classList.remove('open');
@@ -1385,14 +1347,12 @@ function initMobileMenu() {
   const btn = $('hamburger-btn');
   const menu = $('nav-menu');
   if (!btn || !menu) return;
-
   btn.addEventListener('click', () => {
     const isOpen = menu.classList.toggle('mobile-open');
     btn.classList.toggle('open', isOpen);
     btn.setAttribute('aria-expanded', String(isOpen));
     btn.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
   });
-
   $$('.nav__link').forEach((link) => {
     link.addEventListener('click', () => {
       menu.classList.remove('mobile-open');
@@ -1408,7 +1368,6 @@ function initMobileMenu() {
    ===================================================== */
 function initCategoryFilter() {
   const pills = $$('.cat-pill');
-
   pills.forEach((pill) => {
     pill.addEventListener('click', () => {
       pills.forEach((p) => {
@@ -1430,33 +1389,27 @@ function initCategoryFilter() {
 function initLoadMore() {
   const btn = $('load-more-btn');
   if (!btn) return;
-
   btn.addEventListener('click', () => {
     const prevCount = state.visibleProducts;
     state.visibleProducts += CONFIG.productsPerPage;
-
     btn.innerHTML =
       '<i class="fa-solid fa-spinner fa-spin" aria-hidden="true"></i> Loading...';
     btn.disabled = true;
-
     setTimeout(() => {
       renderProducts(state.currentFilter);
       btn.innerHTML =
         '<i class="fa-solid fa-arrow-rotate-right" aria-hidden="true"></i> Load More Products';
       btn.disabled = false;
-
       const allCards = $$('.product-card');
       const firstNew = allCards[prevCount];
       if (firstNew) {
         firstNew.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
         firstNew.focus({ preventScroll: true });
       }
-
       const total = PRODUCTS.filter(
         (p) => state.currentFilter === 'all' ||
           p.category === state.currentFilter
       ).length;
-
       if (state.visibleProducts >= total) {
         showToast('🎉 You\'ve seen all products! New drops every week.', '🎉');
       }
@@ -1481,7 +1434,6 @@ function initWishlist() {
 
 function toggleWishlist(id, name, btn) {
   const isWishlisted = state.wishlist.has(id);
-
   if (isWishlisted) {
     state.wishlist.delete(id);
     showToast(`💔 ${name} removed from wishlist`, '💔');
@@ -1489,10 +1441,8 @@ function toggleWishlist(id, name, btn) {
     state.wishlist.add(id);
     showToast(`❤️ ${name} saved to wishlist!`, '❤️');
   }
-
   persistWishlist();
   updateWishlistFab();
-
   const icon = btn.querySelector('i');
   const nowWishlisted = state.wishlist.has(id);
   btn.classList.toggle('active', nowWishlisted);
@@ -1530,7 +1480,6 @@ function initDarkMode() {
   const html = document.documentElement;
   const saved = storage.get(CONFIG.storageKeys.theme) || 'light';
   applyTheme(saved);
-
   btn?.addEventListener('click', () => {
     const current = html.getAttribute('data-theme');
     const next = current === 'dark' ? 'light' : 'dark';
@@ -1541,7 +1490,6 @@ function initDarkMode() {
       next === 'dark' ? '🌙' : '☀️'
     );
   });
-
   function applyTheme(theme) {
     html.setAttribute('data-theme', theme);
     if (sun) sun.style.display = theme === 'dark' ? 'none' : 'block';
@@ -1559,12 +1507,10 @@ function initDarkMode() {
 function startCountdown() {
   const storageKey = 'zazuCountdownEnd';
   let endTime = storage.get(storageKey);
-
   if (!endTime || endTime < Date.now()) {
     endTime = Date.now() + CONFIG.countdownHours * 60 * 60 * 1000;
     storage.set(storageKey, endTime);
   }
-
   const els = {
     hh: $('h-hours'),
     hm: $('h-mins'),
@@ -1573,11 +1519,9 @@ function startCountdown() {
     fm: $('fs-mins'),
     fs: $('fs-secs'),
   };
-
   function pad(n) {
     return String(n).padStart(2, '0');
   }
-
   function tick() {
     const diff = endTime - Date.now();
     if (diff <= 0) {
@@ -1595,7 +1539,6 @@ function startCountdown() {
     if (els.fm) els.fm.textContent = pad(m);
     if (els.fs) els.fs.textContent = pad(s);
   }
-
   tick();
   setInterval(tick, 1000);
 }
@@ -1606,7 +1549,6 @@ function startCountdown() {
 function initScrollReveal() {
   const items = $$('.reveal:not(.revealed)');
   if (!items.length) return;
-
   const obs = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -1618,7 +1560,6 @@ function initScrollReveal() {
     },
     { threshold: 0.08, rootMargin: '0px 0px -30px 0px' }
   );
-
   items.forEach((el) => obs.observe(el));
 }
 
@@ -1627,7 +1568,6 @@ function initScrollReveal() {
    ===================================================== */
 function initStatsCounter() {
   const nums = $$('.about-stat__num');
-
   const obs = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -1639,22 +1579,18 @@ function initStatsCounter() {
     },
     { threshold: 0.5 }
   );
-
   nums.forEach((el) => obs.observe(el));
 }
 
 function countUp(el) {
   const target = parseInt(el.dataset.target, 10);
   if (isNaN(target)) return;
-
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     el.textContent = target.toLocaleString();
     return;
   }
-
   const duration = 1500;
   const start = performance.now();
-
   function step(now) {
     const progress = Math.min((now - start) / duration, 1);
     const eased = 1 - Math.pow(1 - progress, 3);
@@ -1665,7 +1601,6 @@ function countUp(el) {
       el.textContent = target.toLocaleString();
     }
   }
-
   requestAnimationFrame(step);
 }
 
@@ -1694,7 +1629,6 @@ function showToast(msg, icon = '✅') {
 document.addEventListener('DOMContentLoaded', () => {
   const sections = $$('section[id]');
   const links = $$('.nav__link');
-
   const obs = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
@@ -1711,7 +1645,6 @@ document.addEventListener('DOMContentLoaded', () => {
     },
     { threshold: 0.3, rootMargin: '-64px 0px 0px 0px' }
   );
-
   sections.forEach((s) => obs.observe(s));
 });
 
