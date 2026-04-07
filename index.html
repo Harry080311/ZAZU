@@ -692,19 +692,43 @@
           <i class="fa-solid fa-xmark" aria-hidden="true"></i>
         </button>
 
-        <!-- Image -->
-        <div class="pdp-img-wrap">
-          <img
-            src=""
-            alt=""
-            id="pdp-img"
-            class="pdp-img"
-            onerror="this.onerror=null;this.src='https://placehold.co/600x600/006B3F/fff?text=Product'"
-          />
-          <span class="pdp-badge" id="pdp-badge"></span>
-        </div>
-
-        <!-- Info -->
+       <!-- Image Gallery -->
+<div class="pdp-gallery" id="pdp-gallery" data-images="1">
+  <!-- Main Image Display -->
+  <div class="pdp-gallery__main" id="pdp-gallery-main">
+    <div class="pdp-gallery__track" id="pdp-gallery-track">
+      <!-- Images will be injected here by JS -->
+    </div>
+    
+    <!-- Navigation Arrows -->
+    <button 
+      class="pdp-gallery__nav pdp-gallery__nav--prev" 
+      id="pdp-gallery-prev"
+      aria-label="Previous image"
+    >
+      <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <button 
+      class="pdp-gallery__nav pdp-gallery__nav--next" 
+      id="pdp-gallery-next"
+      aria-label="Next image"
+    >
+      <i class="fa-solid fa-chevron-right"></i>
+    </button>
+    
+    <!-- Image Counter -->
+    <div class="pdp-gallery__counter" id="pdp-gallery-counter">1 / 1</div>
+    
+    <!-- Badge (Hot/New/Sale) -->
+    <span class="pdp-badge" id="pdp-badge"></span>
+  </div>
+  
+  <!-- Dots Indicator -->
+  <div class="pdp-gallery__dots" id="pdp-gallery-dots"></div>
+  
+  <!-- Thumbnails -->
+  <div class="pdp-gallery__thumbs" id="pdp-gallery-thumbs"></div>
+</div>        <!-- Info -->
         <div class="pdp-info">
 
           <!-- Category + Rating -->

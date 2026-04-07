@@ -1,6 +1,6 @@
 /* =====================================================
-   ZAZU v5.0 — JAVASCRIPT (COMPLETE & FIXED)
-   All features connected and working
+   ZAZU v5.0 — JAVASCRIPT (COMPLETE WITH IMAGE CAROUSEL)
+   All features working + Image carousel added
    ===================================================== */
 
 'use strict';
@@ -38,6 +38,12 @@ const PRODUCTS = [
     rating: 4.5,
     reviews: 204,
     image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&q=85&auto=format&fit=crop',
+    images: [
+      'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&q=85',
+      'https://images.unsplash.com/photo-1579586337278-3befd40fd17a?w=600&q=85',
+      'https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=600&q=85',
+      'https://images.unsplash.com/photo-1517420704952-d9f39e95b43e?w=600&q=85',
+    ],
     alt: 'ZazuTech Pro Smartwatch',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Smartwatch',
     colours: ['#1a1a1a', '#c0c0c0', '#4169E1'],
@@ -55,6 +61,11 @@ const PRODUCTS = [
     rating: 5,
     reviews: 87,
     image: 'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=500&q=85&auto=format&fit=crop',
+    images: [
+      'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=600&q=85',
+      'https://images.unsplash.com/photo-1556821840-3a63f95609a7?w=600&q=85',
+      'https://images.unsplash.com/photo-1578587018452-892bacefd3f2?w=600&q=85',
+    ],
     alt: 'Accra Vibes Streetwear Hoodie',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Hoodie',
     colours: ['#1a1a1a', '#006B3F', '#FCD116'],
@@ -72,6 +83,12 @@ const PRODUCTS = [
     rating: 4,
     reviews: 63,
     image: 'https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=500&q=85&auto=format&fit=crop',
+    images: [
+      'https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=600&q=85',
+      'https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=600&q=85',
+      'https://images.unsplash.com/photo-1577803645773-f96470509666?w=600&q=85',
+      'https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?w=600&q=85',
+    ],
     alt: 'Chrome Wave Sunglasses',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Sunglasses',
     colours: ['#1a1a1a', '#c0c0c0', '#8B4513'],
@@ -89,6 +106,11 @@ const PRODUCTS = [
     rating: 5,
     reviews: 311,
     image: 'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=500&q=85&auto=format&fit=crop',
+    images: [
+      'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=600&q=85',
+      'https://images.unsplash.com/photo-1545454675-3531b543be5d?w=600&q=85',
+      'https://images.unsplash.com/photo-1589003077984-894e133dabab?w=600&q=85',
+    ],
     alt: 'BoomBox Mini Bluetooth Speaker',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Speaker',
     colours: ['#1a1a1a', '#CE1126', '#4169E1'],
@@ -106,6 +128,12 @@ const PRODUCTS = [
     rating: 4.5,
     reviews: 176,
     image: 'https://i.ibb.co/ZRzwS8Fp/Air-force-1-sneaker.webp',
+    images: [
+      'https://i.ibb.co/ZRzwS8Fp/Air-force-1-sneaker.webp',
+      'https://images.unsplash.com/photo-1600269452121-4f2416e55c28?w=600&q=85',
+      'https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=600&q=85',
+      'https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?w=600&q=85',
+    ],
     alt: 'Air Force Sneaker — classic style and ultimate comfort',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Air+Force+Sneaker',
     colours: ['#ffffff', '#1a1a1a', '#CE1126'],
@@ -123,6 +151,11 @@ const PRODUCTS = [
     rating: 5,
     reviews: 89,
     image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500&q=85&auto=format&fit=crop',
+    images: [
+      'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600&q=85',
+      'https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=600&q=85',
+      'https://images.unsplash.com/photo-1592286927505-b0e6cc3b17d4?w=600&q=85',
+    ],
     alt: 'ZazuPhone X Pro Smartphone',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Phone',
     colours: ['#1a1a1a', '#4169E1', '#c0c0c0'],
@@ -140,6 +173,11 @@ const PRODUCTS = [
     rating: 4.5,
     reviews: 143,
     image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=85&auto=format&fit=crop',
+    images: [
+      'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=600&q=85',
+      'https://images.unsplash.com/photo-1599669454699-248893623440?w=600&q=85',
+      'https://images.unsplash.com/photo-1618366712010-f4ae9c647dcb?w=600&q=85',
+    ],
     alt: 'ProGamer RGB Headset',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Headset',
     colours: ['#1a1a1a', '#CE1126', '#4169E1'],
@@ -157,6 +195,11 @@ const PRODUCTS = [
     rating: 5,
     reviews: 92,
     image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=500&q=85&auto=format&fit=crop',
+    images: [
+      'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=600&q=85',
+      'https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=600&q=85',
+      'https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?w=600&q=85',
+    ],
     alt: 'Kente Pattern Summer Dress',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Dress',
     colours: ['#FCD116', '#CE1126', '#006B3F'],
@@ -174,6 +217,11 @@ const PRODUCTS = [
     rating: 4.5,
     reviews: 57,
     image: 'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=500&q=85&auto=format&fit=crop',
+    images: [
+      'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=600&q=85',
+      'https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2?w=600&q=85',
+      'https://images.unsplash.com/photo-1588872657578-7efd1f1555ed?w=600&q=85',
+    ],
     alt: 'ZazuBook Pro Laptop',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Laptop',
     colours: ['#c0c0c0', '#1a1a1a'],
@@ -191,6 +239,11 @@ const PRODUCTS = [
     rating: 5,
     reviews: 198,
     image: 'https://i.ibb.co/8LdwzC9S/Explore-Perfume.jpg',
+    images: [
+      'https://i.ibb.co/8LdwzC9S/Explore-Perfume.jpg',
+      'https://images.unsplash.com/photo-1541643600914-78b084683601?w=600&q=85',
+      'https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?w=600&q=85',
+    ],
     alt: 'Explore Perfume 100ml — a luxurious fragrance for every occasion',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Explore+Perfume',
     description: 'Long-lasting eau de parfum with exotic notes of jasmine, sandalwood, and vanilla. Sophisticated fragrance that makes a statement. 100ml bottle.',
@@ -207,6 +260,11 @@ const PRODUCTS = [
     rating: 4.5,
     reviews: 267,
     image: 'https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=500&q=85&auto=format&fit=crop',
+    images: [
+      'https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=600&q=85',
+      'https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=600&q=85',
+      'https://images.unsplash.com/photo-1620987278429-ab178d6eb547?w=600&q=85',
+    ],
     alt: 'ZazuCharge 20000mAh Power Bank',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Power+Bank',
     colours: ['#1a1a1a', '#ffffff', '#4169E1'],
@@ -224,6 +282,11 @@ const PRODUCTS = [
     rating: 4.5,
     reviews: 47,
     image: 'https://i.ibb.co/hFhrYxyc/Acer-LED-Earbuds.avif',
+    images: [
+      'https://i.ibb.co/hFhrYxyc/Acer-LED-Earbuds.avif',
+      'https://images.unsplash.com/photo-1590658268037-6bf12165a8df?w=600&q=85',
+      'https://images.unsplash.com/photo-1606841837239-c5a1a4a07af7?w=600&q=85',
+    ],
     alt: 'Acer LED Earbuds — premium sound quality',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Acer+LED+Earbuds',
     colours: ['#1a1a1a', '#ffffff', '#CE1126'],
@@ -241,6 +304,11 @@ const PRODUCTS = [
     rating: 5,
     reviews: 134,
     image: 'https://i.ibb.co/WNmR8TJB/Electric-air-refreshner.avif',
+    images: [
+      'https://i.ibb.co/WNmR8TJB/Electric-air-refreshner.avif',
+      'https://images.unsplash.com/photo-1585128903994-0c4fa2fbc478?w=600&q=85',
+      'https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?w=600&q=85',
+    ],
     alt: 'Electric Mist Diffuser — fill your home with beautiful fragrance',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Electric+Mist+Diffuser',
     colours: ['#ffffff', '#8B4513', '#1a1a1a'],
@@ -258,6 +326,11 @@ const PRODUCTS = [
     rating: 4.5,
     reviews: 78,
     image: 'https://i.ibb.co/TMM5CsJW/Crocs-for-men.avif',
+    images: [
+      'https://i.ibb.co/TMM5CsJW/Crocs-for-men.avif',
+      'https://images.unsplash.com/photo-1603487742131-4160ec999306?w=600&q=85',
+      'https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=600&q=85',
+    ],
     alt: 'Hollow Out Slides — stylish and comfortable footwear',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Hollow+Out+Slides',
     colours: ['#1a1a1a', '#4169E1', '#FCD116'],
@@ -275,6 +348,11 @@ const PRODUCTS = [
     rating: 5,
     reviews: 312,
     image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=500&q=85&auto=format&fit=crop',
+    images: [
+      'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=600&q=85',
+      'https://images.unsplash.com/photo-1620916566398-39f1143ab7be?w=600&q=85',
+      'https://images.unsplash.com/photo-1608248543803-ba4f8c70ae0b?w=600&q=85',
+    ],
     alt: 'Shea Glow Skincare Set',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Skincare',
     description: 'Complete skincare set with shea butter-infused products. Cleanser, toner, moisturizer, and face mask. Perfect for Ghana\'s climate. Glowing skin guaranteed.',
@@ -291,6 +369,11 @@ const PRODUCTS = [
     rating: 4.5,
     reviews: 95,
     image: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=500&q=85&auto=format&fit=crop',
+    images: [
+      'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=600&q=85',
+      'https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600&q=85',
+      'https://images.unsplash.com/photo-1622560480605-d83c853bc5c3?w=600&q=85',
+    ],
     alt: 'Lagos Leather Backpack',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Backpack',
     colours: ['#8B4513', '#1a1a1a', '#c0c0c0'],
@@ -308,6 +391,11 @@ const PRODUCTS = [
     rating: 4.5,
     reviews: 203,
     image: 'https://i.ibb.co/RTv80H10/hair-clipper.avif',
+    images: [
+      'https://i.ibb.co/RTv80H10/hair-clipper.avif',
+      'https://images.unsplash.com/photo-1622287162716-673b0d7eb15f?w=600&q=85',
+      'https://images.unsplash.com/photo-1621607512214-68297480165e?w=600&q=85',
+    ],
     alt: 'Hair Clipper — professional grade clipper for a clean cut',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Hair+Clipper',
     colours: ['#1a1a1a', '#c0c0c0'],
@@ -325,6 +413,11 @@ const PRODUCTS = [
     rating: 5,
     reviews: 156,
     image: 'https://i.ibb.co/yBKvh8yj/Smart-LED-Desk-Lamp.avif',
+    images: [
+      'https://i.ibb.co/yBKvh8yj/Smart-LED-Desk-Lamp.avif',
+      'https://images.unsplash.com/photo-1507473885765-e6ed057f782c?w=600&q=85',
+      'https://images.unsplash.com/photo-1540932239986-30128078f3c5?w=600&q=85',
+    ],
     alt: 'Smart LED Desk Lamp — perfect for your workspace!',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Smart+LED+Lamp',
     colours: ['#ffffff', '#1a1a1a'],
@@ -342,6 +435,11 @@ const PRODUCTS = [
     rating: 5,
     reviews: 421,
     image: 'https://i.ibb.co/k20f9TRd/Clasic-Church-Shoe.avif',
+    images: [
+      'https://i.ibb.co/k20f9TRd/Clasic-Church-Shoe.avif',
+      'https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?w=600&q=85',
+      'https://images.unsplash.com/photo-1533867617858-e7b97e060509?w=600&q=85',
+    ],
     alt: 'British Retro Classic Shoes — timeless style for every occasion',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Classic+Shoes',
     colours: ['#1a1a1a', '#8B4513'],
@@ -359,6 +457,11 @@ const PRODUCTS = [
     rating: 4.5,
     reviews: 88,
     image: 'https://i.ibb.co/FLbtf1K7/Tripod-ring-light.avif',
+    images: [
+      'https://i.ibb.co/FLbtf1K7/Tripod-ring-light.avif',
+      'https://images.unsplash.com/photo-1611532736579-6b16e2b50449?w=600&q=85',
+      'https://images.unsplash.com/photo-1598134493501-00a6a7f43cc3?w=600&q=85',
+    ],
     alt: 'Tripod Ring Light — perfect for content creators and selfies',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Tripod+Ring+Light',
     colours: ['#1a1a1a', '#ffffff'],
@@ -376,6 +479,11 @@ const PRODUCTS = [
     rating: 5,
     reviews: 287,
     image: 'https://i.ibb.co/GftwFndW/Denim-shorts.avif',
+    images: [
+      'https://i.ibb.co/GftwFndW/Denim-shorts.avif',
+      'https://images.unsplash.com/photo-1591195853828-11db59a44f6b?w=600&q=85',
+      'https://images.unsplash.com/photo-1624378515195-6bbdb73dbe4a?w=600&q=85',
+    ],
     alt: 'Denim Shorts For Men — stylish and comfortable everyday wear',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Denim+Shorts',
     colours: ['#4169E1', '#1a1a1a'],
@@ -393,6 +501,11 @@ const PRODUCTS = [
     rating: 4.5,
     reviews: 167,
     image: 'https://i.ibb.co/vvrCcwYf/Jbl-pro.avif',
+    images: [
+      'https://i.ibb.co/vvrCcwYf/Jbl-pro.avif',
+      'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=600&q=85',
+      'https://images.unsplash.com/photo-1545454675-3531b543be5d?w=600&q=85',
+    ],
     alt: 'JBL Pro Sound Box — powerful bass and crystal clear sound',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=JBL+Pro+Sound+Box',
     colours: ['#1a1a1a', '#CE1126', '#4169E1'],
@@ -410,6 +523,11 @@ const PRODUCTS = [
     rating: 5,
     reviews: 445,
     image: 'https://i.ibb.co/Jjk06pWW/Rechargeable-fan.avif',
+    images: [
+      'https://i.ibb.co/Jjk06pWW/Rechargeable-fan.avif',
+      'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=85',
+      'https://images.unsplash.com/photo-1597040653845-8fc0cc1bb1d2?w=600&q=85',
+    ],
     alt: 'USB Rechargeable Portable Mini Fan — perfect for Ghana heat!',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Mini+Fan',
     colours: ['#ffffff', '#4169E1', '#f97316'],
@@ -427,6 +545,11 @@ const PRODUCTS = [
     rating: 4.5,
     reviews: 119,
     image: 'https://i.ibb.co/VYPC0Fnb/Mens-Graphic-T-shirt.avif',
+    images: [
+      'https://i.ibb.co/VYPC0Fnb/Mens-Graphic-T-shirt.avif',
+      'https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=600&q=85',
+      'https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=600&q=85',
+    ],
     alt: 'Mens Graphic T-Shirt — stylish and comfortable everyday wear',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Mens+Graphic+Tshirt',
     colours: ['#1a1a1a', '#ffffff', '#006B3F'],
@@ -444,6 +567,11 @@ const PRODUCTS = [
     rating: 5,
     reviews: 532,
     image: 'https://i.ibb.co/nq8rVC90/Plaid-short-sleeve.avif',
+    images: [
+      'https://i.ibb.co/nq8rVC90/Plaid-short-sleeve.avif',
+      'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=600&q=85',
+      'https://images.unsplash.com/photo-1602810318383-e386cc2a3ccf?w=600&q=85',
+    ],
     alt: 'Plaid Short Sleeve — stylish and comfortable everyday wear',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Plaid+Short+Sleeve',
     colours: ['#4169E1', '#CE1126', '#006B3F'],
@@ -461,6 +589,11 @@ const PRODUCTS = [
     rating: 4.5,
     reviews: 223,
     image: 'https://i.ibb.co/Fkbv8hqV/Portable-blender.avif',
+    images: [
+      'https://i.ibb.co/Fkbv8hqV/Portable-blender.avif',
+      'https://images.unsplash.com/photo-1570297116274-e0f932eac3fa?w=600&q=85',
+      'https://images.unsplash.com/photo-1585515320310-259814833e62?w=600&q=85',
+    ],
     alt: 'Mini Portable Blender — perfect for smoothies on the go!',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Portable+Blender',
     colours: ['#ffffff', '#f97316', '#4169E1'],
@@ -478,6 +611,11 @@ const PRODUCTS = [
     rating: 5,
     reviews: 189,
     image: 'https://i.ibb.co/kstyBWJN/Stainless-steel-vacuum-flask.avif',
+    images: [
+      'https://i.ibb.co/kstyBWJN/Stainless-steel-vacuum-flask.avif',
+      'https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=600&q=85',
+      'https://images.unsplash.com/photo-1534056820719-fcc4deeaefff?w=600&q=85',
+    ],
     alt: 'Stainless Steel Vacuum Flask — keeps drinks hot or cold for hours',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Vacuum+Flask',
     colours: ['#c0c0c0', '#1a1a1a', '#4169E1'],
@@ -495,6 +633,11 @@ const PRODUCTS = [
     rating: 4.5,
     reviews: 98,
     image: 'https://i.ibb.co/Lh1dtqqr/Mini-Action-Camera-4-K.avif',
+    images: [
+      'https://i.ibb.co/Lh1dtqqr/Mini-Action-Camera-4-K.avif',
+      'https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?w=600&q=85',
+      'https://images.unsplash.com/photo-1606941396153-be5b23e46ba6?w=600&q=85',
+    ],
     alt: 'Mini Action Camera 4K — capture every adventure in stunning detail',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Action+Camera',
     colours: ['#1a1a1a', '#c0c0c0'],
@@ -512,6 +655,11 @@ const PRODUCTS = [
     rating: 5,
     reviews: 376,
     image: 'https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=500&q=85&auto=format&fit=crop',
+    images: [
+      'https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=600&q=85',
+      'https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=600&q=85',
+      'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=600&q=85',
+    ],
     alt: 'Melanin Beauty Makeup Kit',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Makeup+Kit',
     description: 'Complete makeup kit designed for melanin-rich skin tones. Includes foundation, concealer, eyeshadow palette, and brushes. Celebrate your natural beauty.',
@@ -528,6 +676,11 @@ const PRODUCTS = [
     rating: 5,
     reviews: 284,
     image: 'https://i.ibb.co/8gZyw9B1/Mens-Elastic-Boxer.jpg',
+    images: [
+      'https://i.ibb.co/8gZyw9B1/Mens-Elastic-Boxer.jpg',
+      'https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=600&q=85',
+      'https://images.unsplash.com/photo-1611932368374-039eba9f9dc1?w=600&q=85',
+    ],
     alt: 'Mens Elastic Boxer — comfortable and stylish everyday wear',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Mens+Boxer',
     colours: ['#1a1a1a', '#4169E1', '#CE1126'],
@@ -626,14 +779,193 @@ function getColourName(hex) {
 }
 
 /* =====================================================
-   5. DOM HELPERS
+   5. IMAGE CAROUSEL STATE & FUNCTIONS
+   ===================================================== */
+
+const galleryState = {
+  currentIndex: 0,
+  totalImages: 0,
+  images: [],
+  startX: 0,
+  isDragging: false,
+};
+
+function initImageCarousel(images) {
+  if (!images || images.length === 0) return;
+  
+  galleryState.images = images;
+  galleryState.totalImages = images.length;
+  galleryState.currentIndex = 0;
+  
+  const gallery = $('pdp-gallery');
+  const track = $('pdp-gallery-track');
+  const thumbsWrap = $('pdp-gallery-thumbs');
+  const dotsWrap = $('pdp-gallery-dots');
+  const counter = $('pdp-gallery-counter');
+  
+  if (!track) return;
+  
+  // Set data attribute for CSS
+  if (gallery) gallery.dataset.images = images.length;
+  
+  // Render slides
+  track.innerHTML = images.map((img, i) => `
+    <div class="pdp-gallery__slide">
+      <img 
+        src="${img}" 
+        alt="Product image ${i + 1}"
+        loading="${i === 0 ? 'eager' : 'lazy'}"
+        onerror="this.src='https://placehold.co/600x600/006B3F/fff?text=Product'"
+      />
+    </div>
+  `).join('');
+  
+  // Render thumbnails
+  if (thumbsWrap && images.length > 1) {
+    thumbsWrap.innerHTML = images.map((img, i) => `
+      <button 
+        class="pdp-gallery__thumb ${i === 0 ? 'active' : ''}"
+        data-index="${i}"
+        aria-label="View image ${i + 1}"
+      >
+        <img 
+          src="${img}" 
+          alt="Thumbnail ${i + 1}"
+          loading="lazy"
+          onerror="this.src='https://placehold.co/100x100/006B3F/fff?text=${i + 1}'"
+        />
+      </button>
+    `).join('');
+    
+    // Thumbnail click handlers
+    $$('.pdp-gallery__thumb').forEach((thumb) => {
+      thumb.addEventListener('click', () => {
+        goToSlide(Number(thumb.dataset.index));
+      });
+    });
+  }
+  
+  // Render dots
+  if (dotsWrap && images.length > 1) {
+    dotsWrap.innerHTML = images.map((_, i) => `
+      <button 
+        class="pdp-gallery__dot ${i === 0 ? 'active' : ''}"
+        data-index="${i}"
+        aria-label="Go to image ${i + 1}"
+      ></button>
+    `).join('');
+    
+    // Dot click handlers
+    $$('.pdp-gallery__dot').forEach((dot) => {
+      dot.addEventListener('click', () => {
+        goToSlide(Number(dot.dataset.index));
+      });
+    });
+  }
+  
+  // Update counter
+  updateCounter();
+  
+  // Navigation buttons
+  const prevBtn = $('pdp-gallery-prev');
+  const nextBtn = $('pdp-gallery-next');
+  
+  if (prevBtn) prevBtn.addEventListener('click', prevSlide);
+  if (nextBtn) nextBtn.addEventListener('click', nextSlide);
+  
+  // Touch/swipe support
+  const mainGallery = $('pdp-gallery-main');
+  if (mainGallery && images.length > 1) {
+    let startX = 0;
+    let currentX = 0;
+    
+    mainGallery.addEventListener('touchstart', (e) => {
+      startX = e.touches[0].clientX;
+      galleryState.isDragging = true;
+      mainGallery.classList.add('dragging');
+    }, { passive: true });
+    
+    mainGallery.addEventListener('touchmove', (e) => {
+      if (!galleryState.isDragging) return;
+      currentX = e.touches[0].clientX;
+    }, { passive: true });
+    
+    mainGallery.addEventListener('touchend', () => {
+      if (!galleryState.isDragging) return;
+      
+      const diff = startX - currentX;
+      
+      if (Math.abs(diff) > 50) {
+        if (diff > 0) nextSlide();
+        else prevSlide();
+      }
+      
+      galleryState.isDragging = false;
+      mainGallery.classList.remove('dragging');
+    });
+  }
+  
+  // Keyboard navigation
+  document.addEventListener('keydown', (e) => {
+    if (!pdpState.currentProduct) return;
+    if (e.key === 'ArrowLeft') prevSlide();
+    if (e.key === 'ArrowRight') nextSlide();
+  });
+}
+
+function goToSlide(index) {
+  if (index < 0 || index >= galleryState.totalImages) return;
+  
+  galleryState.currentIndex = index;
+  const track = $('pdp-gallery-track');
+  
+  if (track) {
+    track.style.transform = `translateX(-${index * 100}%)`;
+  }
+  
+  updateCounter();
+  updateActiveThumbnail();
+  updateActiveDot();
+}
+
+function nextSlide() {
+  const next = (galleryState.currentIndex + 1) % galleryState.totalImages;
+  goToSlide(next);
+}
+
+function prevSlide() {
+  const prev = (galleryState.currentIndex - 1 + galleryState.totalImages) % galleryState.totalImages;
+  goToSlide(prev);
+}
+
+function updateCounter() {
+  const counter = $('pdp-gallery-counter');
+  if (counter) {
+    counter.textContent = `${galleryState.currentIndex + 1} / ${galleryState.totalImages}`;
+  }
+}
+
+function updateActiveThumbnail() {
+  $$('.pdp-gallery__thumb').forEach((thumb, i) => {
+    thumb.classList.toggle('active', i === galleryState.currentIndex);
+  });
+}
+
+function updateActiveDot() {
+  $$('.pdp-gallery__dot').forEach((dot, i) => {
+    dot.classList.toggle('active', i === galleryState.currentIndex);
+  });
+}
+
+/* =====================================================
+   6. DOM HELPERS
    ===================================================== */
 const $ = (id) => document.getElementById(id);
 const $$ = (sel, ctx = document) => ctx.querySelectorAll(sel);
 const $q = (sel, ctx = document) => ctx.querySelector(sel);
 
 /* =====================================================
-   6. STORAGE HELPERS
+   7. STORAGE HELPERS
    ===================================================== */
 const storage = {
   get(key) {
@@ -654,7 +986,7 @@ const storage = {
 };
 
 /* =====================================================
-   7. PAGE LOADER
+   8. PAGE LOADER
    ===================================================== */
 document.body.style.overflow = 'hidden';
 
@@ -667,7 +999,7 @@ window.addEventListener('load', () => {
 });
 
 /* =====================================================
-   8. INIT
+   9. INIT
    ===================================================== */
 document.addEventListener('DOMContentLoaded', () => {
   console.log(
@@ -692,7 +1024,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initMomoInput();
   initNetworkButtons();
   initFooterYear();
-  initPDP(); // ← CONNECTED!
+  initPDP();
   startCountdown();
   showChatTooltip();
   updateCartUI();
@@ -707,7 +1039,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /* =====================================================
-   9. PERSIST & LOAD STATE
+   10. PERSIST & LOAD STATE
    ===================================================== */
 function loadPersistedState() {
   const savedCart = storage.get(CONFIG.storageKeys.cart);
@@ -725,7 +1057,7 @@ function persistWishlist() {
 }
 
 /* =====================================================
-   10. SCROLL LOCK
+   11. SCROLL LOCK
    ===================================================== */
 function lockScroll() {
   const scrollY = window.scrollY;
@@ -744,7 +1076,7 @@ function unlockScroll() {
 }
 
 /* =====================================================
-   11. RENDER HELPERS — Star rating
+   12. RENDER HELPERS — Star rating
    ===================================================== */
 function renderStars(rating) {
   const full = Math.floor(rating);
@@ -762,7 +1094,7 @@ function renderStars(rating) {
 }
 
 /* =====================================================
-   12. RENDER FLASH SALE
+   13. RENDER FLASH SALE
    ===================================================== */
 function renderFlashSale() {
   const grid = $('flashsale-grid');
@@ -811,7 +1143,7 @@ function renderFlashSale() {
 }
 
 /* =====================================================
-   13. RENDER PRODUCTS
+   14. RENDER PRODUCTS
    ===================================================== */
 function renderProducts(filter = 'all', searchQuery = '') {
   const grid = $('products-grid');
@@ -943,7 +1275,7 @@ function renderProducts(filter = 'all', searchQuery = '') {
 }
 
 /* =====================================================
-   14. EVENT DELEGATION
+   15. EVENT DELEGATION
    ===================================================== */
 document.addEventListener('click', (e) => {
   const target = e.target.closest('[data-action]');
@@ -963,7 +1295,7 @@ document.addEventListener('click', (e) => {
     case 'wishlist':
       toggleWishlist(Number(id), name, target);
       break;
-    case 'view-product': // ← NOW CONNECTED!
+    case 'view-product':
       openPDP(Number(id));
       break;
     case 'cart-qty-increase':
@@ -982,7 +1314,7 @@ document.addEventListener('click', (e) => {
 });
 
 /* =====================================================
-   15. CART
+   16. CART
    ===================================================== */
 function addToCart(id, name, price) {
   const existing = state.cart.find((x) => x.id === id);
@@ -1033,7 +1365,7 @@ function clearCart() {
 }
 
 /* =====================================================
-   16. CART UI
+   17. CART UI
    ===================================================== */
 function updateCartUI() {
   updateCartCount();
@@ -1158,7 +1490,7 @@ function updateDeliveryBar() {
 }
 
 /* =====================================================
-   17. CART SIDEBAR
+   18. CART SIDEBAR
    ===================================================== */
 function initCartSidebar() {
   const cartBtn = $('cart-btn');
@@ -1239,7 +1571,7 @@ function bounceCartBtn() {
 }
 
 /* =====================================================
-   18. WHATSAPP ORDER
+   19. WHATSAPP ORDER
    ===================================================== */
 function orderViaWhatsApp() {
   if (!state.cart.length) {
@@ -1265,7 +1597,7 @@ function orderViaWhatsApp() {
 }
 
 /* =====================================================
-   19. MOMO MODAL
+   20. MOMO MODAL
    ===================================================== */
 function openMomoModal(name, price, isCheckout = false) {
   state.currentModalProduct = { name, price };
@@ -1365,7 +1697,7 @@ function initNetworkButtons() {
 }
 
 /* =====================================================
-   20. MOMO INPUT
+   21. MOMO INPUT
    ===================================================== */
 function initMomoInput() {
   const inp = $('momo-number');
@@ -1382,7 +1714,7 @@ function initMomoInput() {
 }
 
 /* =====================================================
-   21. SEARCH — debounced
+   22. SEARCH — debounced
    ===================================================== */
 function debounce(fn, delay) {
   let timer;
@@ -1430,7 +1762,7 @@ function initSearch() {
 }
 
 /* =====================================================
-   22. HEADER SCROLL
+   23. HEADER SCROLL
    ===================================================== */
 function initHeader() {
   const header = $('header');
@@ -1445,7 +1777,7 @@ function initHeader() {
 }
 
 /* =====================================================
-   23. MOBILE MENU
+   24. MOBILE MENU
    ===================================================== */
 function initMobileMenu() {
   const btn = $('hamburger-btn');
@@ -1468,7 +1800,7 @@ function initMobileMenu() {
 }
 
 /* =====================================================
-   24. CATEGORY FILTER
+   25. CATEGORY FILTER
    ===================================================== */
 function initCategoryFilter() {
   const pills = $$('.cat-pill');
@@ -1488,7 +1820,7 @@ function initCategoryFilter() {
 }
 
 /* =====================================================
-   25. LOAD MORE
+   26. LOAD MORE
    ===================================================== */
 function initLoadMore() {
   const btn = $('load-more-btn');
@@ -1522,7 +1854,7 @@ function initLoadMore() {
 }
 
 /* =====================================================
-   26. WISHLIST
+   27. WISHLIST
    ===================================================== */
 function initWishlist() {
   const fab = $('wishlist-fab');
@@ -1575,7 +1907,7 @@ function updateWishlistFab() {
 }
 
 /* =====================================================
-   27. DARK MODE
+   28. DARK MODE
    ===================================================== */
 function initDarkMode() {
   const btn = $('theme-toggle');
@@ -1606,7 +1938,7 @@ function initDarkMode() {
 }
 
 /* =====================================================
-   28. COUNTDOWN TIMER
+   29. COUNTDOWN TIMER
    ===================================================== */
 function startCountdown() {
   const storageKey = 'zazuCountdownEnd';
@@ -1648,7 +1980,7 @@ function startCountdown() {
 }
 
 /* =====================================================
-   29. SCROLL REVEAL
+   30. SCROLL REVEAL
    ===================================================== */
 function initScrollReveal() {
   const items = $$('.reveal:not(.revealed)');
@@ -1668,7 +2000,7 @@ function initScrollReveal() {
 }
 
 /* =====================================================
-   30. STATS COUNTER
+   31. STATS COUNTER
    ===================================================== */
 function initStatsCounter() {
   const nums = $$('.about-stat__num');
@@ -1709,7 +2041,7 @@ function countUp(el) {
 }
 
 /* =====================================================
-   31. TOAST
+   32. TOAST
    ===================================================== */
 let toastTimer = null;
 
@@ -1728,7 +2060,7 @@ function showToast(msg, icon = '✅') {
 }
 
 /* =====================================================
-   32. ACTIVE NAV
+   33. ACTIVE NAV
    ===================================================== */
 document.addEventListener('DOMContentLoaded', () => {
   const sections = $$('section[id]');
@@ -1753,7 +2085,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /* =====================================================
-   33. CHAT TOOLTIP
+   34. CHAT TOOLTIP
    ===================================================== */
 function showChatTooltip() {
   const tooltip = $('chat-tooltip');
@@ -1769,7 +2101,7 @@ function showChatTooltip() {
 }
 
 /* =====================================================
-   34. FOOTER YEAR
+   35. FOOTER YEAR
    ===================================================== */
 function initFooterYear() {
   const el = $('footer-year');
@@ -1777,10 +2109,9 @@ function initFooterYear() {
 }
 
 /* =====================================================
-   35. PRODUCT DETAIL PANEL (PDP) — COMPLETE
+   36. PRODUCT DETAIL PANEL (PDP)
    ===================================================== */
 
-/* Open PDP */
 function openPDP(productId) {
   const product = PRODUCTS.find((p) => p.id === productId);
   if (!product) return;
@@ -1812,14 +2143,10 @@ function openPDP(productId) {
   }, 400);
 }
 
-/* Populate PDP with product data */
 function populatePDP(product) {
-  // Image
-  const img = $('pdp-img');
-  if (img) {
-    img.src = product.image;
-    img.alt = product.alt;
-  }
+  // Images — use carousel
+  const images = product.images || [product.image];
+  initImageCarousel(images);
 
   // Badge
   const badge = $('pdp-badge');
@@ -1919,7 +2246,6 @@ function populatePDP(product) {
   renderRelatedProducts(product);
 }
 
-/* Render Related Products */
 function renderRelatedProducts(product) {
   const grid = $('pdp-related-grid');
   if (!grid) return;
@@ -1972,7 +2298,6 @@ function renderRelatedProducts(product) {
   });
 }
 
-/* Close PDP */
 function closePDP() {
   const panel = $('pdp-panel');
   const overlay = $('pdp-overlay');
@@ -1990,7 +2315,6 @@ function closePDP() {
   pdpState.currentProduct = null;
 }
 
-/* Init PDP Controls */
 function initPDP() {
   // Close button
   const closeBtn = $('pdp-close');
