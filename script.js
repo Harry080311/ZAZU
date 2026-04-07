@@ -1,6 +1,6 @@
 /* =====================================================
-   ZAZU v5.0 — JAVASCRIPT
-   Clean, modern, fully improved
+   ZAZU v5.0 — JAVASCRIPT (COMPLETE & FIXED)
+   All features connected and working
    ===================================================== */
 
 'use strict';
@@ -40,6 +40,8 @@ const PRODUCTS = [
     image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=500&q=85&auto=format&fit=crop',
     alt: 'ZazuTech Pro Smartwatch',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Smartwatch',
+    colours: ['#1a1a1a', '#c0c0c0', '#4169E1'],
+    description: 'Advanced smartwatch with heart rate monitoring, GPS tracking, sleep analysis, and 7-day battery life. Perfect for fitness enthusiasts and busy professionals across Ghana.',
   },
   {
     id: 2,
@@ -55,6 +57,8 @@ const PRODUCTS = [
     image: 'https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=500&q=85&auto=format&fit=crop',
     alt: 'Accra Vibes Streetwear Hoodie',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Hoodie',
+    colours: ['#1a1a1a', '#006B3F', '#FCD116'],
+    description: 'Premium cotton hoodie with bold Accra-inspired graphics. Soft, comfortable, and perfect for Ghana\'s cooler evenings. Available in Black, Green, and Gold.',
   },
   {
     id: 3,
@@ -70,6 +74,8 @@ const PRODUCTS = [
     image: 'https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=500&q=85&auto=format&fit=crop',
     alt: 'Chrome Wave Sunglasses',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Sunglasses',
+    colours: ['#1a1a1a', '#c0c0c0', '#8B4513'],
+    description: 'UV400 protection sunglasses with polarized lenses. Beat the Ghana heat in style with these sleek chrome frames. Perfect for beach days and city vibes.',
   },
   {
     id: 4,
@@ -85,6 +91,8 @@ const PRODUCTS = [
     image: 'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=500&q=85&auto=format&fit=crop',
     alt: 'BoomBox Mini Bluetooth Speaker',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Speaker',
+    colours: ['#1a1a1a', '#CE1126', '#4169E1'],
+    description: 'Powerful portable Bluetooth speaker with 360° sound, 12-hour battery, and waterproof design. Perfect for parties, picnics, and outdoor adventures.',
   },
   {
     id: 5,
@@ -100,6 +108,8 @@ const PRODUCTS = [
     image: 'https://i.ibb.co/ZRzwS8Fp/Air-force-1-sneaker.webp',
     alt: 'Air Force Sneaker — classic style and ultimate comfort',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Air+Force+Sneaker',
+    colours: ['#ffffff', '#1a1a1a', '#CE1126'],
+    description: 'Classic Air Force style sneakers with premium leather finish. Iconic design meets all-day comfort. A must-have for every sneakerhead in Ghana.',
   },
   {
     id: 6,
@@ -115,6 +125,8 @@ const PRODUCTS = [
     image: 'https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=500&q=85&auto=format&fit=crop',
     alt: 'ZazuPhone X Pro Smartphone',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Phone',
+    colours: ['#1a1a1a', '#4169E1', '#c0c0c0'],
+    description: '6.7" AMOLED display, 108MP camera, 5000mAh battery, and 5G ready. Flagship performance at an unbeatable price. Perfect for content creators and power users.',
   },
   {
     id: 7,
@@ -130,6 +142,8 @@ const PRODUCTS = [
     image: 'https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=500&q=85&auto=format&fit=crop',
     alt: 'ProGamer RGB Headset',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Headset',
+    colours: ['#1a1a1a', '#CE1126', '#4169E1'],
+    description: '7.1 surround sound gaming headset with RGB lighting, noise-canceling mic, and ultra-comfortable ear cushions. Dominate your games with crystal-clear audio.',
   },
   {
     id: 8,
@@ -145,6 +159,8 @@ const PRODUCTS = [
     image: 'https://images.unsplash.com/photo-1594938298603-c8148c4dae35?w=500&q=85&auto=format&fit=crop',
     alt: 'Kente Pattern Summer Dress',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Dress',
+    colours: ['#FCD116', '#CE1126', '#006B3F'],
+    description: 'Beautiful African-inspired summer dress with vibrant Kente patterns. Light, breathable fabric perfect for Ghana\'s tropical climate. Celebrate your heritage in style.',
   },
   {
     id: 9,
@@ -160,6 +176,8 @@ const PRODUCTS = [
     image: 'https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=500&q=85&auto=format&fit=crop',
     alt: 'ZazuBook Pro Laptop',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Laptop',
+    colours: ['#c0c0c0', '#1a1a1a'],
+    description: 'Intel Core i7, 16GB RAM, 512GB SSD, and stunning 15.6" Full HD display. Perfect for students, creatives, and professionals. Fast delivery across Ghana.',
   },
   {
     id: 10,
@@ -175,6 +193,7 @@ const PRODUCTS = [
     image: 'https://i.ibb.co/8LdwzC9S/Explore-Perfume.jpg',
     alt: 'Explore Perfume 100ml — a luxurious fragrance for every occasion',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Explore+Perfume',
+    description: 'Long-lasting eau de parfum with exotic notes of jasmine, sandalwood, and vanilla. Sophisticated fragrance that makes a statement. 100ml bottle.',
   },
   {
     id: 11,
@@ -190,6 +209,8 @@ const PRODUCTS = [
     image: 'https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=500&q=85&auto=format&fit=crop',
     alt: 'ZazuCharge 20000mAh Power Bank',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Power+Bank',
+    colours: ['#1a1a1a', '#ffffff', '#4169E1'],
+    description: 'Ultra-high capacity 20,000mAh power bank with dual USB ports and fast charging. Never run out of battery again — essential for Ghana\'s power situation.',
   },
   {
     id: 12,
@@ -205,6 +226,8 @@ const PRODUCTS = [
     image: 'https://i.ibb.co/hFhrYxyc/Acer-LED-Earbuds.avif',
     alt: 'Acer LED Earbuds — premium sound quality',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Acer+LED+Earbuds',
+    colours: ['#1a1a1a', '#ffffff', '#CE1126'],
+    description: 'True wireless earbuds with LED display, 24-hour battery life, and premium sound quality. Perfect for music lovers and fitness enthusiasts.',
   },
   {
     id: 13,
@@ -220,6 +243,8 @@ const PRODUCTS = [
     image: 'https://i.ibb.co/WNmR8TJB/Electric-air-refreshner.avif',
     alt: 'Electric Mist Diffuser — fill your home with beautiful fragrance',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Electric+Mist+Diffuser',
+    colours: ['#ffffff', '#8B4513', '#1a1a1a'],
+    description: 'Ultrasonic aroma diffuser with LED mood lighting and auto shut-off. Create a relaxing atmosphere in your home with essential oils. 300ml capacity.',
   },
   {
     id: 14,
@@ -235,6 +260,8 @@ const PRODUCTS = [
     image: 'https://i.ibb.co/TMM5CsJW/Crocs-for-men.avif',
     alt: 'Hollow Out Slides — stylish and comfortable footwear',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Hollow+Out+Slides',
+    colours: ['#1a1a1a', '#4169E1', '#FCD116'],
+    description: 'Ultra-lightweight EVA slides with breathable design. Perfect for casual wear, beach trips, or relaxing at home. Comfortable all-day wear.',
   },
   {
     id: 15,
@@ -250,6 +277,7 @@ const PRODUCTS = [
     image: 'https://images.unsplash.com/photo-1556228720-195a672e8a03?w=500&q=85&auto=format&fit=crop',
     alt: 'Shea Glow Skincare Set',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Skincare',
+    description: 'Complete skincare set with shea butter-infused products. Cleanser, toner, moisturizer, and face mask. Perfect for Ghana\'s climate. Glowing skin guaranteed.',
   },
   {
     id: 16,
@@ -265,6 +293,8 @@ const PRODUCTS = [
     image: 'https://images.unsplash.com/photo-1548036328-c9fa89d128fa?w=500&q=85&auto=format&fit=crop',
     alt: 'Lagos Leather Backpack',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Backpack',
+    colours: ['#8B4513', '#1a1a1a', '#c0c0c0'],
+    description: 'Premium leather backpack with laptop compartment, USB charging port, and anti-theft design. Perfect for students, travelers, and professionals.',
   },
   {
     id: 17,
@@ -280,6 +310,8 @@ const PRODUCTS = [
     image: 'https://i.ibb.co/RTv80H10/hair-clipper.avif',
     alt: 'Hair Clipper — professional grade clipper for a clean cut',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Hair+Clipper',
+    colours: ['#1a1a1a', '#c0c0c0'],
+    description: 'Professional-grade hair clipper with ceramic blades, 4-hour battery, and 8 guide combs. Barber-quality cuts at home. Save money on haircuts.',
   },
   {
     id: 18,
@@ -295,6 +327,8 @@ const PRODUCTS = [
     image: 'https://i.ibb.co/yBKvh8yj/Smart-LED-Desk-Lamp.avif',
     alt: 'Smart LED Desk Lamp — perfect for your workspace!',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Smart+LED+Lamp',
+    colours: ['#ffffff', '#1a1a1a'],
+    description: 'Touch-control LED desk lamp with 3 brightness levels and USB charging port. Eye-friendly lighting perfect for studying, reading, or working late.',
   },
   {
     id: 19,
@@ -310,6 +344,8 @@ const PRODUCTS = [
     image: 'https://i.ibb.co/k20f9TRd/Clasic-Church-Shoe.avif',
     alt: 'British Retro Classic Shoes — timeless style for every occasion',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Classic+Shoes',
+    colours: ['#1a1a1a', '#8B4513'],
+    description: 'Timeless Oxford-style shoes with premium leather finish. Perfect for church, weddings, and formal occasions. Classic British elegance meets African style.',
   },
   {
     id: 20,
@@ -325,6 +361,8 @@ const PRODUCTS = [
     image: 'https://i.ibb.co/FLbtf1K7/Tripod-ring-light.avif',
     alt: 'Tripod Ring Light — perfect for content creators and selfies',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Tripod+Ring+Light',
+    colours: ['#1a1a1a', '#ffffff'],
+    description: '12-inch LED ring light with adjustable tripod, phone holder, and 3 lighting modes. Essential for TikTok creators, YouTubers, and selfie lovers.',
   },
   {
     id: 21,
@@ -340,6 +378,8 @@ const PRODUCTS = [
     image: 'https://i.ibb.co/GftwFndW/Denim-shorts.avif',
     alt: 'Denim Shorts For Men — stylish and comfortable everyday wear',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Denim+Shorts',
+    colours: ['#4169E1', '#1a1a1a'],
+    description: 'Premium denim shorts with comfortable fit and modern style. Perfect for Ghana\'s hot weather. Multiple pockets for convenience.',
   },
   {
     id: 22,
@@ -355,6 +395,8 @@ const PRODUCTS = [
     image: 'https://i.ibb.co/vvrCcwYf/Jbl-pro.avif',
     alt: 'JBL Pro Sound Box — powerful bass and crystal clear sound',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=JBL+Pro+Sound+Box',
+    colours: ['#1a1a1a', '#CE1126', '#4169E1'],
+    description: 'Premium JBL speaker with deep bass, 20-hour battery, and PartyBoost pairing. Turn any gathering into an unforgettable party.',
   },
   {
     id: 23,
@@ -370,6 +412,8 @@ const PRODUCTS = [
     image: 'https://i.ibb.co/Jjk06pWW/Rechargeable-fan.avif',
     alt: 'USB Rechargeable Portable Mini Fan — perfect for Ghana heat!',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Mini+Fan',
+    colours: ['#ffffff', '#4169E1', '#f97316'],
+    description: 'Portable rechargeable fan with 3 speed settings and 6-hour battery. Essential for Ghana\'s hot weather. Lightweight and whisper-quiet.',
   },
   {
     id: 24,
@@ -385,6 +429,8 @@ const PRODUCTS = [
     image: 'https://i.ibb.co/VYPC0Fnb/Mens-Graphic-T-shirt.avif',
     alt: 'Mens Graphic T-Shirt — stylish and comfortable everyday wear',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Mens+Graphic+Tshirt',
+    colours: ['#1a1a1a', '#ffffff', '#006B3F'],
+    description: '100% cotton graphic tee with bold African-inspired designs. Soft, breathable, and perfect for casual wear. Express yourself with style.',
   },
   {
     id: 25,
@@ -400,6 +446,8 @@ const PRODUCTS = [
     image: 'https://i.ibb.co/nq8rVC90/Plaid-short-sleeve.avif',
     alt: 'Plaid Short Sleeve — stylish and comfortable everyday wear',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Plaid+Short+Sleeve',
+    colours: ['#4169E1', '#CE1126', '#006B3F'],
+    description: 'Classic plaid short-sleeve shirt in breathable cotton. Perfect for casual outings and everyday wear. Available in multiple color combinations.',
   },
   {
     id: 26,
@@ -415,6 +463,8 @@ const PRODUCTS = [
     image: 'https://i.ibb.co/Fkbv8hqV/Portable-blender.avif',
     alt: 'Mini Portable Blender — perfect for smoothies on the go!',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Portable+Blender',
+    colours: ['#ffffff', '#f97316', '#4169E1'],
+    description: 'USB rechargeable portable blender with 6 blades. Make fresh smoothies anywhere — gym, office, or travel. 380ml capacity and easy to clean.',
   },
   {
     id: 27,
@@ -430,6 +480,8 @@ const PRODUCTS = [
     image: 'https://i.ibb.co/kstyBWJN/Stainless-steel-vacuum-flask.avif',
     alt: 'Stainless Steel Vacuum Flask — keeps drinks hot or cold for hours',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Vacuum+Flask',
+    colours: ['#c0c0c0', '#1a1a1a', '#4169E1'],
+    description: 'Double-wall insulated flask keeps drinks hot for 12 hours or cold for 24 hours. Leak-proof design perfect for work, gym, or travel. 500ml capacity.',
   },
   {
     id: 28,
@@ -445,6 +497,8 @@ const PRODUCTS = [
     image: 'https://i.ibb.co/Lh1dtqqr/Mini-Action-Camera-4-K.avif',
     alt: 'Mini Action Camera 4K — capture every adventure in stunning detail',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Action+Camera',
+    colours: ['#1a1a1a', '#c0c0c0'],
+    description: '4K Ultra HD action camera with waterproof case, Wi-Fi connectivity, and wide-angle lens. Capture your adventures in stunning quality.',
   },
   {
     id: 29,
@@ -460,6 +514,7 @@ const PRODUCTS = [
     image: 'https://images.unsplash.com/photo-1598440947619-2c35fc9aa908?w=500&q=85&auto=format&fit=crop',
     alt: 'Melanin Beauty Makeup Kit',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Makeup+Kit',
+    description: 'Complete makeup kit designed for melanin-rich skin tones. Includes foundation, concealer, eyeshadow palette, and brushes. Celebrate your natural beauty.',
   },
   {
     id: 30,
@@ -475,6 +530,8 @@ const PRODUCTS = [
     image: 'https://i.ibb.co/8gZyw9B1/Mens-Elastic-Boxer.jpg',
     alt: 'Mens Elastic Boxer — comfortable and stylish everyday wear',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Mens+Boxer',
+    colours: ['#1a1a1a', '#4169E1', '#CE1126'],
+    description: 'Premium cotton-blend boxers with elastic waistband. Ultra-comfortable for all-day wear. Pack of 3 in assorted colors. Breathable and durable.',
   },
 ];
 
@@ -542,14 +599,41 @@ const state = {
 };
 
 /* =====================================================
-   4. DOM HELPERS
+   4. PDP STATE
+   ===================================================== */
+const pdpState = {
+  currentProduct: null,
+  quantity: 1,
+  selectedColour: null,
+};
+
+/* Colour name lookup */
+const COLOUR_NAMES = {
+  '#1a1a1a': 'Black',
+  '#ffffff': 'White',
+  '#CE1126': 'Red',
+  '#006B3F': 'Green',
+  '#FCD116': 'Gold',
+  '#4169E1': 'Blue',
+  '#c0c0c0': 'Silver',
+  '#FFD700': 'Gold',
+  '#8B4513': 'Brown',
+  '#f97316': 'Orange',
+};
+
+function getColourName(hex) {
+  return COLOUR_NAMES[hex] || 'Custom';
+}
+
+/* =====================================================
+   5. DOM HELPERS
    ===================================================== */
 const $ = (id) => document.getElementById(id);
 const $$ = (sel, ctx = document) => ctx.querySelectorAll(sel);
 const $q = (sel, ctx = document) => ctx.querySelector(sel);
 
 /* =====================================================
-   5. STORAGE HELPERS
+   6. STORAGE HELPERS
    ===================================================== */
 const storage = {
   get(key) {
@@ -570,7 +654,7 @@ const storage = {
 };
 
 /* =====================================================
-   6. PAGE LOADER
+   7. PAGE LOADER
    ===================================================== */
 document.body.style.overflow = 'hidden';
 
@@ -583,7 +667,7 @@ window.addEventListener('load', () => {
 });
 
 /* =====================================================
-   7. INIT
+   8. INIT
    ===================================================== */
 document.addEventListener('DOMContentLoaded', () => {
   console.log(
@@ -608,6 +692,7 @@ document.addEventListener('DOMContentLoaded', () => {
   initMomoInput();
   initNetworkButtons();
   initFooterYear();
+  initPDP(); // ← CONNECTED!
   startCountdown();
   showChatTooltip();
   updateCartUI();
@@ -622,7 +707,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /* =====================================================
-   8. PERSIST & LOAD STATE
+   9. PERSIST & LOAD STATE
    ===================================================== */
 function loadPersistedState() {
   const savedCart = storage.get(CONFIG.storageKeys.cart);
@@ -640,7 +725,7 @@ function persistWishlist() {
 }
 
 /* =====================================================
-   9. SCROLL LOCK
+   10. SCROLL LOCK
    ===================================================== */
 function lockScroll() {
   const scrollY = window.scrollY;
@@ -659,7 +744,7 @@ function unlockScroll() {
 }
 
 /* =====================================================
-   10. RENDER HELPERS — Star rating
+   11. RENDER HELPERS — Star rating
    ===================================================== */
 function renderStars(rating) {
   const full = Math.floor(rating);
@@ -677,7 +762,7 @@ function renderStars(rating) {
 }
 
 /* =====================================================
-   11. RENDER FLASH SALE
+   12. RENDER FLASH SALE
    ===================================================== */
 function renderFlashSale() {
   const grid = $('flashsale-grid');
@@ -726,7 +811,7 @@ function renderFlashSale() {
 }
 
 /* =====================================================
-   12. RENDER PRODUCTS
+   13. RENDER PRODUCTS
    ===================================================== */
 function renderProducts(filter = 'all', searchQuery = '') {
   const grid = $('products-grid');
@@ -776,7 +861,15 @@ function renderProducts(filter = 'all', searchQuery = '') {
         data-category="${p.category}"
         data-id="${p.id}"
       >
-        <div class="product-card__img-wrap">
+        <div 
+          class="product-card__img-wrap"
+          role="button"
+          tabindex="0"
+          data-action="view-product"
+          data-id="${p.id}"
+          aria-label="View details for ${p.name}"
+          style="cursor: pointer;"
+        >
           <span class="p-badge ${badgeClass}" aria-label="${p.badgeText}">
             ${p.badgeText}
           </span>
@@ -814,7 +907,14 @@ function renderProducts(filter = 'all', searchQuery = '') {
         </div>
         <div class="product-card__body">
           <span class="p-category">${p.category}</span>
-          <h3 class="p-title">${p.name}</h3>
+          <button
+            class="p-title-btn"
+            data-action="view-product"
+            data-id="${p.id}"
+            aria-label="View details for ${p.name}"
+          >
+            <h3 class="p-title">${p.name}</h3>
+          </button>
           <div class="p-stars" aria-label="${p.rating} out of 5 stars">
             ${renderStars(p.rating)}
             <span>(${p.reviews.toLocaleString()})</span>
@@ -843,7 +943,7 @@ function renderProducts(filter = 'all', searchQuery = '') {
 }
 
 /* =====================================================
-   13. EVENT DELEGATION
+   14. EVENT DELEGATION
    ===================================================== */
 document.addEventListener('click', (e) => {
   const target = e.target.closest('[data-action]');
@@ -863,6 +963,9 @@ document.addEventListener('click', (e) => {
     case 'wishlist':
       toggleWishlist(Number(id), name, target);
       break;
+    case 'view-product': // ← NOW CONNECTED!
+      openPDP(Number(id));
+      break;
     case 'cart-qty-increase':
       changeQty(Number(id), 1);
       break;
@@ -879,7 +982,7 @@ document.addEventListener('click', (e) => {
 });
 
 /* =====================================================
-   14. CART
+   15. CART
    ===================================================== */
 function addToCart(id, name, price) {
   const existing = state.cart.find((x) => x.id === id);
@@ -930,7 +1033,7 @@ function clearCart() {
 }
 
 /* =====================================================
-   15. CART UI
+   16. CART UI
    ===================================================== */
 function updateCartUI() {
   updateCartCount();
@@ -1055,7 +1158,7 @@ function updateDeliveryBar() {
 }
 
 /* =====================================================
-   16. CART SIDEBAR
+   17. CART SIDEBAR
    ===================================================== */
 function initCartSidebar() {
   const cartBtn = $('cart-btn');
@@ -1091,6 +1194,7 @@ function initCartSidebar() {
     if (e.key === 'Escape') {
       if (state.isModalOpen) closeModal();
       else if (state.isCartOpen) closeCart();
+      else if (pdpState.currentProduct) closePDP();
     }
   });
 }
@@ -1135,7 +1239,7 @@ function bounceCartBtn() {
 }
 
 /* =====================================================
-   17. WHATSAPP ORDER
+   18. WHATSAPP ORDER
    ===================================================== */
 function orderViaWhatsApp() {
   if (!state.cart.length) {
@@ -1161,7 +1265,7 @@ function orderViaWhatsApp() {
 }
 
 /* =====================================================
-   18. MOMO MODAL
+   19. MOMO MODAL
    ===================================================== */
 function openMomoModal(name, price, isCheckout = false) {
   state.currentModalProduct = { name, price };
@@ -1261,7 +1365,7 @@ function initNetworkButtons() {
 }
 
 /* =====================================================
-   19. MOMO INPUT
+   20. MOMO INPUT
    ===================================================== */
 function initMomoInput() {
   const inp = $('momo-number');
@@ -1278,7 +1382,7 @@ function initMomoInput() {
 }
 
 /* =====================================================
-   20. SEARCH — debounced
+   21. SEARCH — debounced
    ===================================================== */
 function debounce(fn, delay) {
   let timer;
@@ -1326,7 +1430,7 @@ function initSearch() {
 }
 
 /* =====================================================
-   21. HEADER SCROLL
+   22. HEADER SCROLL
    ===================================================== */
 function initHeader() {
   const header = $('header');
@@ -1341,7 +1445,7 @@ function initHeader() {
 }
 
 /* =====================================================
-   22. MOBILE MENU
+   23. MOBILE MENU
    ===================================================== */
 function initMobileMenu() {
   const btn = $('hamburger-btn');
@@ -1364,7 +1468,7 @@ function initMobileMenu() {
 }
 
 /* =====================================================
-   23. CATEGORY FILTER
+   24. CATEGORY FILTER
    ===================================================== */
 function initCategoryFilter() {
   const pills = $$('.cat-pill');
@@ -1384,7 +1488,7 @@ function initCategoryFilter() {
 }
 
 /* =====================================================
-   24. LOAD MORE
+   25. LOAD MORE
    ===================================================== */
 function initLoadMore() {
   const btn = $('load-more-btn');
@@ -1418,7 +1522,7 @@ function initLoadMore() {
 }
 
 /* =====================================================
-   25. WISHLIST
+   26. WISHLIST
    ===================================================== */
 function initWishlist() {
   const fab = $('wishlist-fab');
@@ -1471,7 +1575,7 @@ function updateWishlistFab() {
 }
 
 /* =====================================================
-   26. DARK MODE
+   27. DARK MODE
    ===================================================== */
 function initDarkMode() {
   const btn = $('theme-toggle');
@@ -1502,7 +1606,7 @@ function initDarkMode() {
 }
 
 /* =====================================================
-   27. COUNTDOWN TIMER
+   28. COUNTDOWN TIMER
    ===================================================== */
 function startCountdown() {
   const storageKey = 'zazuCountdownEnd';
@@ -1544,7 +1648,7 @@ function startCountdown() {
 }
 
 /* =====================================================
-   28. SCROLL REVEAL
+   29. SCROLL REVEAL
    ===================================================== */
 function initScrollReveal() {
   const items = $$('.reveal:not(.revealed)');
@@ -1564,7 +1668,7 @@ function initScrollReveal() {
 }
 
 /* =====================================================
-   29. STATS COUNTER
+   30. STATS COUNTER
    ===================================================== */
 function initStatsCounter() {
   const nums = $$('.about-stat__num');
@@ -1605,7 +1709,7 @@ function countUp(el) {
 }
 
 /* =====================================================
-   30. TOAST
+   31. TOAST
    ===================================================== */
 let toastTimer = null;
 
@@ -1624,7 +1728,7 @@ function showToast(msg, icon = '✅') {
 }
 
 /* =====================================================
-   31. ACTIVE NAV
+   32. ACTIVE NAV
    ===================================================== */
 document.addEventListener('DOMContentLoaded', () => {
   const sections = $$('section[id]');
@@ -1649,7 +1753,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /* =====================================================
-   32. CHAT TOOLTIP
+   33. CHAT TOOLTIP
    ===================================================== */
 function showChatTooltip() {
   const tooltip = $('chat-tooltip');
@@ -1665,9 +1769,302 @@ function showChatTooltip() {
 }
 
 /* =====================================================
-   33. FOOTER YEAR
+   34. FOOTER YEAR
    ===================================================== */
 function initFooterYear() {
   const el = $('footer-year');
   if (el) el.textContent = new Date().getFullYear();
+}
+
+/* =====================================================
+   35. PRODUCT DETAIL PANEL (PDP) — COMPLETE
+   ===================================================== */
+
+/* Open PDP */
+function openPDP(productId) {
+  const product = PRODUCTS.find((p) => p.id === productId);
+  if (!product) return;
+
+  pdpState.currentProduct = product;
+  pdpState.quantity = 1;
+  pdpState.selectedColour = product.colours?.[0] || null;
+
+  populatePDP(product);
+
+  const panel = $('pdp-panel');
+  const overlay = $('pdp-overlay');
+
+  if (panel) {
+    panel.classList.add('open');
+    panel.setAttribute('aria-hidden', 'false');
+    panel.scrollTop = 0;
+  }
+  if (overlay) {
+    overlay.classList.add('visible');
+    overlay.setAttribute('aria-hidden', 'false');
+  }
+
+  lockScroll();
+
+  setTimeout(() => {
+    const closeBtn = $('pdp-close');
+    if (closeBtn) closeBtn.focus();
+  }, 400);
+}
+
+/* Populate PDP with product data */
+function populatePDP(product) {
+  // Image
+  const img = $('pdp-img');
+  if (img) {
+    img.src = product.image;
+    img.alt = product.alt;
+  }
+
+  // Badge
+  const badge = $('pdp-badge');
+  if (badge) {
+    badge.textContent = product.badgeText;
+    badge.className = 'pdp-badge';
+    if (product.badge === 'hot') badge.classList.add('pdp-badge--hot');
+    else if (product.badge === 'new') badge.classList.add('pdp-badge--new');
+    else badge.classList.add('pdp-badge--sale');
+  }
+
+  // Category
+  const cat = $('pdp-category');
+  if (cat) cat.textContent = product.category;
+
+  // Rating
+  const rating = $('pdp-rating');
+  if (rating) {
+    rating.innerHTML = `
+      ${renderStars(product.rating)}
+      <span>(${product.reviews.toLocaleString()} reviews)</span>
+    `;
+    rating.setAttribute(
+      'aria-label',
+      `${product.rating} out of 5 stars, ${product.reviews} reviews`
+    );
+  }
+
+  // Title
+  const title = $('pdp-title');
+  if (title) title.textContent = product.name;
+
+  // Pricing
+  const price = $('pdp-price');
+  const old = $('pdp-old');
+  const off = $('pdp-off');
+  if (price) price.textContent = `GH₵ ${product.price.toLocaleString()}`;
+  if (old) old.textContent = `GH₵ ${product.oldPrice.toLocaleString()}`;
+  if (off) off.textContent = `-${product.discount}%`;
+
+  // Description
+  const desc = $('pdp-desc');
+  if (desc) {
+    desc.textContent = product.description ||
+      'Premium quality product. Contact us on WhatsApp for more details.';
+  }
+
+  // Colours
+  const coloursWrap = $('pdp-colours-wrap');
+  const swatches = $('pdp-colour-swatches');
+  const selectedColourLabel = $('pdp-selected-colour');
+
+  if (coloursWrap && swatches) {
+    if (!product.colours || product.colours.length === 0) {
+      coloursWrap.style.display = 'none';
+    } else {
+      coloursWrap.style.display = 'block';
+      swatches.innerHTML = product.colours.map((colour, i) => `
+        <button
+          class="colour-swatch ${i === 0 ? 'active' : ''}"
+          style="background-color:${colour};
+                 ${colour === '#ffffff' ? 'border-color: #ccc;' : ''}"
+          data-colour="${colour}"
+          data-colour-name="${getColourName(colour)}"
+          aria-label="Select colour: ${getColourName(colour)}"
+          aria-pressed="${i === 0}"
+        ></button>
+      `).join('');
+
+      if (selectedColourLabel && product.colours[0]) {
+        selectedColourLabel.textContent = getColourName(product.colours[0]);
+      }
+
+      $$('.colour-swatch', swatches).forEach((swatch) => {
+        swatch.addEventListener('click', () => {
+          $$('.colour-swatch', swatches).forEach((s) => {
+            s.classList.remove('active');
+            s.setAttribute('aria-pressed', 'false');
+          });
+          swatch.classList.add('active');
+          swatch.setAttribute('aria-pressed', 'true');
+          pdpState.selectedColour = swatch.dataset.colour;
+          if (selectedColourLabel) {
+            selectedColourLabel.textContent = swatch.dataset.colourName;
+          }
+        });
+      });
+    }
+  }
+
+  // Quantity reset
+  const qtyNum = $('pdp-qty-num');
+  if (qtyNum) qtyNum.textContent = '1';
+  pdpState.quantity = 1;
+
+  // Related products
+  renderRelatedProducts(product);
+}
+
+/* Render Related Products */
+function renderRelatedProducts(product) {
+  const grid = $('pdp-related-grid');
+  if (!grid) return;
+
+  const related = PRODUCTS
+    .filter((p) => p.category === product.category && p.id !== product.id)
+    .slice(0, 3);
+
+  if (related.length === 0) {
+    const relatedSection = $q('.pdp-related');
+    if (relatedSection) relatedSection.style.display = 'none';
+    return;
+  }
+
+  const relatedSection = $q('.pdp-related');
+  if (relatedSection) relatedSection.style.display = 'block';
+
+  grid.innerHTML = related.map((p) => `
+    <div 
+      class="pdp-related-card" 
+      data-id="${p.id}"
+      role="button"
+      tabindex="0"
+      aria-label="View ${p.name} — GH₵ ${p.price.toLocaleString()}"
+    >
+      <img 
+        src="${p.image}" 
+        alt="${p.alt}" 
+        loading="lazy"
+        onerror="this.onerror=null;this.src='${p.fallback}'"
+      />
+      <div class="pdp-related-card__info">
+        <p class="pdp-related-card__name">${p.name}</p>
+        <p class="pdp-related-card__price">GH₵ ${p.price.toLocaleString()}</p>
+      </div>
+    </div>
+  `).join('');
+
+  $$('.pdp-related-card', grid).forEach((card) => {
+    card.addEventListener('click', () => {
+      const id = Number(card.dataset.id);
+      openPDP(id);
+    });
+    card.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        openPDP(Number(card.dataset.id));
+      }
+    });
+  });
+}
+
+/* Close PDP */
+function closePDP() {
+  const panel = $('pdp-panel');
+  const overlay = $('pdp-overlay');
+
+  if (panel) {
+    panel.classList.remove('open');
+    panel.setAttribute('aria-hidden', 'true');
+  }
+  if (overlay) {
+    overlay.classList.remove('visible');
+    overlay.setAttribute('aria-hidden', 'true');
+  }
+
+  unlockScroll();
+  pdpState.currentProduct = null;
+}
+
+/* Init PDP Controls */
+function initPDP() {
+  // Close button
+  const closeBtn = $('pdp-close');
+  if (closeBtn) closeBtn.addEventListener('click', closePDP);
+
+  // Overlay click
+  const overlay = $('pdp-overlay');
+  if (overlay) overlay.addEventListener('click', closePDP);
+
+  // Quantity buttons
+  const incBtn = $('pdp-qty-inc');
+  const decBtn = $('pdp-qty-dec');
+  const qtyNum = $('pdp-qty-num');
+
+  if (incBtn) {
+    incBtn.addEventListener('click', () => {
+      pdpState.quantity = Math.min(pdpState.quantity + 1, 10);
+      if (qtyNum) qtyNum.textContent = pdpState.quantity;
+    });
+  }
+  if (decBtn) {
+    decBtn.addEventListener('click', () => {
+      pdpState.quantity = Math.max(pdpState.quantity - 1, 1);
+      if (qtyNum) qtyNum.textContent = pdpState.quantity;
+    });
+  }
+
+  // Add to Cart button
+  const addCartBtn = $('pdp-add-cart');
+  if (addCartBtn) {
+    addCartBtn.addEventListener('click', () => {
+      const p = pdpState.currentProduct;
+      if (!p) return;
+
+      for (let i = 0; i < pdpState.quantity; i++) {
+        addToCart(p.id, p.name, p.price);
+      }
+
+      addCartBtn.innerHTML =
+        '<i class="fa-solid fa-check" aria-hidden="true"></i> Added!';
+      addCartBtn.style.background =
+        'linear-gradient(135deg, #059669, #047857)';
+      setTimeout(() => {
+        addCartBtn.innerHTML =
+          '<i class="fa-solid fa-bag-shopping" aria-hidden="true"></i> Add to Cart';
+        addCartBtn.style.background = '';
+      }, 1500);
+    });
+  }
+
+  // MoMo Pay button
+  const momoBtn = $('pdp-momo-btn');
+  if (momoBtn) {
+    momoBtn.addEventListener('click', () => {
+      const p = pdpState.currentProduct;
+      if (!p) return;
+      const totalPrice = p.price * pdpState.quantity;
+      closePDP();
+      setTimeout(() => {
+        openMomoModal(
+          `${p.name}${pdpState.quantity > 1 ? ` x${pdpState.quantity}` : ''}`,
+          totalPrice,
+          false
+        );
+      }, 300);
+    });
+  }
+
+  // Keyboard support for product cards
+  document.addEventListener('keydown', (e) => {
+    const target = e.target.closest('[data-action="view-product"]');
+    if (target && (e.key === 'Enter' || e.key === ' ')) {
+      e.preventDefault();
+      openPDP(Number(target.dataset.id));
+    }
+  });
 }
