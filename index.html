@@ -280,7 +280,6 @@
             <button class="cat-pill" data-filter="fashion"><i class="fa-solid fa-shirt" aria-hidden="true"></i> Fashion</button>
             <button class="cat-pill" data-filter="audio"><i class="fa-solid fa-headphones" aria-hidden="true"></i> Audio</button>
             <button class="cat-pill" data-filter="accessories"><i class="fa-solid fa-glasses" aria-hidden="true"></i> Accessories</button>
-            <button class="cat-pill" data-filter="phones"><i class="fa-solid fa-mobile-screen" aria-hidden="true"></i> Phones</button>
             <button class="cat-pill" data-filter="beauty"><i class="fa-solid fa-spa" aria-hidden="true"></i> Beauty</button>
             <button class="cat-pill" data-filter="home"><i class="fa-solid fa-house" aria-hidden="true"></i> Home</button>
           </div>
@@ -686,79 +685,63 @@
       aria-hidden="true"
     >
       <div class="pdp-panel__inner">
+<!-- Mobile back bar -->
+<div class="pdp-back-bar">
+  <button class="pdp-back-btn" id="pdp-back-btn" aria-label="Go back">
+    <i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Back
+  </button>
+  <span class="pdp-back-bar__title" id="pdp-back-title">Product Details</span>
+</div>
 
-        <!-- Close Button -->
+        <!-- Close Button (BIGGER for mobile) -->
         <button class="pdp-close" id="pdp-close" aria-label="Close product detail">
           <i class="fa-solid fa-xmark" aria-hidden="true"></i>
         </button>
 
-       <!-- Image Gallery -->
-<div class="pdp-gallery" id="pdp-gallery" data-images="1">
-  <!-- Main Image Display -->
-  <div class="pdp-gallery__main" id="pdp-gallery-main">
-    <div class="pdp-gallery__track" id="pdp-gallery-track">
-      <!-- Images will be injected here by JS -->
-    </div>
-    
-    <!-- Navigation Arrows -->
-    <button 
-      class="pdp-gallery__nav pdp-gallery__nav--prev" 
-      id="pdp-gallery-prev"
-      aria-label="Previous image"
-    >
-      <i class="fa-solid fa-chevron-left"></i>
-    </button>
-    <button 
-      class="pdp-gallery__nav pdp-gallery__nav--next" 
-      id="pdp-gallery-next"
-      aria-label="Next image"
-    >
-      <i class="fa-solid fa-chevron-right"></i>
-    </button>
-    
-    <!-- Image Counter -->
-    <div class="pdp-gallery__counter" id="pdp-gallery-counter">1 / 1</div>
-    
-    <!-- Badge (Hot/New/Sale) -->
-    <span class="pdp-badge" id="pdp-badge"></span>
-  </div>
-  
-  <!-- Dots Indicator -->
-  <div class="pdp-gallery__dots" id="pdp-gallery-dots"></div>
-  
-  <!-- Thumbnails -->
-  <div class="pdp-gallery__thumbs" id="pdp-gallery-thumbs"></div>
-</div>        <!-- Info -->
-        <div class="pdp-info">
+        <!-- Image Gallery -->
+        <div class="pdp-gallery" id="pdp-gallery" data-images="1">
+          <div class="pdp-gallery__main" id="pdp-gallery-main">
+            <div class="pdp-gallery__track" id="pdp-gallery-track"></div>
+            <button 
+              class="pdp-gallery__nav pdp-gallery__nav--prev" 
+              id="pdp-gallery-prev"
+              aria-label="Previous image"
+            >
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button 
+              class="pdp-gallery__nav pdp-gallery__nav--next" 
+              id="pdp-gallery-next"
+              aria-label="Next image"
+            >
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+            <div class="pdp-gallery__counter" id="pdp-gallery-counter">1 / 1</div>
+            <span class="pdp-badge" id="pdp-badge"></span>
+          </div>
+          <div class="pdp-gallery__dots" id="pdp-gallery-dots"></div>
+          <div class="pdp-gallery__thumbs" id="pdp-gallery-thumbs"></div>
+        </div>
 
-          <!-- Category + Rating -->
+        <!-- Info -->
+        <div class="pdp-info">
           <div class="pdp-meta">
             <span class="pdp-category" id="pdp-category"></span>
             <div class="pdp-rating" id="pdp-rating" aria-label="Product rating"></div>
           </div>
-
-          <!-- Name -->
           <h2 class="pdp-title" id="pdp-title"></h2>
-
-          <!-- Pricing -->
           <div class="pdp-pricing">
             <span class="pdp-price" id="pdp-price"></span>
             <span class="pdp-old" id="pdp-old"></span>
             <span class="pdp-off" id="pdp-off"></span>
           </div>
-
-          <!-- Description -->
           <p class="pdp-desc" id="pdp-desc"></p>
-
-          <!-- Colour Selector -->
           <div class="pdp-colours" id="pdp-colours-wrap">
             <p class="pdp-option-label">
               Colour: <span id="pdp-selected-colour">Black</span>
             </p>
             <div class="pdp-colour-swatches" id="pdp-colour-swatches"></div>
           </div>
-
-          <!-- Quantity -->
           <div class="pdp-qty-wrap">
             <p class="pdp-option-label">Quantity:</p>
             <div class="pdp-qty">
@@ -771,8 +754,6 @@
               </button>
             </div>
           </div>
-
-          <!-- Action Buttons -->
           <div class="pdp-actions">
             <button class="btn btn--primary pdp-action-btn" id="pdp-add-cart">
               <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i> Add to Cart
@@ -781,20 +762,15 @@
               <i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i> Pay with MoMo
             </button>
           </div>
-
-          <!-- Trust Badges -->
           <div class="pdp-trust">
             <span><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> 100% Authentic</span>
             <span><i class="fa-solid fa-truck-fast" aria-hidden="true"></i> Fast Delivery</span>
             <span><i class="fa-solid fa-rotate-left" aria-hidden="true"></i> 7-Day Return</span>
           </div>
-
-          <!-- Related Products -->
           <div class="pdp-related">
             <h3 class="pdp-related__title">You May Also Like</h3>
             <div class="pdp-related__grid" id="pdp-related-grid"></div>
           </div>
-
         </div>
       </div>
     </div>

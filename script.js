@@ -117,50 +117,50 @@ const PRODUCTS = [
     description: 'Powerful portable Bluetooth speaker with 360° sound, 12-hour battery, and waterproof design. Perfect for parties, picnics, and outdoor adventures.',
   },
   {
-  id: 5,
-  name: 'Air Force Sneaker',
-  category: 'fashion',
-  price: 390,
-  oldPrice: 560,
-  discount: 30,
-  badge: 'hot',
-  badgeText: '🔥 Hot',
-  rating: 4.5,
-  reviews: 176,
-  image: 'https://i.ibb.co/ZRzwS8Fp/Air-force-1-sneaker.webp',
-  images: [
-    'https://i.ibb.co/ZRzwS8Fp/Air-force-1-sneaker.webp',
-    'https://i.ibb.co/FdzPccX/Air-force-black.webp',
-    'https://i.ibb.co/DP1w1YXP/Airforce-Blue.webp',
-    'https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?w=600&q=85',
-  ],
-  alt: 'Air Force Sneaker — classic style and ultimate comfort',
-  fallback: 'https://placehold.co/500x500/006B3F/fff?text=Air+Force+Sneaker',
-  colours: ['#ffffff', '#1a1a1a', '#CE1126'],
-  description: 'Classic Air Force style sneakers with premium leather finish. Iconic design meets all-day comfort. A must-have for every sneakerhead in Ghana.',
-},
- {
-  id: 6,
-  name: 'Mens Soft Clutch Bag',
-  category: 'accessories',
-  price: 185,
-  oldPrice: 280,
-  discount: 34,
-  badge: 'hot',
-  badgeText: '🔥 Hot',
-  rating: 4.5,
-  reviews: 142,
-  image: 'https://i.ibb.co/CsMh2FjT/Mens-soft-clutch-bag.avif',
-  images: [
-    'https://i.ibb.co/CsMh2FjT/Mens-soft-clutch-bag.avif',
-    'https://i.ibb.co/V01yT9W9/Mens-Soft-clutch-bag-2.avif',
-    'https://i.ibb.co/B56SKY43/Mens-soft-clutch-bag-3.avif',
-  ],
-  alt: 'Mens Soft Clutch Bag — stylish and practical everyday carry',
-  fallback: 'https://placehold.co/500x500/006B3F/fff?text=Clutch+Bag',
-  colours: ['#1a1a1a', '#8B4513', '#c0c0c0'],
-  description: 'Premium soft leather clutch bag with multiple compartments. Perfect for carrying essentials — phone, wallet, keys. Sleek design for modern men on the go.',
-},
+    id: 5,
+    name: 'Air Force Sneaker',
+    category: 'fashion',
+    price: 390,
+    oldPrice: 560,
+    discount: 30,
+    badge: 'hot',
+    badgeText: '🔥 Hot',
+    rating: 4.5,
+    reviews: 176,
+    image: 'https://i.ibb.co/ZRzwS8Fp/Air-force-1-sneaker.webp',
+    images: [
+      'https://i.ibb.co/ZRzwS8Fp/Air-force-1-sneaker.webp',
+      'https://i.ibb.co/FdzPccX/Air-force-black.webp',
+      'https://i.ibb.co/DP1w1YXP/Airforce-Blue.webp',
+      'https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?w=600&q=85',
+    ],
+    alt: 'Air Force Sneaker — classic style and ultimate comfort',
+    fallback: 'https://placehold.co/500x500/006B3F/fff?text=Air+Force+Sneaker',
+    colours: ['#ffffff', '#1a1a1a', '#CE1126'],
+    description: 'Classic Air Force style sneakers with premium leather finish. Iconic design meets all-day comfort. A must-have for every sneakerhead in Ghana.',
+  },
+  {
+    id: 6,
+    name: 'Mens Soft Clutch Bag',
+    category: 'accessories',
+    price: 185,
+    oldPrice: 280,
+    discount: 34,
+    badge: 'hot',
+    badgeText: '🔥 Hot',
+    rating: 4.5,
+    reviews: 142,
+    image: 'https://i.ibb.co/CsMh2FjT/Mens-soft-clutch-bag.avif',
+    images: [
+      'https://i.ibb.co/CsMh2FjT/Mens-soft-clutch-bag.avif',
+      'https://i.ibb.co/V01yT9W9/Mens-Soft-clutch-bag-2.avif',
+      'https://i.ibb.co/B56SKY43/Mens-soft-clutch-bag-3.avif',
+    ],
+    alt: 'Mens Soft Clutch Bag — stylish and practical everyday carry',
+    fallback: 'https://placehold.co/500x500/006B3F/fff?text=Clutch+Bag',
+    colours: ['#1a1a1a', '#8B4513', '#c0c0c0'],
+    description: 'Premium soft leather clutch bag with multiple compartments. Perfect for carrying essentials — phone, wallet, keys. Sleek design for modern men on the go.',
+  },
   {
     id: 7,
     name: 'ProGamer RGB Headset',
@@ -700,6 +700,8 @@ const FLASH_PRODUCTS = [
     image: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&q=85&auto=format&fit=crop',
     alt: 'ZazuTech Smartwatch',
     fallback: 'https://placehold.co/400x400/006B3F/fff?text=Smartwatch',
+    /* Link to main product id=1 for PDP */
+    linkedProductId: 1,
   },
   {
     id: 202,
@@ -711,6 +713,7 @@ const FLASH_PRODUCTS = [
     image: 'https://i.ibb.co/ZRzwS8Fp/Air-force-1-sneaker.webp',
     alt: 'Air Force Sneaker',
     fallback: 'https://placehold.co/400x400/CE1126/fff?text=Sneaker',
+    linkedProductId: 5,
   },
   {
     id: 203,
@@ -722,6 +725,7 @@ const FLASH_PRODUCTS = [
     image: 'https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=400&q=85&auto=format&fit=crop',
     alt: 'BoomBox Speaker',
     fallback: 'https://placehold.co/400x400/FCD116/000?text=Speaker',
+    linkedProductId: 4,
   },
   {
     id: 204,
@@ -733,6 +737,7 @@ const FLASH_PRODUCTS = [
     image: 'https://images.unsplash.com/photo-1511499767150-a48a237f0083?w=400&q=85&auto=format&fit=crop',
     alt: 'Chrome Wave Sunglasses',
     fallback: 'https://placehold.co/400x400/006B3F/fff?text=Shades',
+    linkedProductId: 3,
   },
 ];
 
@@ -792,137 +797,120 @@ const galleryState = {
 
 function initImageCarousel(images) {
   if (!images || images.length === 0) return;
-  
+
   galleryState.images = images;
   galleryState.totalImages = images.length;
   galleryState.currentIndex = 0;
-  
+
   const gallery = $('pdp-gallery');
   const track = $('pdp-gallery-track');
   const thumbsWrap = $('pdp-gallery-thumbs');
   const dotsWrap = $('pdp-gallery-dots');
-  const counter = $('pdp-gallery-counter');
-  
+
   if (!track) return;
-  
-  // Set data attribute for CSS
+
   if (gallery) gallery.dataset.images = images.length;
-  
-  // Render slides
+
   track.innerHTML = images.map((img, i) => `
     <div class="pdp-gallery__slide">
-      <img 
-        src="${img}" 
+      <img
+        src="${img}"
         alt="Product image ${i + 1}"
         loading="${i === 0 ? 'eager' : 'lazy'}"
         onerror="this.src='https://placehold.co/600x600/006B3F/fff?text=Product'"
       />
     </div>
   `).join('');
-  
-  // Render thumbnails
+
   if (thumbsWrap && images.length > 1) {
     thumbsWrap.innerHTML = images.map((img, i) => `
-      <button 
+      <button
         class="pdp-gallery__thumb ${i === 0 ? 'active' : ''}"
         data-index="${i}"
         aria-label="View image ${i + 1}"
       >
-        <img 
-          src="${img}" 
+        <img
+          src="${img}"
           alt="Thumbnail ${i + 1}"
           loading="lazy"
           onerror="this.src='https://placehold.co/100x100/006B3F/fff?text=${i + 1}'"
         />
       </button>
     `).join('');
-    
-    // Thumbnail click handlers
+
     $$('.pdp-gallery__thumb').forEach((thumb) => {
       thumb.addEventListener('click', () => {
         goToSlide(Number(thumb.dataset.index));
       });
     });
   }
-  
-  // Render dots
+
   if (dotsWrap && images.length > 1) {
     dotsWrap.innerHTML = images.map((_, i) => `
-      <button 
+      <button
         class="pdp-gallery__dot ${i === 0 ? 'active' : ''}"
         data-index="${i}"
         aria-label="Go to image ${i + 1}"
       ></button>
     `).join('');
-    
-    // Dot click handlers
+
     $$('.pdp-gallery__dot').forEach((dot) => {
       dot.addEventListener('click', () => {
         goToSlide(Number(dot.dataset.index));
       });
     });
   }
-  
-  // Update counter
+
   updateCounter();
-  
-  // Navigation buttons
+
   const prevBtn = $('pdp-gallery-prev');
   const nextBtn = $('pdp-gallery-next');
-  
-  if (prevBtn) prevBtn.addEventListener('click', prevSlide);
-  if (nextBtn) nextBtn.addEventListener('click', nextSlide);
-  
-  // Touch/swipe support
+
+  if (prevBtn) {
+    const newPrev = prevBtn.cloneNode(true);
+    prevBtn.parentNode.replaceChild(newPrev, prevBtn);
+    newPrev.addEventListener('click', prevSlide);
+  }
+  if (nextBtn) {
+    const newNext = nextBtn.cloneNode(true);
+    nextBtn.parentNode.replaceChild(newNext, nextBtn);
+    newNext.addEventListener('click', nextSlide);
+  }
+
   const mainGallery = $('pdp-gallery-main');
   if (mainGallery && images.length > 1) {
     let startX = 0;
     let currentX = 0;
-    
+
     mainGallery.addEventListener('touchstart', (e) => {
       startX = e.touches[0].clientX;
       galleryState.isDragging = true;
-      mainGallery.classList.add('dragging');
     }, { passive: true });
-    
+
     mainGallery.addEventListener('touchmove', (e) => {
       if (!galleryState.isDragging) return;
       currentX = e.touches[0].clientX;
     }, { passive: true });
-    
+
     mainGallery.addEventListener('touchend', () => {
       if (!galleryState.isDragging) return;
-      
       const diff = startX - currentX;
-      
       if (Math.abs(diff) > 50) {
         if (diff > 0) nextSlide();
         else prevSlide();
       }
-      
       galleryState.isDragging = false;
-      mainGallery.classList.remove('dragging');
     });
   }
-  
-  // Keyboard navigation
-  document.addEventListener('keydown', (e) => {
-    if (!pdpState.currentProduct) return;
-    if (e.key === 'ArrowLeft') prevSlide();
-    if (e.key === 'ArrowRight') nextSlide();
-  });
 }
 
 function goToSlide(index) {
   if (index < 0 || index >= galleryState.totalImages) return;
-  
   galleryState.currentIndex = index;
   const track = $('pdp-gallery-track');
-  
   if (track) {
     track.style.transform = `translateX(-${index * 100}%)`;
   }
-  
   updateCounter();
   updateActiveThumbnail();
   updateActiveDot();
@@ -979,9 +967,7 @@ const storage = {
   set(key, value) {
     try {
       localStorage.setItem(key, JSON.stringify(value));
-    } catch {
-      /* storage unavailable — fail silently */
-    }
+    } catch { /* fail silently */ }
   },
 };
 
@@ -1030,7 +1016,6 @@ document.addEventListener('DOMContentLoaded', () => {
   updateCartUI();
   updateWishlistFab();
 
-  /* Mobile — close cart when navigating */
   $$('.nav__link').forEach((link) => {
     link.addEventListener('click', () => {
       if (state.isCartOpen) closeCart();
@@ -1083,24 +1068,29 @@ function renderStars(rating) {
   const half = rating % 1 >= 0.5;
   const empty = 5 - full - (half ? 1 : 0);
   let html = '';
-  for (let i = 0; i < full; i++) {
-    html += '<i class="fa-solid fa-star" aria-hidden="true"></i>';
-  }
+  for (let i = 0; i < full; i++) html += '<i class="fa-solid fa-star" aria-hidden="true"></i>';
   if (half) html += '<i class="fa-solid fa-star-half-stroke" aria-hidden="true"></i>';
-  for (let i = 0; i < empty; i++) {
-    html += '<i class="fa-regular fa-star" aria-hidden="true"></i>';
-  }
+  for (let i = 0; i < empty; i++) html += '<i class="fa-regular fa-star" aria-hidden="true"></i>';
   return html;
 }
 
 /* =====================================================
    13. RENDER FLASH SALE
+   — Cards are now fully tappable to open PDP
    ===================================================== */
 function renderFlashSale() {
   const grid = $('flashsale-grid');
   if (!grid) return;
   grid.innerHTML = FLASH_PRODUCTS.map((p) => `
-    <article class="flash-card reveal" data-id="${p.id}">
+    <article
+      class="flash-card reveal"
+      data-id="${p.id}"
+      data-linked="${p.linkedProductId || ''}"
+      role="button"
+      tabindex="0"
+      aria-label="View ${p.name} details"
+      style="cursor:pointer"
+    >
       <div class="flash-card__img">
         <span class="flash-off">-${p.discount}%</span>
         <img
@@ -1130,20 +1120,40 @@ function renderFlashSale() {
         <p class="flash-sold">🔥 ${p.soldPercent}% sold</p>
         <button
           class="btn btn--flash"
-          data-action="flash-buy"
+          data-action="flash-add-cart"
           data-id="${p.id}"
           data-name="${p.name} — Flash Deal"
           data-price="${p.price}"
+          aria-label="Add ${p.name} to cart"
         >
-          <i class="fa-solid fa-bolt" aria-hidden="true"></i> Buy Now
+          <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i> Add to Cart
         </button>
       </div>
     </article>
   `).join('');
+
+  /* Make entire flash card open PDP on click/tap */
+  $$('.flash-card', grid).forEach((card) => {
+    card.addEventListener('click', (e) => {
+      /* Don't open PDP if the Add to Cart button was clicked */
+      if (e.target.closest('[data-action="flash-add-cart"]')) return;
+      const linkedId = Number(card.dataset.linked);
+      if (linkedId) openPDP(linkedId);
+    });
+    card.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        const linkedId = Number(card.dataset.linked);
+        if (linkedId) openPDP(linkedId);
+      }
+    });
+  });
 }
 
 /* =====================================================
    14. RENDER PRODUCTS
+   — Replaced "Pay with MoMo" with "Add to Cart"
+   — Removed quick-add hover overlay
    ===================================================== */
 function renderProducts(filter = 'all', searchQuery = '') {
   const grid = $('products-grid');
@@ -1193,14 +1203,14 @@ function renderProducts(filter = 'all', searchQuery = '') {
         data-category="${p.category}"
         data-id="${p.id}"
       >
-        <div 
+        <div
           class="product-card__img-wrap"
           role="button"
           tabindex="0"
           data-action="view-product"
           data-id="${p.id}"
           aria-label="View details for ${p.name}"
-          style="cursor: pointer;"
+          style="cursor:pointer"
         >
           <span class="p-badge ${badgeClass}" aria-label="${p.badgeText}">
             ${p.badgeText}
@@ -1224,18 +1234,6 @@ function renderProducts(filter = 'all', searchQuery = '') {
             height="500"
             onerror="this.src='${p.fallback || 'https://placehold.co/500x500/006B3F/fff?text=' + encodeURIComponent(p.name)}'"
           />
-          <div class="product-card__hover">
-            <button
-              class="quick-add-btn"
-              data-action="add-to-cart"
-              data-id="${p.id}"
-              data-name="${p.name}"
-              data-price="${p.price}"
-              aria-label="Quick add ${p.name} to cart"
-            >
-              <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i> Quick Add
-            </button>
-          </div>
         </div>
         <div class="product-card__body">
           <span class="p-category">${p.category}</span>
@@ -1257,14 +1255,14 @@ function renderProducts(filter = 'all', searchQuery = '') {
             <span class="p-off">-${p.discount}%</span>
           </div>
           <button
-            class="btn btn--buy"
-            data-action="momo-pay"
+            class="btn btn--primary btn--add-cart"
+            data-action="add-to-cart"
             data-id="${p.id}"
             data-name="${p.name}"
             data-price="${p.price}"
-            aria-label="Pay for ${p.name} with MoMo — GH₵ ${p.price.toLocaleString()}"
+            aria-label="Add ${p.name} to cart"
           >
-            <i class="fa-solid fa-mobile-screen-button" aria-hidden="true"></i> Pay with MoMo
+            <i class="fa-solid fa-bag-shopping" aria-hidden="true"></i> Add to Cart
           </button>
         </div>
       </article>
@@ -1286,7 +1284,7 @@ document.addEventListener('click', (e) => {
     case 'add-to-cart':
       addToCart(Number(id), name, Number(price));
       break;
-    case 'flash-buy':
+    case 'flash-add-cart':
       addToCart(Number(id), name, Number(price));
       break;
     case 'momo-pay':
@@ -1386,10 +1384,7 @@ function updateCartCount() {
     headerCount.textContent = `${total} item${total !== 1 ? 's' : ''}`;
   }
   if (cartBtn) {
-    cartBtn.setAttribute(
-      'aria-label',
-      `View cart — ${total} item${total !== 1 ? 's' : ''}`
-    );
+    cartBtn.setAttribute('aria-label', `View cart — ${total} item${total !== 1 ? 's' : ''}`);
   }
 }
 
@@ -1406,9 +1401,7 @@ function renderCartItems() {
   }
   if (empty) empty.style.display = 'none';
   if (footer) footer.style.display = 'flex';
-  const subtotal = state.cart.reduce(
-    (s, x) => s + x.price * x.quantity, 0
-  );
+  const subtotal = state.cart.reduce((s, x) => s + x.price * x.quantity, 0);
   const subtotalEl = $('cart-subtotal');
   const totalEl = $('cart-total');
   if (subtotalEl) subtotalEl.textContent = `GH₵ ${subtotal.toLocaleString()}`;
@@ -1421,42 +1414,22 @@ function renderCartItems() {
       <div class="cart-item__thumb">
         ${item.image
           ? `<img src="${item.image}" alt="${item.name}" loading="lazy" />`
-          : '🛍️'
-        }
+          : '🛍️'}
       </div>
       <div class="cart-item__info">
         <p class="cart-item__name">${item.name}</p>
-        <p class="cart-item__price">
-          GH₵ ${(item.price * item.quantity).toLocaleString()}
-        </p>
+        <p class="cart-item__price">GH₵ ${(item.price * item.quantity).toLocaleString()}</p>
         <div class="cart-item__qty">
-          <button
-            class="qty-btn"
-            data-action="cart-qty-decrease"
-            data-id="${item.id}"
-            aria-label="Decrease quantity of ${item.name}"
-          >
+          <button class="qty-btn" data-action="cart-qty-decrease" data-id="${item.id}" aria-label="Decrease quantity of ${item.name}">
             <i class="fa-solid fa-minus" aria-hidden="true"></i>
           </button>
-          <span class="qty-num" aria-label="Quantity: ${item.quantity}">
-            ${item.quantity}
-          </span>
-          <button
-            class="qty-btn"
-            data-action="cart-qty-increase"
-            data-id="${item.id}"
-            aria-label="Increase quantity of ${item.name}"
-          >
+          <span class="qty-num" aria-label="Quantity: ${item.quantity}">${item.quantity}</span>
+          <button class="qty-btn" data-action="cart-qty-increase" data-id="${item.id}" aria-label="Increase quantity of ${item.name}">
             <i class="fa-solid fa-plus" aria-hidden="true"></i>
           </button>
         </div>
       </div>
-      <button
-        class="cart-item__rm"
-        data-action="cart-remove"
-        data-id="${item.id}"
-        aria-label="Remove ${item.name} from cart"
-      >
+      <button class="cart-item__rm" data-action="cart-remove" data-id="${item.id}" aria-label="Remove ${item.name} from cart">
         <i class="fa-solid fa-trash-can" aria-hidden="true"></i>
       </button>
     `;
@@ -1466,12 +1439,8 @@ function renderCartItems() {
 }
 
 function updateDeliveryBar() {
-  const subtotal = state.cart.reduce(
-    (s, x) => s + x.price * x.quantity, 0
-  );
-  const pct = Math.min(
-    (subtotal / CONFIG.freeDeliveryThreshold) * 100, 100
-  );
+  const subtotal = state.cart.reduce((s, x) => s + x.price * x.quantity, 0);
+  const pct = Math.min((subtotal / CONFIG.freeDeliveryThreshold) * 100, 100);
   const fill = $('cart-delivery-fill');
   const txt = $('cart-delivery-text');
   const bar = $('delivery-progress-bar');
@@ -1505,20 +1474,11 @@ function initCartSidebar() {
   if (shopLink) shopLink.addEventListener('click', closeCart);
   if (momoBtn) {
     momoBtn.addEventListener('click', () => {
-      const subtotal = state.cart.reduce(
-        (s, x) => s + x.price * x.quantity, 0
-      );
-      if (!subtotal) {
-        showToast('⚠️ Your cart is empty!', '⚠️');
-        return;
-      }
+      const subtotal = state.cart.reduce((s, x) => s + x.price * x.quantity, 0);
+      if (!subtotal) { showToast('⚠️ Your cart is empty!', '⚠️'); return; }
       closeCart();
       const itemCount = state.cart.length;
-      openMomoModal(
-        `Your Cart (${itemCount} item${itemCount > 1 ? 's' : ''})`,
-        subtotal,
-        true
-      );
+      openMomoModal(`Your Cart (${itemCount} item${itemCount > 1 ? 's' : ''})`, subtotal, true);
     });
   }
   if (waBtn) waBtn.addEventListener('click', orderViaWhatsApp);
@@ -1537,10 +1497,7 @@ function openCart() {
   if (!sidebar) return;
   sidebar.classList.add('open');
   sidebar.setAttribute('aria-hidden', 'false');
-  if (overlay) {
-    overlay.classList.add('visible');
-    overlay.setAttribute('aria-hidden', 'false');
-  }
+  if (overlay) { overlay.classList.add('visible'); overlay.setAttribute('aria-hidden', 'false'); }
   lockScroll();
   state.isCartOpen = true;
   const closeBtn = $('cart-close-btn');
@@ -1553,10 +1510,7 @@ function closeCart() {
   if (!sidebar) return;
   sidebar.classList.remove('open');
   sidebar.setAttribute('aria-hidden', 'true');
-  if (overlay) {
-    overlay.classList.remove('visible');
-    overlay.setAttribute('aria-hidden', 'true');
-  }
+  if (overlay) { overlay.classList.remove('visible'); overlay.setAttribute('aria-hidden', 'true'); }
   unlockScroll();
   state.isCartOpen = false;
   const cartBtn = $('cart-btn');
@@ -1574,16 +1528,11 @@ function bounceCartBtn() {
    19. WHATSAPP ORDER
    ===================================================== */
 function orderViaWhatsApp() {
-  if (!state.cart.length) {
-    showToast('⚠️ Cart is empty!', '⚠️');
-    return;
-  }
+  if (!state.cart.length) { showToast('⚠️ Cart is empty!', '⚠️'); return; }
   const lines = state.cart.map(
     (x) => `• ${x.name} x${x.quantity} = GH₵ ${(x.price * x.quantity).toLocaleString()}`
   );
-  const total = state.cart.reduce(
-    (s, x) => s + x.price * x.quantity, 0
-  );
+  const total = state.cart.reduce((s, x) => s + x.price * x.quantity, 0);
   const msg =
     `Hi Zazu! 👋 I want to order:\n\n` +
     `${lines.join('\n')}\n\n` +
@@ -1591,8 +1540,7 @@ function orderViaWhatsApp() {
     `Please confirm. Medaase! 🙏`;
   window.open(
     `https://wa.me/${CONFIG.whatsappNumber}?text=${encodeURIComponent(msg)}`,
-    '_blank',
-    'noopener,noreferrer'
+    '_blank', 'noopener,noreferrer'
   );
 }
 
@@ -1607,20 +1555,13 @@ function openMomoModal(name, price, isCheckout = false) {
   const input = $('momo-number');
   if (productEl) productEl.textContent = name;
   if (priceEl) priceEl.textContent = `GH₵ ${price.toLocaleString()}`;
-  if (input) {
-    input.value = '';
-    input.classList.remove('error');
-    input.style.borderColor = '';
-  }
+  if (input) { input.value = ''; input.classList.remove('error'); input.style.borderColor = ''; }
   $$('.net-btn').forEach((b) => b.classList.remove('active'));
   const mtnBtn = $q('.net-btn--mtn');
   if (mtnBtn) mtnBtn.classList.add('active');
   state.selectedNetwork = 'MTN MoMo';
   const overlay = $('modal-overlay');
-  if (overlay) {
-    overlay.classList.add('visible');
-    overlay.setAttribute('aria-hidden', 'false');
-  }
+  if (overlay) { overlay.classList.add('visible'); overlay.setAttribute('aria-hidden', 'false'); }
   lockScroll();
   state.isModalOpen = true;
   const input2 = $('momo-number');
@@ -1629,10 +1570,7 @@ function openMomoModal(name, price, isCheckout = false) {
 
 function closeModal() {
   const overlay = $('modal-overlay');
-  if (overlay) {
-    overlay.classList.remove('visible');
-    overlay.setAttribute('aria-hidden', 'true');
-  }
+  if (overlay) { overlay.classList.remove('visible'); overlay.setAttribute('aria-hidden', 'true'); }
   unlockScroll();
   state.isModalOpen = false;
   state.currentModalProduct = null;
@@ -1668,10 +1606,7 @@ function confirmMoMoPayment() {
     closeModal();
     btn.innerHTML = origHTML;
     btn.disabled = false;
-    showToast(
-      `🎉 ${state.selectedNetwork} prompt sent! Check your phone.`,
-      '🎉'
-    );
+    showToast(`🎉 ${state.selectedNetwork} prompt sent! Check your phone.`, '🎉');
     if (state.isCheckout) clearCart();
     state.isCheckout = false;
   }, 1800);
@@ -1683,17 +1618,13 @@ function initModalControls() {
   const confirmBtn = $('confirm-pay-btn');
   if (closeBtn) closeBtn.addEventListener('click', closeModal);
   if (overlay) {
-    overlay.addEventListener('click', (e) => {
-      if (e.target === overlay) closeModal();
-    });
+    overlay.addEventListener('click', (e) => { if (e.target === overlay) closeModal(); });
   }
   if (confirmBtn) confirmBtn.addEventListener('click', confirmMoMoPayment);
 }
 
 function initNetworkButtons() {
-  $$('.net-btn').forEach((btn) => {
-    btn.dataset.action = 'network-select';
-  });
+  $$('.net-btn').forEach((btn) => { btn.dataset.action = 'network-select'; });
 }
 
 /* =====================================================
@@ -1767,13 +1698,9 @@ function initSearch() {
 function initHeader() {
   const header = $('header');
   if (!header) return;
-  window.addEventListener(
-    'scroll',
-    debounce(() => {
-      header.classList.toggle('scrolled', window.scrollY > 50);
-    }, 50),
-    { passive: true }
-  );
+  window.addEventListener('scroll', debounce(() => {
+    header.classList.toggle('scrolled', window.scrollY > 50);
+  }, 50), { passive: true });
 }
 
 /* =====================================================
@@ -1806,10 +1733,7 @@ function initCategoryFilter() {
   const pills = $$('.cat-pill');
   pills.forEach((pill) => {
     pill.addEventListener('click', () => {
-      pills.forEach((p) => {
-        p.classList.remove('active');
-        p.removeAttribute('aria-current');
-      });
+      pills.forEach((p) => { p.classList.remove('active'); p.removeAttribute('aria-current'); });
       pill.classList.add('active');
       pill.setAttribute('aria-current', 'true');
       state.currentFilter = pill.dataset.filter;
@@ -1828,24 +1752,16 @@ function initLoadMore() {
   btn.addEventListener('click', () => {
     const prevCount = state.visibleProducts;
     state.visibleProducts += CONFIG.productsPerPage;
-    btn.innerHTML =
-      '<i class="fa-solid fa-spinner fa-spin" aria-hidden="true"></i> Loading...';
+    btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin" aria-hidden="true"></i> Loading...';
     btn.disabled = true;
     setTimeout(() => {
       renderProducts(state.currentFilter);
-      btn.innerHTML =
-        '<i class="fa-solid fa-arrow-rotate-right" aria-hidden="true"></i> Load More Products';
+      btn.innerHTML = '<i class="fa-solid fa-arrow-rotate-right" aria-hidden="true"></i> Load More Products';
       btn.disabled = false;
       const allCards = $$('.product-card');
       const firstNew = allCards[prevCount];
-      if (firstNew) {
-        firstNew.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-        firstNew.focus({ preventScroll: true });
-      }
-      const total = PRODUCTS.filter(
-        (p) => state.currentFilter === 'all' ||
-          p.category === state.currentFilter
-      ).length;
+      if (firstNew) { firstNew.scrollIntoView({ behavior: 'smooth', block: 'nearest' }); firstNew.focus({ preventScroll: true }); }
+      const total = PRODUCTS.filter((p) => state.currentFilter === 'all' || p.category === state.currentFilter).length;
       if (state.visibleProducts >= total) {
         showToast('🎉 You\'ve seen all products! New drops every week.', '🎉');
       }
@@ -1860,10 +1776,7 @@ function initWishlist() {
   const fab = $('wishlist-fab');
   if (fab) {
     fab.addEventListener('click', () => {
-      showToast(
-        `❤️ ${state.wishlist.size} item${state.wishlist.size !== 1 ? 's' : ''} in your wishlist!`,
-        '❤️'
-      );
+      showToast(`❤️ ${state.wishlist.size} item${state.wishlist.size !== 1 ? 's' : ''} in your wishlist!`, '❤️');
     });
   }
 }
@@ -1883,10 +1796,7 @@ function toggleWishlist(id, name, btn) {
   const nowWishlisted = state.wishlist.has(id);
   btn.classList.toggle('active', nowWishlisted);
   btn.setAttribute('aria-pressed', String(nowWishlisted));
-  btn.setAttribute(
-    'aria-label',
-    `${nowWishlisted ? 'Remove from wishlist' : 'Add to wishlist'}: ${name}`
-  );
+  btn.setAttribute('aria-label', `${nowWishlisted ? 'Remove from wishlist' : 'Add to wishlist'}: ${name}`);
   if (icon) {
     icon.className = `fa-${nowWishlisted ? 'solid' : 'regular'} fa-heart`;
     icon.setAttribute('aria-hidden', 'true');
@@ -1899,10 +1809,7 @@ function updateWishlistFab() {
   if (!fab) return;
   const total = state.wishlist.size;
   fab.style.display = total > 0 ? 'flex' : 'none';
-  fab.setAttribute(
-    'aria-label',
-    `Wishlist — ${total} item${total !== 1 ? 's' : ''}`
-  );
+  fab.setAttribute('aria-label', `Wishlist — ${total} item${total !== 1 ? 's' : ''}`);
   if (count) count.textContent = total;
 }
 
@@ -1921,19 +1828,13 @@ function initDarkMode() {
     const next = current === 'dark' ? 'light' : 'dark';
     applyTheme(next);
     storage.set(CONFIG.storageKeys.theme, next);
-    showToast(
-      next === 'dark' ? '🌙 Dark mode on!' : '☀️ Light mode on!',
-      next === 'dark' ? '🌙' : '☀️'
-    );
+    showToast(next === 'dark' ? '🌙 Dark mode on!' : '☀️ Light mode on!', next === 'dark' ? '🌙' : '☀️');
   });
   function applyTheme(theme) {
     html.setAttribute('data-theme', theme);
     if (sun) sun.style.display = theme === 'dark' ? 'none' : 'block';
     if (moon) moon.style.display = theme === 'dark' ? 'block' : 'none';
-    btn?.setAttribute(
-      'aria-label',
-      theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'
-    );
+    btn?.setAttribute('aria-label', theme === 'dark' ? 'Switch to light mode' : 'Switch to dark mode');
   }
 }
 
@@ -1948,16 +1849,10 @@ function startCountdown() {
     storage.set(storageKey, endTime);
   }
   const els = {
-    hh: $('h-hours'),
-    hm: $('h-mins'),
-    hs: $('h-secs'),
-    fh: $('fs-hours'),
-    fm: $('fs-mins'),
-    fs: $('fs-secs'),
+    hh: $('h-hours'), hm: $('h-mins'), hs: $('h-secs'),
+    fh: $('fs-hours'), fm: $('fs-mins'), fs: $('fs-secs'),
   };
-  function pad(n) {
-    return String(n).padStart(2, '0');
-  }
+  function pad(n) { return String(n).padStart(2, '0'); }
   function tick() {
     const diff = endTime - Date.now();
     if (diff <= 0) {
@@ -1988,10 +1883,7 @@ function initScrollReveal() {
   const obs = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('revealed');
-          obs.unobserve(entry.target);
-        }
+        if (entry.isIntersecting) { entry.target.classList.add('revealed'); obs.unobserve(entry.target); }
       });
     },
     { threshold: 0.08, rootMargin: '0px 0px -30px 0px' }
@@ -2007,10 +1899,7 @@ function initStatsCounter() {
   const obs = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          countUp(entry.target);
-          obs.unobserve(entry.target);
-        }
+        if (entry.isIntersecting) { countUp(entry.target); obs.unobserve(entry.target); }
       });
     },
     { threshold: 0.5 }
@@ -2031,11 +1920,8 @@ function countUp(el) {
     const progress = Math.min((now - start) / duration, 1);
     const eased = 1 - Math.pow(1 - progress, 3);
     el.textContent = Math.floor(eased * target).toLocaleString();
-    if (progress < 1) {
-      requestAnimationFrame(step);
-    } else {
-      el.textContent = target.toLocaleString();
-    }
+    if (progress < 1) requestAnimationFrame(step);
+    else el.textContent = target.toLocaleString();
   }
   requestAnimationFrame(step);
 }
@@ -2054,9 +1940,7 @@ function showToast(msg, icon = '✅') {
   if (iconEl) iconEl.textContent = icon;
   clearTimeout(toastTimer);
   toast.classList.add('show');
-  toastTimer = setTimeout(() => {
-    toast.classList.remove('show');
-  }, CONFIG.toastDuration);
+  toastTimer = setTimeout(() => { toast.classList.remove('show'); }, CONFIG.toastDuration);
 }
 
 /* =====================================================
@@ -2070,8 +1954,7 @@ document.addEventListener('DOMContentLoaded', () => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           links.forEach((link) => {
-            const isActive =
-              link.getAttribute('href') === `#${entry.target.id}`;
+            const isActive = link.getAttribute('href') === `#${entry.target.id}`;
             link.classList.toggle('active-link', isActive);
             if (isActive) link.setAttribute('aria-current', 'page');
             else link.removeAttribute('aria-current');
@@ -2144,11 +2027,9 @@ function openPDP(productId) {
 }
 
 function populatePDP(product) {
-  // Images — use carousel
   const images = product.images || [product.image];
   initImageCarousel(images);
 
-  // Badge
   const badge = $('pdp-badge');
   if (badge) {
     badge.textContent = product.badgeText;
@@ -2158,28 +2039,23 @@ function populatePDP(product) {
     else badge.classList.add('pdp-badge--sale');
   }
 
-  // Category
   const cat = $('pdp-category');
   if (cat) cat.textContent = product.category;
 
-  // Rating
   const rating = $('pdp-rating');
   if (rating) {
     rating.innerHTML = `
       ${renderStars(product.rating)}
       <span>(${product.reviews.toLocaleString()} reviews)</span>
     `;
-    rating.setAttribute(
-      'aria-label',
-      `${product.rating} out of 5 stars, ${product.reviews} reviews`
-    );
+    rating.setAttribute('aria-label', `${product.rating} out of 5 stars, ${product.reviews} reviews`);
   }
 
-  // Title
   const title = $('pdp-title');
   if (title) title.textContent = product.name;
+const backTitle = $('pdp-back-title');
+if (backTitle) backTitle.textContent = product.name;
 
-  // Pricing
   const price = $('pdp-price');
   const old = $('pdp-old');
   const off = $('pdp-off');
@@ -2187,14 +2063,12 @@ function populatePDP(product) {
   if (old) old.textContent = `GH₵ ${product.oldPrice.toLocaleString()}`;
   if (off) off.textContent = `-${product.discount}%`;
 
-  // Description
   const desc = $('pdp-desc');
   if (desc) {
     desc.textContent = product.description ||
       'Premium quality product. Contact us on WhatsApp for more details.';
   }
 
-  // Colours
   const coloursWrap = $('pdp-colours-wrap');
   const swatches = $('pdp-colour-swatches');
   const selectedColourLabel = $('pdp-selected-colour');
@@ -2207,8 +2081,7 @@ function populatePDP(product) {
       swatches.innerHTML = product.colours.map((colour, i) => `
         <button
           class="colour-swatch ${i === 0 ? 'active' : ''}"
-          style="background-color:${colour};
-                 ${colour === '#ffffff' ? 'border-color: #ccc;' : ''}"
+          style="background-color:${colour};${colour === '#ffffff' ? 'border-color:#ccc;' : ''}"
           data-colour="${colour}"
           data-colour-name="${getColourName(colour)}"
           aria-label="Select colour: ${getColourName(colour)}"
@@ -2229,20 +2102,16 @@ function populatePDP(product) {
           swatch.classList.add('active');
           swatch.setAttribute('aria-pressed', 'true');
           pdpState.selectedColour = swatch.dataset.colour;
-          if (selectedColourLabel) {
-            selectedColourLabel.textContent = swatch.dataset.colourName;
-          }
+          if (selectedColourLabel) selectedColourLabel.textContent = swatch.dataset.colourName;
         });
       });
     }
   }
 
-  // Quantity reset
   const qtyNum = $('pdp-qty-num');
   if (qtyNum) qtyNum.textContent = '1';
   pdpState.quantity = 1;
 
-  // Related products
   renderRelatedProducts(product);
 }
 
@@ -2264,19 +2133,14 @@ function renderRelatedProducts(product) {
   if (relatedSection) relatedSection.style.display = 'block';
 
   grid.innerHTML = related.map((p) => `
-    <div 
-      class="pdp-related-card" 
+    <div
+      class="pdp-related-card"
       data-id="${p.id}"
       role="button"
       tabindex="0"
       aria-label="View ${p.name} — GH₵ ${p.price.toLocaleString()}"
     >
-      <img 
-        src="${p.image}" 
-        alt="${p.alt}" 
-        loading="lazy"
-        onerror="this.onerror=null;this.src='${p.fallback}'"
-      />
+      <img src="${p.image}" alt="${p.alt}" loading="lazy" onerror="this.onerror=null;this.src='${p.fallback}'" />
       <div class="pdp-related-card__info">
         <p class="pdp-related-card__name">${p.name}</p>
         <p class="pdp-related-card__price">GH₵ ${p.price.toLocaleString()}</p>
@@ -2285,15 +2149,9 @@ function renderRelatedProducts(product) {
   `).join('');
 
   $$('.pdp-related-card', grid).forEach((card) => {
-    card.addEventListener('click', () => {
-      const id = Number(card.dataset.id);
-      openPDP(id);
-    });
+    card.addEventListener('click', () => { openPDP(Number(card.dataset.id)); });
     card.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' || e.key === ' ') {
-        e.preventDefault();
-        openPDP(Number(card.dataset.id));
-      }
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openPDP(Number(card.dataset.id)); }
     });
   });
 }
@@ -2301,30 +2159,21 @@ function renderRelatedProducts(product) {
 function closePDP() {
   const panel = $('pdp-panel');
   const overlay = $('pdp-overlay');
-
-  if (panel) {
-    panel.classList.remove('open');
-    panel.setAttribute('aria-hidden', 'true');
-  }
-  if (overlay) {
-    overlay.classList.remove('visible');
-    overlay.setAttribute('aria-hidden', 'true');
-  }
-
+  if (panel) { panel.classList.remove('open'); panel.setAttribute('aria-hidden', 'true'); }
+  if (overlay) { overlay.classList.remove('visible'); overlay.setAttribute('aria-hidden', 'true'); }
   unlockScroll();
   pdpState.currentProduct = null;
 }
 
 function initPDP() {
-  // Close button
   const closeBtn = $('pdp-close');
   if (closeBtn) closeBtn.addEventListener('click', closePDP);
+const backBtn = $('pdp-back-btn');
+if (backBtn) backBtn.addEventListener('click', closePDP);
 
-  // Overlay click
   const overlay = $('pdp-overlay');
   if (overlay) overlay.addEventListener('click', closePDP);
 
-  // Quantity buttons
   const incBtn = $('pdp-qty-inc');
   const decBtn = $('pdp-qty-dec');
   const qtyNum = $('pdp-qty-num');
@@ -2342,30 +2191,21 @@ function initPDP() {
     });
   }
 
-  // Add to Cart button
   const addCartBtn = $('pdp-add-cart');
   if (addCartBtn) {
     addCartBtn.addEventListener('click', () => {
       const p = pdpState.currentProduct;
       if (!p) return;
-
-      for (let i = 0; i < pdpState.quantity; i++) {
-        addToCart(p.id, p.name, p.price);
-      }
-
-      addCartBtn.innerHTML =
-        '<i class="fa-solid fa-check" aria-hidden="true"></i> Added!';
-      addCartBtn.style.background =
-        'linear-gradient(135deg, #059669, #047857)';
+      for (let i = 0; i < pdpState.quantity; i++) addToCart(p.id, p.name, p.price);
+      addCartBtn.innerHTML = '<i class="fa-solid fa-check" aria-hidden="true"></i> Added!';
+      addCartBtn.style.background = 'linear-gradient(135deg, #059669, #047857)';
       setTimeout(() => {
-        addCartBtn.innerHTML =
-          '<i class="fa-solid fa-bag-shopping" aria-hidden="true"></i> Add to Cart';
+        addCartBtn.innerHTML = '<i class="fa-solid fa-bag-shopping" aria-hidden="true"></i> Add to Cart';
         addCartBtn.style.background = '';
       }, 1500);
     });
   }
 
-  // MoMo Pay button
   const momoBtn = $('pdp-momo-btn');
   if (momoBtn) {
     momoBtn.addEventListener('click', () => {
@@ -2383,12 +2223,9 @@ function initPDP() {
     });
   }
 
-  // Keyboard support for product cards
   document.addEventListener('keydown', (e) => {
-    const target = e.target.closest('[data-action="view-product"]');
-    if (target && (e.key === 'Enter' || e.key === ' ')) {
-      e.preventDefault();
-      openPDP(Number(target.dataset.id));
-    }
+    if (!pdpState.currentProduct) return;
+    if (e.key === 'ArrowLeft') prevSlide();
+    if (e.key === 'ArrowRight') nextSlide();
   });
 }
