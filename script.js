@@ -134,6 +134,7 @@ const PRODUCTS = [
       'https://i.ibb.co/DP1w1YXP/Airforce-Blue.webp',
       'https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?w=600&q=85',
     ],
+    video: 'https://res.cloudinary.com/dxxtckmjf/video/upload/q_auto/f_auto/v1775663780/8401334-hd_1920_1080_30fps_fddx2x.mp4',
     alt: 'Air Force Sneaker — classic style and ultimate comfort',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Air+Force+Sneaker',
     colours: ['#ffffff', '#1a1a1a', '#CE1126'],
@@ -250,7 +251,7 @@ const PRODUCTS = [
   },
   {
     id: 11,
-    name: 'ZazuCharge 20,000mAh Power Bank',
+    name: 'Portable Power Bank',
     category: 'tech',
     price: 185,
     oldPrice: 280,
@@ -259,13 +260,14 @@ const PRODUCTS = [
     badgeText: '🔥 Must Have',
     rating: 4.5,
     reviews: 267,
-    image: 'https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=500&q=85&auto=format&fit=crop',
+    image: 'https://i.ibb.co/6c0kyNcT/Power-bank-1.webp',
     images: [
-      'https://images.unsplash.com/photo-1609091839311-d5365f9ff1c5?w=600&q=85',
-      'https://images.unsplash.com/photo-1606813907291-d86efa9b94db?w=600&q=85',
-      'https://images.unsplash.com/photo-1620987278429-ab178d6eb547?w=600&q=85',
+      'https://i.ibb.co/6c0kyNcT/Power-bank-1.webp',
+      'https://i.ibb.co/s9MWwD1t/power-bank-2.jpg',
+      'https://i.ibb.co/v4pZQy8K/Power-bank-3.jpg',
+      'https://i.ibb.co/7xwbMbty/power-bank-4.jpg',
     ],
-    alt: 'ZazuCharge 20000mAh Power Bank',
+    alt: 'Portable Power Bank — never run out of battery',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Power+Bank',
     colours: ['#1a1a1a', '#ffffff', '#4169E1'],
     description: 'Ultra-high capacity 20,000mAh power bank with dual USB ports and fast charging. Never run out of battery again — essential for Ghana\'s power situation.',
@@ -664,7 +666,7 @@ const PRODUCTS = [
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Makeup+Kit',
     description: 'Complete makeup kit designed for melanin-rich skin tones. Includes foundation, concealer, eyeshadow palette, and brushes. Celebrate your natural beauty.',
   },
-  {
+ {
     id: 30,
     name: 'Mens Elastic Boxer',
     category: 'fashion',
@@ -678,8 +680,9 @@ const PRODUCTS = [
     image: 'https://i.ibb.co/8gZyw9B1/Mens-Elastic-Boxer.jpg',
     images: [
       'https://i.ibb.co/8gZyw9B1/Mens-Elastic-Boxer.jpg',
-      'https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?w=600&q=85',
-      'https://images.unsplash.com/photo-1611932368374-039eba9f9dc1?w=600&q=85',
+      'https://i.ibb.co/zTVC8pqv/Mens-elastic-boxer-2.avif',
+      'https://i.ibb.co/hRwRHr9G/Mens-Elastic-boxer-3.avif',
+      'https://i.ibb.co/DDMbY3y6/Mens-elastic-boxer-4.avif',
     ],
     alt: 'Mens Elastic Boxer — comfortable and stylish everyday wear',
     fallback: 'https://placehold.co/500x500/006B3F/fff?text=Mens+Boxer',
@@ -2111,7 +2114,21 @@ if (backTitle) backTitle.textContent = product.name;
   const qtyNum = $('pdp-qty-num');
   if (qtyNum) qtyNum.textContent = '1';
   pdpState.quantity = 1;
+/* ── Video ── */
+const videoWrap = $('pdp-video-wrap');
+const videoEl = $('pdp-video');
+const videoSource = $('pdp-video-source');
 
+if (videoWrap && videoEl && videoSource) {
+  if (product.video) {
+    videoSource.src = product.video;
+    videoEl.load();
+    videoWrap.style.display = 'block';
+  } else {
+    videoWrap.style.display = 'none';
+    videoSource.src = '';
+  }
+}
   renderRelatedProducts(product);
 }
 
@@ -2155,16 +2172,22 @@ function renderRelatedProducts(product) {
     });
   });
 }
-
 function closePDP() {
   const panel = $('pdp-panel');
   const overlay = $('pdp-overlay');
+
+  /* Stop video when closing */
+  const videoEl = $('pdp-video');
+  if (videoEl) {
+    videoEl.pause();
+    videoEl.currentTime = 0;
+  }
+
   if (panel) { panel.classList.remove('open'); panel.setAttribute('aria-hidden', 'true'); }
   if (overlay) { overlay.classList.remove('visible'); overlay.setAttribute('aria-hidden', 'true'); }
   unlockScroll();
   pdpState.currentProduct = null;
 }
-
 function initPDP() {
   const closeBtn = $('pdp-close');
   if (closeBtn) closeBtn.addEventListener('click', closePDP);

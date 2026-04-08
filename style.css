@@ -2503,3 +2503,49 @@ a,button{-webkit-tap-highlight-color:rgba(0,107,63,.2)}
 .pdp-gallery__main.dragging .pdp-gallery__slide img {
   pointer-events: none;
 }
+/* =====================================================
+   PRODUCT VIDEO — PDP
+   ===================================================== */
+
+.pdp-video-wrap {
+  margin: 0 1.25rem 1rem;
+  border-radius: var(--r-xl);
+  overflow: hidden;
+  border: 2px solid var(--border);
+  background: #000;
+}
+
+.pdp-video-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1rem;
+  background: linear-gradient(135deg, var(--gh-green), var(--gh-green-mid));
+  color: #fff;
+  font-family: var(--fh);
+  font-weight: 700;
+  font-size: 0.82rem;
+}
+
+.pdp-video-label i {
+  font-size: 1rem;
+}
+
+.pdp-video {
+  width: 100%;
+  display: block;
+  max-height: 320px;
+  background: #000;
+  outline: none;
+}
+
+@media (min-width: 768px) {
+  .pdp-video {
+    max-height: 400px;
+  }
+}
+
+/* Dark mode */
+[data-theme="dark"] .pdp-video-wrap {
+  border-color: var(--border-2);
+}

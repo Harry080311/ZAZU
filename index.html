@@ -699,7 +699,8 @@
         </button>
 
         <!-- Image Gallery -->
-        <div class="pdp-gallery" id="pdp-gallery" data-images="1">
+        <!-- Image Gallery -->
+<div class="pdp-gallery" id="pdp-gallery" data-images="1">
           <div class="pdp-gallery__main" id="pdp-gallery-main">
             <div class="pdp-gallery__track" id="pdp-gallery-track"></div>
             <button 
@@ -722,7 +723,24 @@
           <div class="pdp-gallery__dots" id="pdp-gallery-dots"></div>
           <div class="pdp-gallery__thumbs" id="pdp-gallery-thumbs"></div>
         </div>
-
+<!-- Product Video -->
+<div class="pdp-video-wrap" id="pdp-video-wrap" style="display:none">
+  <div class="pdp-video-label">
+    <i class="fa-solid fa-circle-play" aria-hidden="true"></i>
+    <span>Product Video</span>
+  </div>
+  <video
+    id="pdp-video"
+    class="pdp-video"
+    controls
+    playsinline
+    preload="none"
+    aria-label="Product video"
+  >
+    <source id="pdp-video-source" src="" type="video/mp4" />
+    Your browser does not support video playback.
+  </video>
+</div>
         <!-- Info -->
         <div class="pdp-info">
           <div class="pdp-meta">
