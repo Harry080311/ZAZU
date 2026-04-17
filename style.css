@@ -19,6 +19,13 @@
   --gh-red-mid:    #ef4444;
   --gh-red-light:  #fee2e2;
   --gh-black:      #0a0a0a;
+  /* CTA Power Colors */
+  --cta-orange:       #FF6B00;
+  --cta-orange-dark:  #cc5500;
+  --cta-orange-light: #fff0e6;
+  --cta-lime:         #39D353;
+  --cta-lime-dark:    #28a83f;
+  --cta-lime-light:   #e6fff0;
 
   /* UI Colours */
   --primary:       #006B3F;
@@ -175,15 +182,16 @@ h1,h2,h3,h4,h5,h6{
 }
 
 .btn--wa{
-  background:linear-gradient(135deg,#16a34a,#15803d);
-  color:#fff;font-weight:700;
-  box-shadow:0 6px 20px rgba(22,163,74,.4);
+  background:linear-gradient(135deg, var(--cta-lime), var(--cta-lime-dark));
+  color:#fff;
+  font-weight:700;
+  box-shadow:0 6px 20px rgba(57,211,83,.4);
 }
 .btn--wa:hover{
   transform:translateY(-2px);
-  box-shadow:0 10px 32px rgba(22,163,74,.5);
+  box-shadow:0 10px 32px rgba(57,211,83,.55);
+  background:linear-gradient(135deg, #4dff6e, var(--cta-lime));
 }
-
 .btn--buy{
   background:linear-gradient(135deg,var(--gh-gold),var(--gh-gold-dark));
   color:#0a2010;font-weight:700;width:100%;
@@ -1019,11 +1027,24 @@ h1,h2,h3,h4,h5,h6{
   font-size:.82rem;
   border-radius:var(--r-full);
   margin-top:auto;
+  background:linear-gradient(135deg, var(--cta-orange), var(--cta-orange-dark));
+  color:#fff;
+  font-weight:700;
+  border:none;
+  box-shadow:0 4px 15px rgba(255,107,0,.4);
+  transition:all var(--tb);
+}
+.btn--add-cart:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 25px rgba(255,107,0,.55);
+  background:linear-gradient(135deg, #ff8533, var(--cta-orange));
+}
+.btn--add-cart:active{
+  transform:translateY(0);
 }
 @media(max-width:479px){
   .btn--add-cart{font-size:.75rem;padding:.65rem .85rem}
-}
-.load-more-wrap{display:flex;justify-content:center}
+}.load-more-wrap{display:flex;justify-content:center}
 
 /* =====================================================
    14. DELIVERY
@@ -1538,6 +1559,16 @@ h1,h2,h3,h4,h5,h6{
   padding-top:.65rem;border-top:1px solid var(--border);
 }
 #cart-total{color:var(--gh-green);font-size:1.2rem}
+/* Cart WhatsApp button extra pop */
+#whatsapp-order-btn{
+  background:linear-gradient(135deg, var(--cta-lime), var(--cta-lime-dark));
+  box-shadow:0 4px 15px rgba(57,211,83,.4);
+  font-size:.95rem;
+}
+#whatsapp-order-btn:hover{
+  box-shadow:0 8px 25px rgba(57,211,83,.55);
+  transform:translateY(-2px);
+}
 .cart-secure{
   text-align:center;font-size:.68rem;color:var(--tx-3);
   display:flex;align-items:center;justify-content:center;gap:.35rem;
@@ -2215,6 +2246,19 @@ a,button{-webkit-tap-highlight-color:rgba(0,107,63,.2)}
 .pdp-actions{display:flex;flex-direction:column;gap:.65rem}
 .pdp-action-btn{width:100%;padding:.9rem;font-size:.95rem}
 
+/* PDP Add to Cart specific */
+#pdp-add-cart{
+  background:linear-gradient(135deg, var(--cta-orange), var(--cta-orange-dark));
+  color:#fff;
+  font-weight:700;
+  border:none;
+  box-shadow:0 4px 15px rgba(255,107,0,.4);
+  transition:all var(--tb);
+}
+#pdp-add-cart:hover{
+  transform:translateY(-2px);
+  box-shadow:0 8px 25px rgba(255,107,0,.55);
+}
 .pdp-trust{
   display:flex;flex-wrap:wrap;gap:.5rem;
   justify-content:center;padding:.75rem;
@@ -2548,4 +2592,29 @@ a,button{-webkit-tap-highlight-color:rgba(0,107,63,.2)}
 /* Dark mode */
 [data-theme="dark"] .pdp-video-wrap {
   border-color: var(--border-2);
+}
+/* =====================================================
+   CTA PULSE ANIMATION
+   ===================================================== */
+
+/* Subtle pulse on Add to Cart to draw attention */
+@keyframes cta-pulse {
+  0%   { box-shadow: 0 4px 15px rgba(255,107,0,.4); }
+  50%  { box-shadow: 0 4px 25px rgba(255,107,0,.7); }
+  100% { box-shadow: 0 4px 15px rgba(255,107,0,.4); }
+}
+
+.btn--add-cart {
+  animation: cta-pulse 2.5s ease-in-out infinite;
+}
+
+.btn--add-cart:hover {
+  animation: none;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .btn--add-cart {
+    animation: none;
+  }
 }
